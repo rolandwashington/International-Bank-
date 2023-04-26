@@ -4,9 +4,10 @@
     use PHPMailer\PHPMailer\Exception;
     
     require_once "load.php";
-    require_once "/PHPMailer/src/PHPMailer.php";
-    require_once "/PHPMailer/src/SMTP.php";
-    require_once "/PHPMailer/src/Exception.php";
+    // require_once "/core/form-handlers/load.php";
+    require_once "/core/PHPMailer/src/PHPMailer.php";
+    require_once "/core/PHPMailer/src/SMTP.php";
+    require_once "/core/PHPMailer/src/Exception.php";
 
 
     if (isset($_POST["internet-banking"])) {
