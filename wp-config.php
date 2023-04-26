@@ -46,8 +46,6 @@ define( 'DB_CHARSET', 'utf8' );
 define( 'DB_COLLATE', '' );
 
 
-require_once('database.php');
-
 /**#@+
  * Authentication unique keys and salts.
  *
