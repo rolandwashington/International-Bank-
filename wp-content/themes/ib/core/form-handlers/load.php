@@ -4,7 +4,7 @@
 	$loadFromUser = new User($pdo);
     require_once get_template_directory() . "/core/form-handlers/database.php";
   
-    $SMTPEmailAddress   = 'admin@international-bank.thekreativezone.com';
-    $SMTPEmailPassword  = 'p$TpsM!!BTFkzx8Q&pJK!';
-    $SMTPHost           = 'box2064.bluehost.com';
-    $SMTPPortNumber     = 25;
+    // $SMTPEmailAddress   = 'admin@international-bank.thekreativezone.com';
+    // $SMTPEmailPassword  = 'p$TpsM!!BTFkzx8Q&pJK!';
+    // $SMTPHost           = 'box2064.bluehost.com';
+    // $SMTPPortNumber     = 25;
