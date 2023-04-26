@@ -25,7 +25,7 @@
     $databaseName = "ibliberi_the_kreative_zone_online_application";
 
     // Create connection
-    $conn = new mysqli($servername, $username, $password);
+    $conn = new mysqli($servername, $username, $password, $databaseName);
     
     // Check connection
     if ($conn->connect_error) {
