@@ -1,14 +1,12 @@
 <?php
-    // use PHPMailer\PHPMailer\PHPMailer;
-    // use PHPMailer\PHPMailer\SMTP;
-    // use PHPMailer\PHPMailer\Exception;
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\SMTP;
+    use PHPMailer\PHPMailer\Exception;
     
     // require_once get_template_directory() . "/core/form-handlers/load.php";
     // require_once get_template_directory() . "/core/PHPMailer/src/PHPMailer.php";
     // require_once get_template_directory() . "/core/PHPMailer/src/SMTP.php";
     // require_once get_template_directory() . "/core/PHPMailer/src/Exception.php";
-
-    require_once get_template_directory() . '/core/PHPMailer/PHPMailerAutoload.php';
 
 
     if (isset($_POST["internet-banking"])) {
