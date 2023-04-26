@@ -40,7 +40,7 @@
 						}
 					} else {
 						?>
-							<h1>Gallery Items coming soon...</h1>
+							<p>Gallery Items coming soon...</p>
 						<?php
 					}
 					
