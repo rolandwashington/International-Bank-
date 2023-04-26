@@ -16,13 +16,13 @@
     //     $servername = "localhost";
     //     $username = "ibliberi_zone_admin";
     //     $password = "#P{~D2dvrF{V";
-    //     $databaseName = "ibliberi_bank_online_application";
+    //     $databaseName = "ibliberi_the_kreative_zone_online_application";
     // }
 
     $servername = "localhost";
-        $username = "ibliberi_zone_admin";
-        $password = "#P{~D2dvrF{V";
-        $databaseName = "ibliberi_bank_online_application";
+    $username = "ibliberi_zone_admin";
+    $password = "#P{~D2dvrF{V";
+    $databaseName = "ibliberi_the_kreative_zone_online_application";
 
     // Create connection
     $conn = new mysqli($servername, $username, $password);

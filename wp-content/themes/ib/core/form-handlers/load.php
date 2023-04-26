@@ -5,6 +5,7 @@
 	$loadFromUser = new User($pdo);
   
     include 'database.php';
+
     $SMTPEmailAddress   = 'admin@international-bank.thekreativezone.com';
     $SMTPEmailPassword  = 'p$TpsM!!BTFkzx8Q&pJK!';
     $SMTPHost           = 'box2064.bluehost.com';
