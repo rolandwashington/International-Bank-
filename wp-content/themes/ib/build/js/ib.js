@@ -285,14 +285,14 @@ $(document).ready(function () {
     var slideIndex = 1;
     var modalImg = $(".modal-img")[0];
 
-    $("img").click(function () {
+    $("#gallery img").click(function () {
         var t = $(this).attr("src");
         slideIndex = $(this).index() + 1;
         modalImg.src = t;
         $("#myModal").modal();
     });
 
-    $("video").click(function () {
+    $("#gallery video").click(function () {
         var v = $("video > source");
         var t = v.attr("src");
         $(".modal-body").html("<video class='model-vid' controls><source src='" + t + "' type='video/mp4'></source></video>");

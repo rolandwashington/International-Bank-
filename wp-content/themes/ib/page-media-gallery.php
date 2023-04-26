@@ -39,7 +39,9 @@
 							<?php }
 						}
 					} else {
-						echo "No Gallery Items";
+						?>
+							<h1>Gallery Items coming soon...</h1>
+						<?php
 					}
 					
 					?>
@@ -50,8 +52,6 @@
 						<div class="modal-content">
 							<div class="modal-body">
 								<img src="" class="modal-img">
-								<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-								<a class="next" onclick="plusSlides(1)">&#10095;</a>
 							</div>
 						</div>
 					</div>
