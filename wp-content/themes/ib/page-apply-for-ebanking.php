@@ -1,7 +1,7 @@
 
 <?php 
     get_header(); 
-    // require_once get_template_directory() . "/core/form-handlers/apply-for-ebanking.php";
+    require_once get_template_directory() . "/core/form-handlers/apply-for-ebanking.php";
 ?>
 
 <div id="content" class="site-content">

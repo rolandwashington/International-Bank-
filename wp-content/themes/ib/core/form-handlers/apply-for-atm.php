@@ -4,8 +4,6 @@
     use PHPMailer\PHPMailer\Exception;
     
     include "load.php";
-    // include "database.php";
-
 
     require_once "PHPMailer/src/PHPMailer.php";
     require_once "PHPMailer/src/SMTP.php";

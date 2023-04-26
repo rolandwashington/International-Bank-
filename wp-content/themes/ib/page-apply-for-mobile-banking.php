@@ -1,7 +1,7 @@
 
 <?php 
     get_header(); 
-    // require_once get_template_directory() . "/core/form-handlers/mobile-banking.php";
+    require_once get_template_directory() . "/core/form-handlers/mobile-banking.php";
 ?>
 
 <div id="content" class="site-content">

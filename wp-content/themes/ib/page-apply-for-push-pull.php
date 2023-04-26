@@ -1,6 +1,6 @@
 <?php 
     get_header(); 
-    // require_once get_template_directory() . "/core/form-handlers/push-pull.php";
+    require_once get_template_directory() . "/core/form-handlers/push-pull.php";
 ?>
 
 <div id="content" class="site-content">

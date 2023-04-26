@@ -1,6 +1,6 @@
 <?php 
     get_header(); 
-    // require_once get_template_directory() . "/core/form-handlers/bank-account-online-application.php";
+    require_once get_template_directory() . "/core/form-handlers/bank-account-online-application.php";
 ?>
 
 <div id="content" class="site-content">

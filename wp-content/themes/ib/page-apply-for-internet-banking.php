@@ -1,6 +1,6 @@
 <?php 
     get_header(); 
-    // require_once get_template_directory() . "/core/form-handlers/internet-banking.php";
+    require_once get_template_directory() . "/core/form-handlers/internet-banking.php";
 ?>
 
 
