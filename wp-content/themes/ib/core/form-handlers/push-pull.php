@@ -4,10 +4,10 @@
     use PHPMailer\PHPMailer\Exception;
     
     require_once "load.php";
-    // require_once "/core/form-handlers/load.php";
-    require_once "/core/PHPMailer/src/PHPMailer.php";
-    require_once "/core/PHPMailer/src/SMTP.php";
-    require_once "/core/PHPMailer/src/Exception.php";
+    // require_once get_template_directory() . "/core/form-handlers/load.php";
+    require_once get_template_directory() . "/core/PHPMailer/src/PHPMailer.php";
+    require_once get_template_directory() . "/core/PHPMailer/src/SMTP.php";
+    require_once get_template_directory() . "/core/PHPMailer/src/Exception.php";
 
 
     if (isset($_POST["internet-banking"])) {
