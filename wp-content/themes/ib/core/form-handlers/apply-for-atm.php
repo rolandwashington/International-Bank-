@@ -3,13 +3,11 @@
     use PHPMailer\PHPMailer\SMTP;
     use PHPMailer\PHPMailer\Exception;
     
-    // include "load.php";
-    require_once get_template_directory() . "/core/form-handlers/load.php";
+    include "load.php";
 
-
-    include "PHPMailer/src/PHPMailer.php";
-    include "PHPMailer/src/SMTP.php";
-    include "PHPMailer/src/Exception.php";
+    require_once "PHPMailer/src/PHPMailer.php";
+    require_once "PHPMailer/src/SMTP.php";
+    require_once "PHPMailer/src/Exception.php";
 
     if (isset($_POST["internet-banking"])) {
         $ApplicantTitle                 = $_POST["title"];
