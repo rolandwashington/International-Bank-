@@ -38,6 +38,8 @@
 								<img src="<?php echo $image[0]; ?>" alt="<?php echo $attachment->post_title; ?>" class="img-responsive">
 							<?php }
 						}
+					} else {
+						echo "No Gallery Items";
 					}
 					
 					?>
