@@ -22,7 +22,7 @@
 				<div class="career-box" id="ib-application-form">
 					<h5>APPLICATION FORM</h5>
 					<div class="content-box">
-                        <form action="<?php site_url() . '/apply-for-push-pull' ?>" method="POST" enctype="multipart/form-data">
+                        <form action="#" method="POST" enctype="multipart/form-data">
                             <div class="application-form">                            
                                 <label for="" class="">
                                     Do you have an account with IB? <br>
