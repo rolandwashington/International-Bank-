@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>International Bank (Liberia) Limited</title>
-    
+    <?php echo get_template_directory_uri()?>
 	<link rel="stylesheet" id="bootstrap-css" href="<?php echo get_template_directory_uri() . '/build/css/bootstrap.css' ?>" type="text/css" media="all">
 	<link rel="stylesheet" id="awesome-font-css" href="<?php echo get_template_directory_uri() . '/build/css/font-awesome.css' ?>" type="text/css" media="all">
 	<link rel="stylesheet" id="ionicon-font-css" href="<?php echo get_template_directory_uri() . '/build/css/ionicon.css' ?>" type="text/css" media="all">
