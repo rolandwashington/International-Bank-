@@ -2,27 +2,22 @@
 
     // USE ALTER TO ADD NEW COLUMN TO TABLE
     // =============================================================
-    // if ( strstr( $_SERVER['SERVER_NAME'], 'international-bank.local' ) ) {
-    //     $servername = "localhost";
-    //     $username = "thekrea9";
-    //     $password = "password";
-    //     $databaseName = "thekrea9ib";
-    // } else if ( strstr( $_SERVER['SERVER_NAME'], 'international-bank.thekreativezone.com' ) ) {
-    //     $servername = "localhost";
-    //     $username = "thekrea9";
-    //     $password = "password";
-    //     $databaseName = "thekrea9ib";
-    // } else {
-    //     $servername = "localhost";
-    //     $username = "ibliberi_zone_admin";
-    //     $password = "#P{~D2dvrF{V";
-    //     $databaseName = "ibliberi_the_kreative_zone_online_application";
-    // }
-
-    $servername = "localhost";
-    $username = "ibliberi_zone_admin";
-    $password = "#P{~D2dvrF{V";
-    $databaseName = "ibliberi_the_kreative_zone_online_application";
+    if ( strstr( $_SERVER['SERVER_NAME'], 'international-bank.local' ) ) {
+        $servername = "localhost";
+        $username = "root";
+        $password = "root";
+        $databaseName = "local";
+    } else if ( strstr( $_SERVER['SERVER_NAME'], 'international-bank.thekreativezone.com' ) ) {
+        $servername = "localhost";
+        $username = "thekrea9";
+        $password = "password";
+        $databaseName = "thekrea9ib";
+    } else {
+        $servername = "localhost";
+        $username = "ibliberi_zone_admin";
+        $password = "#P{~D2dvrF{V";
+        $databaseName = "ibliberi_the_kreative_zone";
+    }
 
     // Create connection
     $conn = new mysqli($servername, $username, $password, $databaseName);

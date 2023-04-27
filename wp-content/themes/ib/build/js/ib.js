@@ -282,32 +282,16 @@ $("#ib-partners-nav").click(function () {
 
 // GALLERY JS
 $(document).ready(function () {
-    var slideIndex = 1;
-    var modalImg = $(".modal-img")[0];
-
-    $("#gallery img").click(function () {
+    $("img").click(function () {
         var t = $(this).attr("src");
-        slideIndex = $(this).index() + 1;
-        modalImg.src = t;
+        $(".modal-body").html("<img src='" + t + "' class='modal-img'>");
         $("#myModal").modal();
     });
 
-    $("#gallery video").click(function () {
+    $("video").click(function () {
         var v = $("video > source");
         var t = v.attr("src");
         $(".modal-body").html("<video class='model-vid' controls><source src='" + t + "' type='video/mp4'></source></video>");
         $("#myModal").modal();
     });
-
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-
-    function showSlides(n) {
-        var i;
-        var slides = $("img");
-        if (n > slides.length) { slideIndex = 1 }
-        if (n < 1) { slideIndex = slides.length }
-        modalImg.src = slides[slideIndex - 1].src;
-    }
 });//EOF Document.ready
