@@ -20,24 +20,17 @@
  */
 
 // ** Database settings - You can get this info from your web host ** //
+/** The name of the database for WordPress */
+define( 'DB_NAME', 'local' );
 
-if ( strstr( $_SERVER['SERVER_NAME'], 'international-bank.local' ) ) {
-	define( 'DB_NAME', 'local' );
-	define( 'DB_USER', 'root' );
-	define( 'DB_PASSWORD', 'root' );
-	define( 'DB_HOST', 'localhost' );
-} else if ( strstr( $_SERVER['SERVER_NAME'], 'international-bank.thekreativezone.com' ) ) {
-	define( 'DB_NAME', 'movable1_ecommerce' );
-	define( 'DB_USER', 'movable1_admin' );
-	define( 'DB_PASSWORD', '$gPfpK7ajNCR@4kpQKk$8' );
-	define( 'DB_HOST', 'localhost' );
-} else {
-	define( 'DB_NAME', 'ibliberi_the_kreative_zone' );
-	define( 'DB_USER', 'ibliberi_zone_admin' );
-	define( 'DB_PASSWORD', '#P{~D2dvrF{V' );
-	define( 'DB_HOST', 'localhost' );
-}
+/** Database username */
+define( 'DB_USER', 'root' );
 
+/** Database password */
+define( 'DB_PASSWORD', 'root' );
+
+/** Database hostname */
+define( 'DB_HOST', 'localhost' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
