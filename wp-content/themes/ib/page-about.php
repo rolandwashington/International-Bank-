@@ -91,7 +91,7 @@
 												<img src="<?php echo get_template_directory_uri(); ?>/images/our-team/Brumskine_Charlyne.jpg" alt=""> <span class="overlay"></span>
 											</div>
 											<div class="mem-info">
-												<h5>Charlyne M. Brumskin<span class="font12 normal">Director</span></h5>
+												<h5>Charlyne M. Brumskine<span class="font12 normal">Director</span></h5>
 												<p></p>
 											</div>
 										</div>

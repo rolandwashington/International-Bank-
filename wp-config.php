@@ -27,10 +27,10 @@ if ( strstr( $_SERVER['SERVER_NAME'], 'international-bank.local' ) ) {
 	define( 'DB_PASSWORD', 'root' );
 	define( 'DB_HOST', 'localhost' );
 } else if ( strstr( $_SERVER['SERVER_NAME'], 'international-bank.thekreativezone.com' ) ) {
-	define( 'DB_NAME', 'movable1_ecommerce' );
-	define( 'DB_USER', 'movable1_admin' );
-	define( 'DB_PASSWORD', '$gPfpK7ajNCR@4kpQKk$8' );
-	define( 'DB_HOST', 'localhost' );
+	define('DB_NAME', 'thekrea9_WP9UZ');
+	define('DB_USER', 'thekrea9_WP9UZ');
+	define('DB_PASSWORD', '6-{a<}9[#p0K6w}P?');
+	define('DB_HOST', 'localhost');
 } else {
 	define( 'DB_NAME', 'ibliberi_the_kreative_zone' );
 	define( 'DB_USER', 'ibliberi_zone_admin' );
