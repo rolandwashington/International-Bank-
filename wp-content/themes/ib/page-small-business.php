@@ -78,7 +78,7 @@
                                     <br>
                                     <div class="ib-account-button-wrap">
                                         <a class="link-box pagelink" href="<?php echo site_url() ?>/account-application">Apply Online</a>
-                                        <a class="link-box pagelink" href="<?php echo site_url() ?>/personal-account-form.pdf">Download Form</a>
+                                        <a class="link-box pagelink" target="_blank" href="<?php echo get_template_directory_uri() ?>/personal-account-form.pdf">Download Form</a>
                                     </div>
                                 </div>
                             </div>
@@ -99,7 +99,7 @@
                                     
                                     <div class="ib-account-button-wrap">
                                         <a class="link-box pagelink" href="<?php echo site_url() ?>/account-application">Apply Online</a>
-                                        <a class="link-box pagelink" href="<?php echo site_url() ?>/personal-account-form.pdf">Download Form</a>
+                                        <a class="link-box pagelink" target="_blank" href="<?php echo get_template_directory_uri() ?>/personal-account-form.pdf">Download Form</a>
                                     </div>
                                 </div>
                             </div>

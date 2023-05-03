@@ -34,12 +34,12 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/build/css/ib.css' ?>" type="text/css" media="all">
 
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <body class="royal_preloader">
 
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
-<body class="royal_preloader">
 	<div id="page" class="site">
 
     <header id="site-header" class="site-header mobile-header-blue header-style-1">
@@ -77,7 +77,7 @@
                     <a href="<?php echo site_url( '/small-business' ) ?>" class="ib-menu-link ib-small-business">SMALL BUSINESS</a>
                     <a href="<?php echo site_url( '/corporate-institutional' ) ?>" class="ib-menu-link ib-corporate-institutional">CORPORATE & INSTITUTIONAL</a>
                     <a href="<?php echo site_url( '/about' ) ?>" class="ib-menu-link ib-about">ABOUT</a>
-                    <a href="<?php echo site_url( '/resources' ) ?>" class="ib-menu-link ib-resources">RESOURCES</a>
+                    <a href="<?php echo site_url( '/publications' ) ?>" class="ib-menu-link ib-resources">PUBLICATIONS</a>
                 </div>
 
                 <a target="_blank" href="https://onlinebanking.ibliberia.com/Trustbank_InternetBanking/" class="ib-internet-banking">
@@ -133,12 +133,12 @@
                                     <li><a href="<?php echo site_url( '/about#ib-team' ) ?>">OUR TEAM</a></li>
                                     <li><a href="<?php echo site_url( '/about#ib-partners' ) ?>">IB PARTNERS</a></li>
                                     <li><a href="<?php echo site_url( '/about#ib-community' ) ?>">IB IN THE COMMUNITY</a></li>
-                                    <li><a href="<?php echo site_url( '/about#ib-location' ) ?>">IB LOCATIONS</a></li>
+                                    <li><a href="<?php echo site_url( '/locations' ) ?>">IB LOCATIONS</a></li>
                                 </ul>
                             </li>
-                            <li class="menu-item-has-children"><a href="<?php echo site_url() ?>/resources">RESOURCES</a>
+                            <li class="menu-item-has-children"><a href="<?php echo site_url() ?>/publications">PUBLICATIONS</a>
                                 <ul class="sub-menu">
-                                    <li><a href="<?php echo site_url( '/resources' ) ?>">ANNOUNCEMENT </a></li>
+                                    <li><a href="<?php echo site_url( '/publications' ) ?>">PUBLICATIONS</a></li>
                                     <li><a href="<?php echo site_url( '/blog' ) ?>">BLOG</a></li>
                                 </ul>
                             </li>
@@ -192,10 +192,10 @@
                     <div class="ib-sub-header">
                         <div class="ib-sub-header-wrap">
                             <div class="ib-navigation">
-                                <a href="#ib-small-business-get-an-account" class="ib-menu-link" id="small-business-get-account">GET AN ACCOUNT</a>
-                                <a href="#ib-small-business-credit-facilities" class="ib-menu-link" id="small-business-credit">BUSINESS CREDIT FACILITIES</a>
-                                <a href="#ib-small-business-e-banking" class="ib-menu-link" id="small-business-ebanking">BUSINESS E-BANKING</a>
-                                <a href="/other-services" class="ib-menu-link">OTHER SERVICES</a>
+                                <a href="<?php echo site_url( '/small-business/#ib-small-business-get-an-account' ) ?>" class="ib-menu-link" id="small-business-get-account">GET AN ACCOUNT</a>
+                                <a href="<?php echo site_url( '/small-business/#ib-small-business-credit-facilities' ) ?>" class="ib-menu-link" id="small-business-credit">BUSINESS CREDIT FACILITIES</a>
+                                <a href="<?php echo site_url( '/small-business/#ib-small-business-e-banking' ) ?>" class="ib-menu-link" id="small-business-ebanking">BUSINESS E-BANKING</a>
+                                <a href="<?php echo site_url( '/other-services' ) ?>" class="ib-menu-link">OTHER SERVICES</a>
                             </div>
                         </div>
                     </div>
@@ -220,7 +220,7 @@
                         </div>
                     </div>
                 <?php
-            } else if(strpos($_SERVER['REQUEST_URI'], 'about') !== false ) {
+            } else if(strpos($_SERVER['REQUEST_URI'], 'about') !== false || strpos($_SERVER['REQUEST_URI'], 'locations') !== false || strpos($_SERVER['REQUEST_URI'], 'ib-community') !== false || strpos($_SERVER['REQUEST_URI'], 'our-partners') !== false) {
                 ?>
                     <style>
                         a.ib-menu-link.ib-about {
@@ -233,15 +233,15 @@
                     <div class="ib-sub-header">
                         <div class="ib-sub-header-wrap">
                             <div class="ib-navigation">
-                                <a href="#ib-team" class="ib-menu-link" id="ib-team-nav">Our Team</a>
-                                <a href="#ib-partners" class="ib-menu-link" id="ib-partners-nav">IB Partners</a>
-                                <a href="#ib-community" class="ib-menu-link" id="ib-community-nav">IB in the Community</a>
-                                <a href="#ib-location" class="ib-menu-link" id="ib-location-nav">IB Locations</a>
+                                <a href="<?php echo site_url( '/about/#ib-team' ) ?>" class="ib-menu-link" id="ib-team-nav">Our Team</a>
+                                <a href="<?php echo site_url( '/our-partners' ) ?>" class="ib-menu-link" id="ib-partners-nav">IB Partners</a>
+                                <a href="<?php echo site_url( '/ib-community' ) ?>" class="ib-menu-link" id="ib-community-nav">IB in the Community</a>
+                                <a href="<?php echo site_url( '/locations' ) ?>" class="ib-menu-link" id="ib-location-nav">IB Locations</a>
                             </div>
                         </div>
                     </div>
                 <?php
-            } else if(strpos($_SERVER['REQUEST_URI'], 'resources') !== false || strpos($_SERVER['REQUEST_URI'], 'blog') !== false || strpos($_SERVER['REQUEST_URI'], 'category') !== false || strpos($_SERVER['REQUEST_URI'], 'online-forms') !== false || strpos($_SERVER['REQUEST_URI'], 'media-gallery') !== false) {
+            } else if(strpos($_SERVER['REQUEST_URI'], 'publications') !== false || strpos($_SERVER['REQUEST_URI'], 'blog') !== false || strpos($_SERVER['REQUEST_URI'], 'category') !== false || strpos($_SERVER['REQUEST_URI'], 'online-forms') !== false || strpos($_SERVER['REQUEST_URI'], 'media-gallery') !== false) {
                 ?>
                     <style>
                         a.ib-menu-link.ib-resources {
@@ -254,10 +254,10 @@
                     <div class="ib-sub-header">
                         <div class="ib-sub-header-wrap">
                             <div class="ib-navigation">
-                                <a href="/resources" class="ib-menu-link">Announcement</a>
-                                <a href="/online-forms" class="ib-menu-link">Online Application Forms</a>
-                                <a href="/media-gallery" class="ib-menu-link">Media & Gallery</a>
-                                <a href="/blog" class="ib-menu-link">Blog</a>
+                                <a href="<?php echo site_url( '/publications' ) ?>" class="ib-menu-link">Announcement</a>
+                                <a href="<?php echo site_url( '/online-forms' ) ?>" class="ib-menu-link">Online Application Forms</a>
+                                <a href="<?php echo site_url( '/media-gallery' ) ?>" class="ib-menu-link">Media & Gallery</a>
+                                <a href="<?php echo site_url( '/blog' ) ?>" class="ib-menu-link">Blog</a>
                             </div>
                         </div>
                     </div>

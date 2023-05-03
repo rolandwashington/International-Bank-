@@ -50,9 +50,10 @@
                                     <li><a href="<?php echo site_url( '/small-business' ) ?>">Small Business</a></li>
                                     <li><a href="<?php echo site_url( '/corporate-institutional' ) ?>">Corporate &amp; Institutional</a></li>
                                     <li><a href="<?php echo site_url( '/about' ) ?>">About</a></li>
-                                    <li><a href="<?php echo site_url( '/resources' ) ?>">Resources</a></li>
+                                    <li><a href="<?php echo site_url( '/publications' ) ?>">Publications</a></li>
                                     <li><a href="<?php echo site_url( '/#contact-us' ) ?>">Contact Us</a></li>
-                                    <li><a href="<?php echo site_url( '/about#ib-location' ) ?>">Location</a></li>
+                                    <li><a href="<?php echo site_url( '/ib-community' ) ?>">IB in the Community</a></li>
+                                    <li><a href="<?php echo site_url( '/locations' ) ?>">Location</a></li>
                                 </ul>
                             </div>
                         </section>
@@ -61,7 +62,7 @@
 
                     <div class="col-md-3 col-sm-6 subscribe">
                         <section id="mc4wp_form_widget-1" class="widget widget_mc4wp_form_widget">
-                            <h4 class="widget-title">Stay inform of our products and services</h4>
+                            <h4 class="widget-title">Stay informed of our products and services</h4>
                             <!-- Mailchimp for WordPress v4.5.2 - https://wordpress.org/plugins/mailchimp-for-wp/ -->
                             <form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-1696" method="post" data-id="1696" data-name="Consultax Subscribe">
                                 <div class="mc4wp-form-fields">

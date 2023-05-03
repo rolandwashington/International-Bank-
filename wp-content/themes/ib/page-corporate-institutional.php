@@ -76,7 +76,7 @@
                                     <p>Is a convenient way to manage your business cash flow easily.  Ideal for businesses with high transactions volume.</p>
                                     <div class="ib-account-button-wrap">
                                         <a class="link-box pagelink" href="<?php echo site_url() ?>/account-application">Apply Online</a>
-                                        <a class="link-box pagelink" href="<?php echo site_url() ?>/corporate-account-form.pdf">Download Form</a>
+                                        <a class="link-box pagelink" target="_blank" href="<?php echo get_template_directory_uri() ?>/personal-account-form.pdf">Download Form</a>
                                     </div>
                                 </div>
                             </div>
@@ -97,7 +97,7 @@
                                     
                                     <div class="ib-account-button-wrap">
                                         <a class="link-box pagelink" href="<?php echo site_url() ?>/account-application">Apply Online</a>
-                                        <a class="link-box pagelink" href="<?php echo site_url() ?>/corporate-account-form.pdf">Download Form</a>
+                                        <a class="link-box pagelink" target="_blank" href="<?php echo get_template_directory_uri() ?>/personal-account-form.pdf">Download Form</a>
                                     </div>
                                 </div>
                             </div>
@@ -127,7 +127,7 @@
                                                 <h2 class="custom_heading text-light">Corporate Overdraft</h2>
                                                 <div class="wpb_text_column wpb_content_element  text-light">
                                                     <div class="wpb_wrapper">
-                                                        <p>Our Commercial overdraft provides you with a line of credit when your main account is overdrawn. The Automatic Business Overdraft is automatically accessed whenever your linked IB Business Checking account is overdrawn. We'll handle urgent transactions, so you can focus on running your business.</p>
+                                                        <p>Our Commercial overdraft provides you with a line of credit when your main account is not adequately funded to meet your cash needs. The Automatic Business Overdraft is automatically accessed whenever your linked IB Business Checking account is overdrawn. We'll handle urgent transactions, so you can focus on running your business.</p>
                                                     </div>
                                                 </div>
                                                 <a class="link-box pagelink personal-credit-read-button btn" href="<?php echo site_url() ?>/business-credit-facilities#business-credit-facilities-prerequisites">Request Corporate Overdraft</a>

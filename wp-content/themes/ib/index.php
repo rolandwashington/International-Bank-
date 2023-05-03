@@ -127,7 +127,7 @@
                             <h2 class="custom_heading text-light">Push & Pull</h2>
                             <div class="wpb_text_column wpb_content_element  text-light">
                                 <div class="wpb_wrapper">
-                                    <p>No need to stand in line, transfer money between <br>your bank account and your mobile wallet. </p>
+                                    <p>No need to stand in line; transfer money between <br>your bank account and your mobile wallet easily with IBLL's Push & Pull Service. </p>
                                 </div>
                             </div>
                             <a class="wpcf7-form-control wpcf7-submit btn" href="<?php echo site_url( '/apply-for-push-pull' ) ?>">Sign Up</a>

@@ -189,6 +189,10 @@ a.ib-menu-link {
     position: relative;
 }
 
+.ib-navigation>* {
+    margin: -0.2rem;
+}
+
 .tp-caption p {
     color: var(--ib-primary);
 }
@@ -225,6 +229,11 @@ a.ib-menu-link {
 .ib-sub-header a {
     color: white;
     text-transform: uppercase;
+}
+
+a.ib-menu-link:hover {
+    background-color: #98a54485;
+    color: var(--ib-primary);
 }
 
 /* INDEX PAGE */
@@ -689,7 +698,7 @@ h1.page-title {
 }
 
 .site-content {
-    background: #ffffff;
+    background: var(--ib-white);
 }
 
 .boxed-content .section-padd {

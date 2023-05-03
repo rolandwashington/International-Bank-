@@ -17,7 +17,7 @@
             <ul class="semi-bold">
                 <li><span class="normal">Phone:</span><br> <a href="tel:+231 555 420 134">+231 555 420 134 | +231 555 766 366</a></li><br>
                 <li><span class="normal">Head Office:</span><br>
-                    Tubman Boulevard, Between 12th & 13th Streets Sinkor, Monrovia, Liberia
+                    Tubman Boulevard, Between 11th & 12th Streets Sinkor, Monrovia, Liberia
                 </li><br>
                 <li><span class="normal">Mail:</span> <br><a href="mailto:customercare@ibliberia.com">customercare@ibliberia.com</a></li>
             </ul>

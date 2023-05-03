@@ -10,7 +10,7 @@
 			<div class="breadc-box no-line">
 				<div class="row">
 					<div class="col-md-6">
-						<h1 class="page-title">ATM <?php if (!empty($ThankYou)) { echo $ThankYou; } ?></h1>
+						<h1 class="page-title">ATM Card <?php if (!empty($ThankYou)) { echo $ThankYou; } ?></h1>
 					</div>
 				</div>
 			</div>

@@ -24,7 +24,7 @@
                                 <h4>ATM</h4>
                                 <p>With our ATM service, your bank is never closed. Access your cash on-demand from our over 20 locations Nationwide.</p>
                                 <br>
-                                <a class="link-box pagelink" href="<?php echo site_url() ?>/apply-for-atm">Sign up for ATM</a></div>
+                                <a class="link-box pagelink" href="<?php echo site_url() ?>/apply-for-atm">Sign up for ATM Card</a></div>
                             </div>
 
                         <div class="empty_space_30"></div>
@@ -39,7 +39,7 @@
                             <img src="<?php echo get_template_directory_uri(); ?>/images/push-pull.png" alt="">
                             <div class="content-box">
                                 <h4>Push and Pull</h4>
-                                <p>No need to stand in line, transfer money between your bank account and your mobile wallet.</p>
+                                <p>No need to stand in line; transfer money between your bank account and your mobile wallet easily with IBLL's Push & Pull Service.</p>
                                 <br>
                                 <a class="link-box pagelink" href="<?php echo site_url() ?>/apply-for-push-pull">Sign Up for Push & Pull</a> </div>
                             </div>
@@ -87,7 +87,7 @@
                             <img src="<?php echo get_template_directory_uri(); ?>/images/ebanking-service.png" alt="">
                             <div class="content-box">
                                 <h4>Online Banking</h4>
-                                <p>Run your business efficiently with our Online baking solutions. You can manage your account, review and approve transactions and access your account information anytime, anywhere.</p>
+                                <p>Run your business efficiently with our Online banking solutions. You can manage your account, review and approve transactions and access your account information anytime, anywhere.</p>
                                 <a class="link-box pagelink" href="<?php echo site_url() ?>/apply-for-internet-banking">Sign up for Online Banking</a> </div>
                             </div>
 

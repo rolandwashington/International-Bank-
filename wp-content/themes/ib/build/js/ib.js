@@ -261,18 +261,6 @@ $("#ib-team-nav").click(function () {
     }, 700);
 });
 
-$("#ib-community-nav").click(function () {
-    $('html, body').animate({
-        scrollTop: $("#ib-community").offset().top
-    }, 700);
-});
-
-$("#ib-location-nav").click(function () {
-    $('html, body').animate({
-        scrollTop: $("#ib-location").offset().top
-    }, 700);
-});
-
 $("#ib-partners-nav").click(function () {
     $('html, body').animate({
         scrollTop: $("#ib-partners").offset().top
