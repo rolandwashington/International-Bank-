@@ -1,6 +1,6 @@
 <?php 
     get_header(); 
-    require_once get_template_directory() . "/core/form-handlers/push-pull.php";
+    require_once get_template_directory() . "/core/form-handlers/apply-for-atm.php";
 ?>
 
 <div id="content" class="site-content">
@@ -9,7 +9,7 @@
 			<div class="breadc-box no-line">
 				<div class="row">
 					<div class="col-md-6">
-						<h1 class="page-title">Push & Pull <?php if (!empty($ThankYou)) { echo $ThankYou; } ?></h1>
+						<h1 class="page-title">Card Services <?php if (!empty($ThankYou)) { echo $ThankYou; } ?></h1>
 					</div>
 				</div>
 			</div>
@@ -22,7 +22,7 @@
 				<div class="career-box" id="ib-application-form">
 					<h5>APPLICATION FORM</h5>
 					<div class="content-box">
-                        <form action="<?php echo site_url() . "/apply-for-push-pull" ?>" method="POST" enctype="multipart/form-data">
+                        <form action="<?php echo site_url() ?>/card-services" method="POST" enctype="multipart/form-data">
                             <div class="application-form">                            
                                 <label for="" class="">
                                     Do you have an account with IB? <br>
@@ -33,10 +33,12 @@
                                 <div class="is-account">
                                     <label for="">
                                         Select Title: <br>
-                                        Ms. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" id="" value="Ms.">
-                                        Mr. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" id="" value="Mr.">
+                                        Mr. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" id="" value="Mr." required>
                                         Mrs. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" id="" value="Mrs.">
-                                        Other <input type="text" placeholder="Please Specify" name="title">
+                                        Miss &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" id="" value="Miss">
+                                        Cllr. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" id="" value="Cllr."> 
+                                        Dr. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" id="" value="Dr.">
+                                        Rev. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" id="" value="Rev.">
                                     </label>
     
                                     <label for="full-name">
@@ -69,7 +71,7 @@
                                         Kindly click all that applies <br>
                                         <input type="checkbox" name="sms-banking" id="" value="SMS Banking"> <span>SMS Banking </span> <br>
                                         <input type="checkbox" name="internet-banking" id="" value="Internet Banking"> <span>Internet Banking</span> <br>
-                                        <input type="checkbox" name="atm" id="" value="ATM"> <span>ATM</span> <br>
+                                        <input type="checkbox" name="push-pull" id="" value="Push and Pull"> <span>Push and Pull</span> <br>
                                         <input type="checkbox" name="e-alert" id="" value="E-Alerts"> <span>E-Alerts</span> <br> 
                                         <input type="checkbox" name="email-instructions" id="" value="Email Instructions"> <span>Email Instructions</span> <br>
                                     </label>
@@ -77,7 +79,7 @@
                                         <input type="checkbox" name="" id="" required> <span><strong>NOTE:</strong> I agree to be in-person to complete the process</span> <br>
                                         <input type="checkbox" name="" id="" required> <span>Agree to the terms</span>
                                     </label>
-                                    <button type="submit" name="internet-banking" class="wpcf7-form-control wpcf7-submit btn form-half-width service-button">Submit Application</button>                               
+                                    <button type="submit" name="internet-banking" class="wpcf7-form-control wpcf7-submit btn form-half-width service-button">Submit Application</button>                          
                                 </div>
                             </div>
                         </form>

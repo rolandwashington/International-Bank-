@@ -268,6 +268,53 @@ $("#ib-partners-nav").click(function () {
 });
 
 
+
+
+// SHOW LOCATION MAP
+
+function showMap(lat, lng) {
+    var mapFrame = document.getElementById("ib-map-direction");
+    mapFrame.src = "https://maps.google.com/maps?q=" + lat + "," + lng + "&t=&z=13&ie=UTF8&iwloc=&output=embed";
+    
+    document.getElementById("wrap-map-display").style.display = "flex";
+}
+
+const closeMapButton = document.getElementById("close-ib-map");
+const mapDisplay = document.getElementById("wrap-map-display");
+
+if (closeMapButton) {
+    closeMapButton.addEventListener("click", () => {
+        mapDisplay.style.display = "none";
+    });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // GALLERY JS
 $(document).ready(function () {
     $("img").click(function () {
@@ -283,3 +330,70 @@ $(document).ready(function () {
         $("#myModal").modal();
     });
 });//EOF Document.ready
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Get the elements for the menu and sub header
+    const menuEls = {
+      smallBusiness: {
+        linkEl: document.querySelectorAll(".ib-small-business"),
+        subHeaderEl: document.querySelector("#ib-small-business-sub-header"),
+      },
+      // personal: {
+      //     linkEl: document.querySelector('.ib-personal'),
+      //     subHeaderEl: document.querySelector('#ib-personal-sub-header')
+      // },
+      // about: {
+      //     linkEl: document.querySelector('.ib-about'),
+      //     subHeaderEl: document.querySelector('#ib-about-sub-header')
+      // },
+      // publications: {
+      //     linkEl: document.querySelector('.ib-publications'),
+      //     subHeaderEl: document.querySelector('#ib-publications-sub-header')
+      // }
+    };
+  
+    // Add a mouseover event listener to each menu link
+    Object.keys(menuEls).forEach((key) => {
+      const linkEl = menuEls[key].linkEl;
+      const subHeaderEl = menuEls[key].subHeaderEl;
+  
+      if (linkEl) {
+        linkEl.forEach((el) => {
+          el.addEventListener("mouseover", function (event) {
+            // Show the subHeaderEl when the mouse is over the menu link and not over .the-sub-menu
+            if (
+              event.target.classList.contains("ib-small-business") &&
+              !event.target.closest(".the-sub-menu")
+            ) {
+              subHeaderEl.style.display = "flex";
+              document
+                .querySelector(".the-sub-menu")
+                .style.setProperty("display", "flex");
+            }
+          });
+        });
+  
+        linkEl.forEach((el) => {
+          el.addEventListener("mouseleave", function () {
+            // Hide the subHeaderEl when the mouse leaves the menu link and .the-sub-menu
+            setTimeout(() => {
+              if (
+                !subHeaderEl.matches(":hover") &&
+                !document.querySelector(".the-sub-menu:hover")
+              ) {
+                subHeaderEl.style.display = "none";
+                document
+                  .querySelector(".the-sub-menu")
+                  .style.removeProperty("display");
+              }
+            }, 100);
+          });
+        });
+      }
+    });
+  });
+  
+  

@@ -35,6 +35,7 @@
                                         <option value="Business Saving">Business Saving</option>
                                         <option value="Corporate Checking">Corporate Checking</option>
                                         <option value="Corporate Saving">Corporate Saving</option>
+                                        <option value="Time Deposite">Time Deposite</option>
                                     </select>
                                 </label>
                                 <br>
@@ -50,14 +51,12 @@
                                     </div>
                                 </div>
 
-                                <label for="">
+                                <label for="" class="account-user-title">
                                     Select Title: <br>
-                                    Mr. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" id="" value="Mr." required>
+                                    Ms. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" id="" value="Ms.">
+                                    Mr. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" id="" value="Mr.">
                                     Mrs. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" id="" value="Mrs.">
-                                    Miss &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" id="" value="Miss">
-                                    Cllr. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" id="" value="Cllr."> 
-                                    Dr. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" id="" value="Dr.">
-                                    Rev. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" id="" value="Rev.">
+                                    Other <input type="text" placeholder="Please Specify" name="title">
                                 </label>
 
                                 <label for="full-name">
@@ -118,9 +117,10 @@
                                 
                                 <label for="">
                                     Selecte Marital Status: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <br>
-                                    Single &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="marital-status" id="" value="Single" required>
-                                    Married &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="marital-status" id="" value="Married">
+                                    Married &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="marital-status" id="" value="Married" required>
+                                    Single &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="marital-status" id="" value="Single">
                                     Divorced &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="marital-status" id="" value="Divorced">
+                                    Widow/er &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="marital-status" id="" value="Widow/er">
                                 </label>
                                 
                                 <label for="spouse-name" class="spouse-name">

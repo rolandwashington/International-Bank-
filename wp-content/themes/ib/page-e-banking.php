@@ -35,7 +35,7 @@
 																<p><span>e-Statement</span> -  Need your account statement? There's no need to make the trip to the bank. We can digitally send your account statement whenever you need it, or have them sent to you periodically. <a class="link-box pagelink" href="#">Sign up for e-Statements</a></p>
 																<p><span>e-Alerts</span> - Get notified of every transaction via your account. Notifications about withdrawals, deposits and check encashment will be sent to you via email or sms. All alerts will include your updated account balance. <a class="link-box pagelink" href="">Sign up for e-Alert</a></p>
 																<p><span>SMS Alert</span> - Get notified of every transaction via your account. Notifications will be sent to you via SMS. All alerts will include your updated account balance. <a class="link-box pagelink" href="<?php echo site_url() ?>/apply-for-sms-alert">Sign up for SMS Alert</a></p>
-																<p><span>ATM</span> - With our ATM service, your bank is never closed. Access your cash on-demand from our over 20 locations Nationwide. <a class="link-box pagelink" href="<?php echo site_url() ?>/apply-for-atm">Sign up for ATM</a></p>
+																<p><span>ATM</span> - With our ATM service, your bank is never closed. Access your cash on-demand from our over 20 locations Nationwide. <a class="link-box pagelink" href="<?php echo site_url() ?>/card-services">Sign up for Card Services</a></p>
 															</div>
 														</div>
 													</div>

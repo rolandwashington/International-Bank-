@@ -16,35 +16,7 @@
 		<div class="container">
 			<div class="boxed-content">
 				<section class="wpb_row row-fluid section-padd container-fluid" id="gallery">
-					<?php
-					$args = array(
-						'post_type' => 'attachment',
-						'post_mime_type' => 'image,video',
-						'post_status' => 'inherit',
-						'posts_per_page' => -1
-					);
-					
-					$attachments = get_posts( $args );
-					
-					if ( $attachments ) {
-						foreach ( $attachments as $attachment ) {
-							if ( strpos( $attachment->post_mime_type, 'video' ) !== false ) {
-								$video = wp_get_attachment_url( $attachment->ID ); ?>
-								<video controls>
-									<source src="<?php echo $video; ?>" type="<?php echo $attachment->post_mime_type; ?>">
-								</video>
-							<?php } else {
-								$image = wp_get_attachment_image_src( $attachment->ID, 'full' ); ?>
-								<img src="<?php echo $image[0]; ?>" alt="<?php echo $attachment->post_title; ?>" class="img-responsive">
-							<?php }
-						}
-					} else {
-						?>
-							<p>Gallery Items coming soon...</p>
-						<?php
-					}
-					
-					?>
+					<?php the_content() ?>
 				</section>
 				<div id="myModal" class="modal fade" role="dialog">
 					<div class="modal-dialog">

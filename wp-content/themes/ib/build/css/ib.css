@@ -193,6 +193,11 @@ a.ib-menu-link {
     margin: -0.2rem;
 }
 
+#ib-small-business-sub-header {
+    display: none;
+    background: var(--ib-secondary);
+}
+
 .tp-caption p {
     color: var(--ib-primary);
 }
@@ -947,8 +952,12 @@ input[type="checkbox"] {
     width: 18rem;
     position: absolute;
     right: 0;
-    top: 30rem;
+    top: 34rem;
     margin-right: 2rem;
+}
+
+.account-user-title input[type="radio"] {
+    margin-top: 1.5rem;
 }
 
 .id-card {
@@ -1567,4 +1576,61 @@ img.attachment-medium.size-medium.wp-post-image {
 
 .modal-body {
     padding: 0px;
+}
+
+
+
+/* display map */
+
+#ib-map-direction {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#wrap-map-display {
+    background: #00000054;
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+}
+
+#close-ib-map-wrap {
+    position: fixed;
+    margin: 0 auto;
+    width: 100rem;
+    height: 65vh;
+    border: 1px dotted var(--ib-primary); 
+}
+
+#close-ib-map {
+    width: 5rem;
+    background: var(--ib-primary);
+    color: var(--ib-white);
+    height: 5rem;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+#close-ib-map:hover {
+    background: var(--ib-secondary);
+    color: var(--ib-white);
+}
+
+#ib-location .service-box {
+    cursor: pointer;
 }

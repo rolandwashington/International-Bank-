@@ -51,7 +51,7 @@
                             <p class="ib-about-caption"><span>Access your cash whenever at our 20+ locations Nationwide.</span></p>
                         </div>
                         <div class="tp-caption" data-x="['left']" data-hoffset="['0','15','15','40']" data-y="bottom" data-voffset="['285','300','350','260']" data-transform_idle="o:1;" data-transform_in="x:100px;opacity:0;s:800;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="2100">
-                            <a class="btn" href="<?php echo site_url( '/apply-for-atm' ) ?>">Get an ATM Card</a>
+                            <a class="btn" href="<?php echo site_url( '/card-services' ) ?>">Get an ATM Card</a>
                         </div>
                     </div>
                 </li>
@@ -146,7 +146,7 @@
     <section id="contact-us" class="wpb_row row-fluid section-padd bg-light find-ib-branches" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/ib-pattern.png);">
         <div class="container">
             <div class="row">
-                <a href="<?php echo site_url( '/about#ib-location' ) ?>">
+                <a href="<?php echo site_url( '/locations' ) ?>">
                     <img src="<?php echo get_template_directory_uri() . '/icons/location-pin.png' ?>" alt="" class="ib-location-pin mobile-display-none">
                 </a>
                 <div class="ib-literature-wrap">
@@ -155,7 +155,7 @@
                         <img src="<?php echo get_template_directory_uri() . '/icons/location-pin.png' ?>" alt="" class="ib-location-pin web-display-none">
                         <h4 class="web-display-none">Visit Us</h4>
                         <p class="contact-branches">9 branches across Liberia</p>
-                        <a class="btn find-branch web-display-none" href="<?php echo site_url( '/about#ib-location' ) ?>">Find a branch</a>
+                        <a class="btn find-branch web-display-none" href="<?php echo site_url( '/locations' ) ?>">Find a branch</a>
                         <img src="<?php echo get_template_directory_uri() . '/images/ib-map.png' ?>" class="ib-map-image web-display-none" alt="">
 
                         <img src="<?php echo get_template_directory_uri() . '/icons/get-in-touch.png' ?>" alt="" class="ib-location-pin web-display-none">
@@ -177,7 +177,7 @@
                             </a>
                         </p>
                         <p class="time-to-reach-out web-display-none">Monday to Friday - 9AM to 2PM<br>Saturday 9AM to 12 Noon</p>
-                        <a class="btn find-branch mobile-display-none" href="<?php echo site_url( '/about#ib-location' ) ?>">Find a branch</a>
+                        <a class="btn find-branch mobile-display-none" href="<?php echo site_url( '/locations' ) ?>">Find a branch</a>
                     </div>
                     <div class="ib-map">
                         <img src="<?php echo get_template_directory_uri() . '/images/ib-map.png' ?>" class="ib-map-image mobile-display-none" alt="">

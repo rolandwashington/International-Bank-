@@ -21,10 +21,9 @@
                         <div class="service-box image-box ">
                             <img src="<?php echo get_template_directory_uri(); ?>/images/atm.png" alt="">
                             <div class="content-box">
-                                <h4>ATM</h4>
-                                <p>With our ATM service, your bank is never closed. Access your cash on-demand from our over 20 locations Nationwide.</p>
-                                <br>
-                                <a class="link-box pagelink" href="<?php echo site_url() ?>/apply-for-atm">Sign up for ATM Card</a></div>
+                                <h4>Card Services</h4>
+                                <p>With our MasterCard and IBLL Proprietary Card, your bank is never closed. Access your cash on-demand, pay online, perform POS transactions, etc.</p>
+                                <a class="link-box pagelink" href="<?php echo site_url() ?>/card-services">Sign up for Card Services</a></div>
                             </div>
 
                         <div class="empty_space_30"></div>

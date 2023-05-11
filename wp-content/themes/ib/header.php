@@ -157,6 +157,20 @@
 
 
         <!-- PHP LOGIC -->
+
+
+
+
+        <div id="ib-small-business-sub-header" class="the-sub-menu ib-sub-header">
+            <div class="ib-sub-header-wrap">
+                <div class="ib-navigation">
+                    <a href="<?php echo site_url( '/small-business/#ib-small-business-get-an-account' ) ?>" class="ib-menu-link" id="small-business-get-account">GET AN ACCOUNT</a>
+                    <a href="<?php echo site_url( '/small-business/#ib-small-business-credit-facilities' ) ?>" class="ib-menu-link" id="small-business-credit">BUSINESS CREDIT FACILITIES</a>
+                    <a href="<?php echo site_url( '/small-business/#ib-small-business-e-banking' ) ?>" class="ib-menu-link" id="small-business-ebanking">BUSINESS E-BANKING</a>
+                    <a href="<?php echo site_url( '/other-services' ) ?>" class="ib-menu-link">OTHER SERVICES</a>
+                </div>
+            </div>
+        </div>
         
         <?php 
             if(strpos($_SERVER['REQUEST_URI'], 'personal') !== false ) {

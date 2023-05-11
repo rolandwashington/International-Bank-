@@ -24,7 +24,7 @@
 										<ul>
                                             <li><a href="<?php echo site_url() ?>/account-application/">Account Application Form</a></li>
                                             <li><a href="<?php echo site_url() ?>/apply-for-push-pull/">Push & Pull Application Form</a></li>
-                                            <li><a href="<?php echo site_url() ?>/apply-for-atm/">ATM Application Form</a></li>
+                                            <li><a href="<?php echo site_url() ?>/card-services/">Card Services Form</a></li>
                                             <li><a href="<?php echo site_url() ?>/apply-for-sms-alert/">SMS Alert Application Form</a></li>
                                             <li><a href="<?php echo site_url() ?>/apply-for-internet-banking/">Online Banking Application Form</a></li>
                                             <li><a href="<?php echo site_url() ?>/apply-for-mobile-banking/">Mobile Banking Application Form</a></li>

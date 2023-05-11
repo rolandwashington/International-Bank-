@@ -35,7 +35,7 @@
 							<div class="wpb_column column_container col-sm-6 col-md-4">
 								<div class="column-inner">
 									<div class="wpb_wrapper">
-										<div class="service-box icon-box ionic hover-box">
+										<div class="service-box icon-box ionic hover-box" onclick="showMap(0,0)">
 											<h5>Head Office</h5>
 											<p class="ib-address-wrap"> 
 												<span class="ib-location-icon">
@@ -64,7 +64,7 @@
 							<div class="wpb_column column_container col-sm-6 col-md-4">
 								<div class="column-inner">
 									<div class="wpb_wrapper">
-										<div class="service-box icon-box ionic hover-box">
+										<div class="service-box icon-box ionic hover-box" onclick="showMap(6.31914758682251,-10.8115434646606)">
 											<h5>Ducor Branch</h5>
 											<p class="ib-address-wrap"> 
 												<span class="ib-location-icon">
@@ -95,7 +95,7 @@
 							<div class="wpb_column column_container col-sm-6 col-md-4">
 								<div class="column-inner">
 									<div class="wpb_wrapper">
-										<div class="service-box icon-box ionic hover-box">
+										<div class="service-box icon-box ionic hover-box" onclick="showMap(6.29444551467896,-10.788646697998)">
 											<h5>Sinkor - Corporate Branch</h5>
 											<p class="ib-address-wrap"> 
 												<span class="ib-location-icon">
@@ -124,7 +124,7 @@
                             <div class="wpb_column column_container col-sm-6 col-md-4">
 								<div class="column-inner">
 									<div class="wpb_wrapper">
-										<div class="service-box icon-box ionic hover-box">
+										<div class="service-box icon-box ionic hover-box" onclick="showMap(0,0)">
 											<h5>Logan Town</h5>
 											<p class="ib-address-wrap"> 
 												<span class="ib-location-icon">
@@ -153,7 +153,7 @@
 							<div class="wpb_column column_container col-sm-6 col-md-4">
 								<div class="column-inner">
 									<div class="wpb_wrapper">
-										<div class="service-box icon-box ionic hover-box">
+										<div class="service-box icon-box ionic hover-box" onclick="showMap(0,0)">
 											<h5>Clara Town Branch</h5>
 											<p class="ib-address-wrap"> 
 												<span class="ib-location-icon">
@@ -182,7 +182,7 @@
 							<div class="wpb_column column_container col-sm-6 col-md-4">
 								<div class="column-inner">
 									<div class="wpb_wrapper">
-										<div class="service-box icon-box ionic hover-box">
+										<div class="service-box icon-box ionic hover-box" onclick="showMap(6.36785078048706,-10.7867889404297)">
 											<h5>Caldwell</h5>
 											<p class="ib-address-wrap"> 
 												<span class="ib-location-icon">
@@ -211,7 +211,7 @@
 							<div class="wpb_column column_container col-sm-6 col-md-4">
 								<div class="column-inner">
 									<div class="wpb_wrapper">
-										<div class="service-box icon-box ionic hover-box">
+										<div class="service-box icon-box ionic hover-box" onclick="showMap(6.26441097259521,-10.7072257995605)">
 											<h5>Paynesville</h5>
 											<p class="ib-address-wrap"> 
 												<span class="ib-location-icon">
@@ -240,7 +240,7 @@
 							<div class="wpb_column column_container col-sm-6 col-md-4">
 								<div class="column-inner">
 									<div class="wpb_wrapper">
-										<div class="service-box icon-box ionic hover-box">
+										<div class="service-box icon-box ionic hover-box" onclick="showMap(6.27281045913696,-10.3457546234131)">
 											<h5>Harbel</h5>
 											<p class="ib-address-wrap"> 
 												<span class="ib-location-icon">
@@ -269,7 +269,7 @@
 							<div class="wpb_column column_container col-sm-6 col-md-4">
 								<div class="column-inner">
 									<div class="wpb_wrapper">
-										<div class="service-box icon-box ionic hover-box">
+										<div class="service-box icon-box ionic hover-box" onclick="showMap(0,0)">
 											<h5>Kakata</h5>
 											<p class="ib-address-wrap"> 
 												<span class="ib-location-icon">
@@ -298,7 +298,7 @@
 							<div class="wpb_column column_container col-sm-6 col-md-4">
 								<div class="column-inner">
 									<div class="wpb_wrapper">
-										<div class="service-box icon-box ionic hover-box">
+										<div class="service-box icon-box ionic hover-box" onclick="showMap(0,0)">
 											<h5>Pleebo Branch</h5>
 											<p class="ib-address-wrap"> 
 												<span class="ib-location-icon">
@@ -333,7 +333,7 @@
 							<div class="wpb_column column_container col-sm-6 col-md-4">
 								<div class="column-inner">
 									<div class="wpb_wrapper">
-										<div class="service-box icon-box ionic hover-box">
+										<div class="service-box icon-box ionic hover-box" onclick="showMap(0,0)">
 											<h5>AMEU</h5>
 											<p class="ib-address-wrap"> 
 												<span class="ib-location-icon">
@@ -362,7 +362,7 @@
 							<div class="wpb_column column_container col-sm-6 col-md-4">
 								<div class="column-inner">
 									<div class="wpb_wrapper">
-										<div class="service-box icon-box ionic hover-box">
+										<div class="service-box icon-box ionic hover-box" onclick="showMap(0,0)">
 											<h5>Freeport</h5>
 											<p class="ib-address-wrap"> 
 												<span class="ib-location-icon">
@@ -398,7 +398,7 @@
 							<div class="wpb_column column_container col-sm-6 col-md-4">
 								<div class="column-inner">
 									<div class="wpb_wrapper">
-										<div class="service-box icon-box ionic hover-box">
+										<div class="service-box icon-box ionic hover-box" onclick="showMap(6.31914758682251,-10.8115434646606)">
 											<h5>Ducor Branch</h5>
 											<p class="ib-address-wrap"> 
 												<span class="ib-location-icon">
@@ -427,7 +427,7 @@
 							<div class="wpb_column column_container col-sm-6 col-md-4">
 								<div class="column-inner">
 									<div class="wpb_wrapper">
-										<div class="service-box icon-box ionic hover-box">
+										<div class="service-box icon-box ionic hover-box" onclick="showMap(0,0)">
 											<h5>Randall Street Post Office</h5>
 											<p class="ib-address-wrap"> 
 												<span class="ib-location-icon">
@@ -456,7 +456,7 @@
 							<div class="wpb_column column_container col-sm-6 col-md-4">
 								<div class="column-inner">
 									<div class="wpb_wrapper">
-										<div class="service-box icon-box ionic hover-box">
+										<div class="service-box icon-box ionic hover-box" onclick="showMap(0,0)">
 											<h5>MacDonald Street Post Office</h5>
 											<p class="ib-address-wrap"> 
 												<span class="ib-location-icon">
@@ -481,14 +481,21 @@
 									</div>
 								</div>
 							</div>
-
-							
 						</div>
+					</div>
+				</div>
+				<div class="col-md-12" id="wrap-map-display">
+					<div id="close-ib-map-wrap">
+						<div id="close-ib-map">&times;</div>
+						<iframe id="ib-map-direction">
+						</iframe>
+						<a href="https://www.enable-javascript.net"></a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
+
 
 <?php get_footer(); ?>
