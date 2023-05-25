@@ -80,7 +80,7 @@
 													<i class="ion-md-phone-portrait ion-logo-phone-portrait"></i>
 												</span>
 												<span class="ib-location-address">
-													(231) 886 472618	
+													(231) 887 317454	
 												</span>
 											</p>
 										</div>
@@ -111,7 +111,7 @@
 													<i class="ion-md-phone-portrait ion-logo-phone-portrait"></i>
 												</span>
 												<span class="ib-location-address">
-													(231) 886 472557
+													(231) 887 317 453 
 												</span>
 											</p>
 										</div>
@@ -169,7 +169,7 @@
 													<i class="ion-md-phone-portrait ion-logo-phone-portrait"></i>
 												</span>
 												<span class="ib-location-address">
-													(231) 886 472590
+													(231) 887 317 459 
 												</span>
 											</p>
 										</div>
@@ -198,7 +198,7 @@
 													<i class="ion-md-phone-portrait ion-logo-phone-portrait"></i>
 												</span>
 												<span class="ib-location-address">
-													(231) 555 420138
+													(231) 887 317461 
 												</span>
 											</p>
 										</div>
@@ -227,7 +227,7 @@
 													<i class="ion-md-phone-portrait ion-logo-phone-portrait"></i>
 												</span>
 												<span class="ib-location-address">
-													(231) 555 804859
+													(231) 887 317462
 												</span>
 											</p>
 										</div>
@@ -256,7 +256,7 @@
 													<i class="ion-md-phone-portrait ion-logo-phone-portrait"></i>
 												</span>
 												<span class="ib-location-address">
-												(231) 880 708457
+												(231) 887 317464  
 												</span>
 											</p>
 										</div>
@@ -285,7 +285,7 @@
 													<i class="ion-md-phone-portrait ion-logo-phone-portrait"></i>
 												</span>
 												<span class="ib-location-address">
-													(231) 555 558903
+													(231) 887 317463 
 												</span>
 											</p>
 										</div>
@@ -314,7 +314,7 @@
 													<i class="ion-md-phone-portrait ion-logo-phone-portrait"></i>
 												</span>
 												<span class="ib-location-address">
-													(231) 886721490, 886882166
+													(231) 887 317 465 
 												</span>
 											</p>
 										</div>
@@ -378,7 +378,7 @@
 													<i class="ion-md-phone-portrait ion-logo-phone-portrait"></i>
 												</span>
 												<span class="ib-location-address">
-													(231) 886576444
+													(231) 887 317460
 												</span>
 											</p>
 										</div>
@@ -414,7 +414,7 @@
 													<i class="ion-md-phone-portrait ion-logo-phone-portrait"></i>
 												</span>
 												<span class="ib-location-address">
-													(231) 555 420132
+													(231) 887 317454
 												</span>
 											</p>
 										</div>

@@ -63,7 +63,7 @@
 																		<ion-icon name="call-outline" role="img" class="md hydrated" aria-label="call outline" data-dashlane-observed="true"></ion-icon>
 																	</span>
 																	<span class="ib-location-address">
-																		+231 555 420 135
+																		+231 887 317 438
 																	</span>
 																</p>
 																<p class="ib-address-wrap"> 

@@ -15,7 +15,39 @@
         <h4 class="widget-title">Do you need support !</h4>
         <div class="textwidget">
             <ul class="semi-bold">
-                <li><span class="normal">Phone:</span><br> <a href="tel:+231 555 420 134">+231 555 420 134 | +231 555 766 366</a></li><br>
+                <li>
+                    <span class="normal">Phone:</span><br> 
+
+                    <?php 
+                        if(strpos($_SERVER['REQUEST_URI'], 'business-credit-facilities') !== false ) {
+                            ?>
+                                <a href="tel:+231887317438">+231 887 317 438</a>
+                            <?php
+                        } else if(strpos($_SERVER['REQUEST_URI'], 'loans') !== false ) {
+                            ?>
+                                <a href="tel:+231887317438">+231 887 317 438</a>
+                            <?php
+                        } else if(strpos($_SERVER['REQUEST_URI'], 'e-banking') !== false ) {
+                            ?>
+                                <a href="tel:+231887317442">+231 887 317 442</a>
+                            <?php
+                        } else if(strpos($_SERVER['REQUEST_URI'], 'money-transfer-service') !== false ) {
+                            ?>
+                                <a href="tel:+231887317483">+231 887 317 483</a>
+                            <?php
+                        } else if(strpos($_SERVER['REQUEST_URI'], 'other-services') !== false ) {
+                            ?>
+                                <a href="tel:+231 555 420 134">+231 555 420 134 | +231 555 766 366</a>
+                            <?php
+                        }
+                    ?>
+
+
+
+
+
+
+                </li><br>
                 <li><span class="normal">Head Office:</span><br>
                     Tubman Boulevard, Between 11th & 12th Streets Sinkor, Monrovia, Liberia
                 </li><br>

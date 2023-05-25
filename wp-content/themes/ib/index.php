@@ -165,7 +165,7 @@
                                 <span class="ib-location-icon">
                                     <ion-icon name="call-outline"></ion-icon>
                                 </span>
-                                +231 555 420 134 | +231 555 766 366
+                                +231 887 317 436 | +231 887 317 437 
                             </a>
                         </p>
                         <p class="ib-address-wrap give-margin-bottom"> 
