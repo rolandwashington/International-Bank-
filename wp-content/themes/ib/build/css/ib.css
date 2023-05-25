@@ -1,0 +1,1648 @@
+:root {
+    --ib-primary: #53622F;
+    --ib-secondary: #98A544;
+    --ib-tertiary: #ECF0CA;
+    --ib-gray: #515252;
+    --ib-white: #FFFFFF;
+}
+
+html {
+    font-size: 62.5%;
+
+    @media only screen and (max-width: 18em) {
+        font-size: 55%;
+    }
+
+    @media only screen and (max-width: 15.5em) {
+        font-size: 50%;
+    }
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.ib-background-primary {
+    background-color: var(--ib-primary);
+}
+
+.ib-background-secondary {
+    background-color: var(--ib-secondary);
+}
+
+#header_topbar {
+    z-index: 1;
+    position: relative;
+    background-color: var(--ib-primary);
+}
+
+#header_topbar li a:hover {
+    color: var(--ib-secondary);
+}
+
+.ib-main-header {
+    height: 6.9rem;
+    width: 100%;
+    background-color: var(--ib-tertiary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header_topbar {
+    display: block;
+}
+
+@media screen and (max-width: 902px) {
+    .ib-main-header {
+        display: none;
+    }
+
+    #header_topbar {
+        display: none;
+    }
+
+    .ib-sub-header {
+        display: none;
+    }
+}
+
+@media (min-width: 903px) {
+    .header_mobile {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .header_mobile .mlogo_wrapper {
+        padding: 15px;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    .ib-main-header {
+        display: none;
+    }
+
+    #header_topbar {
+        display: none;
+    }
+
+    .ib-sub-header {
+        display: none;
+    }
+}
+
+.mobile-header-blue .header_mobile .mobile_nav {
+    background-color: var(--ib-tertiary);
+    border-top-color: rgba(255, 255, 255, 0.2);
+}
+
+.mobile-header-blue .header_mobile .mobile_nav .mobile_mainmenu li a {
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+    color: var(--ib-primary)
+}
+
+.mobile-header-blue .header_mobile .mobile_nav .mobile_mainmenu>li.menu-item-has-children .arrow i:before,
+.mobile-header-blue .header_mobile .mobile_nav .mobile_mainmenu>li.menu-item-has-children .arrow i:after {
+    background: var(--ib-primary);
+}
+
+.mobile_logo {
+    width: 15rem;
+}
+
+.ib-main-header-wrap {
+    width: 120rem;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.ib-main-header-wrap .ib-internet-banking {
+    width: 18rem;
+    display: flex;
+}
+
+.ib-main-header-wrap .ib-internet-banking img {
+    align-self: center;
+}
+
+.ib-main-header-wrap .ib-internet-banking-icon {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+}
+
+.ib-main-header-wrap .ib-internet-banking-icon img {
+    align-self: center;
+}
+
+.block-web-veiw {
+    display: block;
+}
+
+
+@media screen and (min-width: 1060px) {
+    .ib-main-header-wrap .ib-internet-banking-icon {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .ib-main-header-wrap .ib-internet-banking {
+        display: none;
+    }
+}
+
+
+.ib-brand-logo {
+    height: 5rem;
+    width: 15rem;
+    display: inline-block;
+}
+
+.ib-brand-logo img {
+    height: 5rem;
+    object-fit: contain;
+}
+
+.ib-main-header a.ib-menu-link {
+    color: var(--ib-primary);
+    font-weight: 500;
+    padding: 2.5rem 1.5rem;
+    margin-top: .1rem;
+    line-height: 5rem;
+    position: relative;
+}
+
+a.ib-menu-link {
+    color: var(--ib-primary);
+    font-weight: 500;
+    padding: 1.5rem 1.5rem;
+    margin-top: .1rem;
+    line-height: 5rem;
+    position: relative;
+}
+
+.ib-navigation>* {
+    margin: -0.2rem;
+}
+
+#ib-small-business-sub-header {
+    display: none;
+    background: var(--ib-secondary);
+}
+
+.tp-caption p {
+    color: var(--ib-primary);
+}
+
+.tp-caption p.ib-about-caption {
+    color: var(--ib-gray);
+    font-size: 2rem;
+}
+
+.tp-caption .btn {
+    background-color: var(--ib-secondary);
+}
+
+
+/* SUB HEADER START */
+.ib-sub-header {
+    background-color: var(--ib-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 902px) {
+    .ib-sub-header {
+        display: none;
+    }
+}
+
+.ib-sub-header-wrap {
+    width: 120rem;
+    padding: 0 1.5rem;
+}
+
+.ib-sub-header a {
+    color: white;
+    text-transform: uppercase;
+}
+
+a.ib-menu-link:hover {
+    background-color: #98a54485;
+    color: var(--ib-primary);
+}
+
+/* INDEX PAGE */
+#revolution-slider.ib-home-slider {
+    height: 55rem !important;
+    background-size: cover;
+}
+
+
+@media only screen and (max-width: 902px) and (min-width:600px) {
+    #revolution-slider.ib-home-slider {
+        height: 39rem !important;
+    }
+}
+
+#revolution-slider li>* {
+    margin-top: -15rem !important;
+}
+
+.ib-slider-text {
+    margin-top: 10rem !important;
+}
+
+
+
+/* INDEX PAGE - SERVICES SECTION */
+.ib-services-wrap {
+    padding: 40px 0;
+}
+
+#ib-services .testi-item.box-shadow-hover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ib-services img {
+    margin: 0;
+}
+
+#ib-services p {
+    color: var(--ib-primary);
+}
+
+
+.testi-item .testi-head {
+    overflow: hidden;
+    padding: 10px;
+}
+
+.next-nav.slick-arrow {
+    right: -5rem;
+    top: 3.7rem;
+}
+
+.prev-nav.slick-arrow {
+    left: -5rem;
+    top: 3.7rem;
+}
+
+.prev-nav.slick-arrow:hover,
+.next-nav.slick-arrow:hover {
+    background: var(--ib-primary);
+    border-color: var(--ib-primary)
+}
+
+/* IB OFFERS */
+.ib-student-offer {
+    overflow: hidden;
+}
+
+.ib-offer-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.ib-offer-text h2 {
+    text-align: left;
+}
+
+.ib-offer-text a {
+    background: var(--ib-secondary);
+}
+
+.ib-offer-text a:hover {
+    background: var(--ib-secondary) !important;
+    border-color: var(--ib-tertiary) !important;
+}
+
+.ib-promotion-image {
+    display: flex;
+    justify-content: right;
+}
+
+.ib-promotion-image img {
+    margin-top: -7rem;
+    width: 43rem;
+}
+
+/* FIND IB BRANCHES */
+.find-ib-branches {
+    background-size: cover;
+    padding: 6.5rem 0;
+}
+
+.find-ib-branches .row {
+    display: flex;
+    height: 35rem;
+    align-items: center;
+}
+
+.ib-ceo {
+    margin-top: 3rem;
+}
+
+.find-ib-branches h2 {
+    margin-left: -0.2rem;
+    font-weight: 300;
+    color: var(--ib-primary);
+}
+
+.ib-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ib-map-literature {
+    text-align: left;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ib-map-literature a {
+    width: fit-content;
+    color: inherit;
+}
+
+
+.ib-literature-wrap {
+    display: flex;
+    width: -webkit-fill-available;
+    justify-content: space-between;
+}
+
+.find-ib-branches .ib-location-pin {
+    width: 12rem;
+    object-fit: contain;
+}
+
+.contact-branches {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.find-branch {
+    margin-top: 1rem;
+}
+
+a.find-branch {
+    color: var(--ib-white);
+}
+
+.find-branch:hover,
+.apply-for-service:hover {
+    background: var(--ib-secondary);
+}
+
+.apply-for-service {
+    color: var(--ib-white) !important;
+}
+
+.ib-address-wrap span {
+    margin-right: 1rem;
+}
+
+.ib-address-wrap span i {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.ib-address-wrap span ion-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: .4rem;
+}
+
+.application-form .btn {
+    color: var(--ib-white);
+    width: 35%;
+}
+
+.web-display-none {
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .ib-map-literature {
+        width: 90%;
+    }
+
+    .ib-location-pin {
+        width: 10rem;
+    }
+
+    .find-ib-branches .row,
+    .ib-literature-wrap {
+        flex-direction: column;
+        align-items: center;
+        text-align-last: center;
+    }
+
+    .ib-address-wrap {
+        justify-content: center;
+    }
+
+    .ib-map-literature a.find-branch {
+        margin: 1rem auto 4rem;
+    }
+
+    .find-ib-branches {
+        height: 74rem;
+    }
+
+    .ib-offer-text p {
+        text-align: center;
+    }
+
+    .ib-offer-text a {
+        margin: 0 auto;
+    }
+
+    .ib-student-offer {
+        height: 58rem;
+    }
+
+    .ib-promotion-image img {
+        margin-top: 4rem;
+        width: 43rem;
+    }
+
+    .ib-promotion-image {
+        height: 25rem;
+    }
+
+    #personal-credit-facilities .btn {
+        margin-left: 2rem;
+    }
+
+    #ib-personal-credit-facilities .ib-promotion-image img {
+        padding: 0 2rem;
+    }
+
+    #ib-e-banking {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    #ib-e-banking .ebanking-header {
+        padding: 0;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .get-an-account-margin-bottom {
+        margin-bottom: 2rem;
+    }
+
+    #ib-hire-wrap {
+        flex-direction: column;
+    }
+
+    .ib-location-address {
+        background-color: transparent;
+    }
+
+    .ib-map-literature h2,
+    .contact-branches {
+        width: 100%;
+        text-align: center;
+    }
+
+    .mobile-display-none {
+        display: none;
+    }
+
+    .web-display-none {
+        display: flex;
+    }
+
+    .ib-map-literature h4 {
+        margin-bottom: 0;
+        margin: 0 auto;
+    }
+
+    .section-padd,
+    .section-padd-2 {
+        padding-bottom: 3rem;
+    }
+
+
+}
+
+@media only screen and (max-width: 530px) {
+    .tp-caption.tp-resizeme.image {
+        display: none;
+    }
+
+    .font-second.text-second p {
+        font-size: 3.5rem !important;
+        line-height: 4rem !important;
+        width: 70vw;
+        text-align: left;
+    }
+
+    p.ib-about-caption,
+    p.ib-about-caption span {
+        font-size: 1.8rem !important;
+        width: 80vw;
+    }
+
+    #revolution-slider.ib-home-slider {
+        height: 50rem !important;
+    }
+
+    #revolution-slider.ib-home-slider .display,
+    .font-second.text-second .display {
+        display: block;
+    }
+
+    .display.margin-top {
+        margin-top: 5rem !important;
+    }
+
+    .ib-about-caption {
+        font-size: 1.2rem;
+    }
+
+    .block-web-veiw {
+        display: inline;
+    }
+
+    .font-second.text-second.more-width p {
+        width: 90vw !important;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+        padding-left: 2rem;
+        margin-top: -3rem;
+    }
+
+    .career-box .content-box {
+        padding: 0;
+    }
+
+    .about-text p {
+        margin-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+.ib-services .service-box {
+    background-color: var(--ib-tertiary);
+    color: inherit;
+}
+
+.ib-services .service-box:hover {
+    background-color: var(--ib-tertiary);
+    color: inherit;
+}
+
+.ib-services .service-box:hover h4 {
+    color: inherit;
+}
+
+.ib-services .service-box:hover a.link-box.pagelink {
+    color: var(--ib-gray);
+    border-bottom: 2px solid var(--ib-gray);
+}
+
+.ib-services .service-box a.link-box.pagelink:hover {
+    color: var(--ib-primary);
+    border-bottom: 2px solid var(--ib-primary);
+}
+
+
+.ib-services .service-box i {
+    color: var(--ib-primary);
+}
+
+
+
+.pagelink.gray:hover {
+    color: var(--ib-secondary);
+    border-bottom: 2px solid var(--ib-secondary);
+}
+
+
+
+
+
+
+/* FOOTER START */
+.ib-footer-logo {
+    max-width: 80%;
+}
+
+.ot-socials.bg-white a:hover {
+    background: var(--ib-primary);
+    border-color: var(--ib-primary);
+}
+
+#custom_html-2 a:hover,
+#custom_html-3 a:hover {
+    color: var(--ib-primary);
+}
+
+.footer-sub .btn {
+    background-color: var(--ib-primary);
+}
+
+.footer-sub .btn:hover {
+    background-color: var(--ib-gray);
+    border-color: var(--ib-gray);
+}
+
+/* ARROW BACK TO TOP */
+
+#back-to-top {
+    background-color: var(--ib-gray);
+}
+
+#back-to-top:hover {
+    background-color: var(--ib-primary);
+}
+
+.bg-second {
+    background-color: var(--ib-primary);
+}
+
+h1.page-title {
+    color: var(--ib-primary);
+}
+
+.content-area .inner-post .entry-title a:hover {
+    color: var(--ib-primary);
+}
+
+.site-content {
+    background: var(--ib-white);
+}
+
+.boxed-content .section-padd {
+    padding: 0 0 90px 0;
+}
+
+.avatar img {
+    width: 100%;
+}
+
+.page-header {
+    background: url("/images/ib-page-header.png");
+    background-size: cover;
+}
+
+.career-box>h5 {
+    background: var(--ib-primary);
+}
+
+.career-box .content-box {
+    background-color: var(--ib-tertiary);
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 530px) {
+    .career-box .content-box {
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .application-form {
+        width: 100%;
+    }
+}
+
+.career-box .content-box.display-row {
+    flex-direction: row;
+    height: 85%;
+}
+
+.career-box .employment {
+    margin-right: 2rem;
+}
+
+.career-box .btn {
+    background-color: var(--ib-secondary);
+}
+
+.career-box .btn:hover {
+    background-color: var(--ib-primary);
+}
+
+.ib-community {
+    max-width: 117rem;
+    margin: 0 auto;
+}
+
+.ib-community .column_container {
+    background-color: var(--ib-secondary);
+    color: var(--ib-white);
+}
+
+.ib-community h4 {
+    color: var(--ib-white);
+}
+
+.ib-location {
+    margin-top: 5rem;
+}
+
+.ib-location .service-box {
+    background: var(--ib-white);
+}
+
+
+.ib-location .service-box:hover {
+    background: var(--ib-white);
+    color: inherit;
+}
+
+.ib-address-wrap {
+    display: flex;
+    margin: 0;
+    justify-content: flex-start;
+}
+
+.ib-location .ib-location-icon i {
+    color: var(--ib-primary);
+    font-size: 3rem;
+    text-align: center;
+    margin-right: 1rem;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+}
+
+.ib-location .ib-location-address {
+    color: var(--ib-primary);
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    display: inline-block;
+}
+
+.member-item .mem-info {
+    background: var(--ib-secondary);
+}
+
+
+.member-item .mem-info h5 {
+    color: var(--ib-white);
+}
+
+
+
+/* PERSONAL PAGE */
+/* HERO SECTION */
+.ib-personal-slider {
+    height: 20rem;
+}
+
+#section-slider.ib-personal-slider {
+    height: 40rem !important;
+    background-size: cover;
+}
+
+
+.member-item-3 .mem-info {
+    background: var(--ib-tertiary);
+}
+
+.ib-account-button-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ib-account-button-wrap a {
+    color: var(--ib-primary) !important;
+    border-color: var(--ib-primary);
+}
+
+.ib-account-button-wrap a:focus,
+.ib-account-button-wrap a:hover {
+    color: var(--ib-primary) !important;
+    border-color: var(--ib-primary);
+}
+
+
+#ib-personal-credit-facilities h6,
+#ib-small-business-credit-facilities h6,
+#ib-corporate-credit-facilities h6 {
+    color: var(--ib-white);
+}
+
+#ib-personal-credit-facilities .next-nav.slick-arrow,
+#ib-small-business-credit-facilities .next-nav.slick-arrow,
+#ib-corporate-credit-facilities .next-nav.slick-arrow {
+    right: -5rem;
+    top: 12rem;
+    background: var(--ib-white);
+}
+
+#ib-personal-credit-facilities .prev-nav.slick-arrow,
+#ib-small-business-credit-facilities .prev-nav.slick-arrow,
+#ib-corporate-credit-facilities .prev-nav.slick-arrow {
+    left: -5rem;
+    top: 12rem;
+    background: var(--ib-white);
+}
+
+#ib-personal-credit-facilities .prev-nav.slick-arrow:hover,
+#ib-personal-credit-facilities .next-nav.slick-arrow:hover,
+#ib-small-business-credit-facilities .prev-nav.slick-arrow:hover,
+#ib-small-business-credit-facilities .next-nav.slick-arrow:hover,
+#ib-corporate-credit-facilities .prev-nav.slick-arrow:hover,
+#ib-corporate-credit-facilities .next-nav.slick-arrow:hover {
+    background: var(--ib-secondary);
+    border-color: var(--ib-secondary)
+}
+
+
+/* APPLICATION FORM */
+.application-form {
+    display: flex;
+    flex-direction: column;
+    width: 65rem;
+    position: relative;
+}
+
+@media only screen and (max-width: 530px) {
+    .application-form {
+        width: 100%;
+    }
+
+    .form-half-width {
+        width: 100%;
+    }
+}
+
+
+.application-form label {
+    margin-top: 1.5rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    margin-top: .3rem;
+    margin-left: -3.5rem;
+}
+
+input[type="checkbox"] {
+    margin-left: .5rem;
+}
+
+.additional-services span {
+    margin-left: 2.5rem;
+}
+
+.form-half-width {
+    width: 47%;
+}
+
+.minor input {
+    margin-bottom: 1rem;
+}
+
+.travel {
+    display: flex;
+    align-items: self-end;
+}
+
+.travel div {
+    width: 48%;
+    padding-right: 0.2%;
+}
+
+.travel input {
+    width: 100%;
+}
+
+.passport-size-image {
+    width: 18rem;
+    position: absolute;
+    right: 0;
+    top: 34rem;
+    margin-right: 2rem;
+}
+
+.account-user-title input[type="radio"] {
+    margin-top: 1.5rem;
+}
+
+.id-card {
+    max-width: 48%;
+    margin-top: 1rem;
+}
+
+.passport-display {
+    background-color: var(--ib-primary);
+    width: 18rem;
+    height: 18rem;
+}
+
+.id-display {
+    background-color: var(--ib-gray);
+    max-width: 100%;
+    max-height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.id-display img {
+    object-fit: contain;
+    max-width: 30rem;
+    max-height: 25rem;
+}
+
+.passport-display img {
+    object-fit: cover;
+    width: 18rem;
+    height: 18rem;
+    border: 1px solid var(--ib-secondary);
+}
+
+.ib-upload-image {
+    width: 100%;
+    height: 3rem;
+    background: var(--ib-secondary);
+    bottom: 0;
+}
+
+.ib-upload-image-wrap {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--ib-white);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.mem-info.personal-checking-info p {
+    margin-bottom: 4.5rem;
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1229px) {
+    .member-item-3 .mem-info {
+        padding: 10px;
+    }
+
+    .mem-info.personal-checking-info p {
+        margin-bottom: 2rem;
+    }
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 991px) {
+    .ib-promotion-image img {
+        margin-top: -5.5rem;
+    }
+
+    .ib-background-secondary.main-footer .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "Brand Service"
+            "Navigation Subscribe";
+        grid-gap: 1rem;
+    }
+
+    .ib-background-secondary.main-footer .row .brand {
+        grid-area: Brand;
+        width: 100%;
+    }
+
+    .ib-background-secondary.main-footer .row .brand img {
+        width: 70%;
+    }
+
+    .ib-background-secondary.main-footer .row .service {
+        grid-area: Service;
+        width: 100%;
+    }
+
+    .ib-background-secondary.main-footer .row .navigation {
+        grid-area: Navigation;
+        width: 100%;
+    }
+
+    .ib-background-secondary.main-footer .row .subscribe {
+        grid-area: Subscribe;
+        width: 100%;
+    }
+
+    .find-ib-branches .ib-location-pin {
+        width: 8rem;
+    }
+
+    .ib-map img.ib-map-image {
+        width: 30rem;
+    }
+
+    #revolution-slider.ib-home-slider {
+        height: 51rem !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .ib-promotion-image img {
+        margin-top: -22.5rem;
+        width: 35rem;
+    }
+
+    .ib-map img.ib-map-image {
+        width: 35rem;
+    }
+}
+
+
+@media only screen and (max-width: 530px) {
+
+    .form-half-width,
+    .career-box input {
+        width: 100%;
+    }
+
+    .form-half-width:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
+    .passport-size-image {
+        position: relative;
+        right: 0;
+        top: 1rem;
+        margin-right: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+        width: 1.5rem;
+        height: 1.5rem;
+        position: absolute;
+        margin-top: 0.3rem;
+        margin-left: -3.5rem;
+    }
+
+    input[type="checkbox"] {
+        width: 1.5rem;
+        height: 1.5rem;
+        position: absolute;
+        margin-top: 0.3rem;
+        margin-left: 0;
+    }
+
+    .id-card {
+        max-width: 100%;
+    }
+}
+
+.ib-upload-image-wrap span {
+    position: absolute;
+    cursor: pointer;
+
+}
+
+.ib-upload-image-wrap input {
+    opacity: 0;
+    cursor: pointer;
+}
+
+.employer-details label {
+    margin-bottom: 3rem;
+}
+
+#ib-personal-credit-facilities,
+#ib-small-business-credit-facilities,
+#ib-corporate-credit-facilities {
+    background-color: var(--ib-primary);
+}
+
+#ib-personal-credit-facilities h2,
+#ib-small-business-credit-facilities h2 {
+    color: var(--ib-white);
+}
+
+.ib-background-secondary.form-header {
+    color: var(--ib-white);
+    padding: .5rem 1.5rem;
+    width: 97%;
+    margin: 0;
+}
+
+.government-official-position,
+.official-info,
+.employer-details,
+.spouse-name,
+.is-account,
+.minor,
+.additional-services.ib-hide {
+    display: none;
+}
+
+/* SINGLE SERVICE */
+.ib-service-aside .current-menu-item>a {
+    background: var(--ib-primary) !important;
+}
+
+.ib-service-aside ul li a:hover {
+    background: var(--ib-secondary) !important;
+    color: var(--ib-white) !important;
+}
+
+.ib-service-aside .widget .textwidget ul li a {
+    color: var(--ib-white) !important;
+}
+
+.ib-service-aside .widget .textwidget ul li a:hover {
+    background: transparent !important;
+}
+
+.ib-service-aside .wpcf7-form-control:not(.btn):not(select):focus {
+    border-color: var(--ib-white);
+}
+
+.ib-service-aside .widget.bg-second {
+    background: var(--ib-primary);
+
+}
+
+.ib-service-aside .btn {
+    background: var(--ib-tertiary);
+    color: var(--ib-primary);
+    border: none;
+}
+
+.ib-service-aside .btn:hover,
+.ib-service-aside .btn:focus {
+    border: none;
+    background: var(--ib-secondary) !important;
+    color: var(--ib-primary);
+}
+
+.ib-form-agreement span {
+    margin-left: 2.5rem;
+}
+
+.services-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .5rem;
+}
+
+.other-nationality {
+    display: none;
+}
+
+.ot-socials.bg-white .fa {
+    color: var(--ib-primary);
+}
+
+.ot-socials.bg-white .fa:hover {
+    color: var(--ib-white);
+}
+
+.content-area.ib-post .inner-post {
+    background: var(--ib-tertiary);
+}
+
+#ib-personal-credit-facilities.section-padd {
+    padding-top: 5rem;
+    padding-bottom: 0;
+}
+
+
+#ib-small-business-credit-facilities.section-padd,
+#ib-corporate-credit-facilities.section-padd {
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+}
+
+#personal-credit-facilities img {
+    margin-top: -2.5rem;
+    width: 50rem;
+}
+
+#ib-small-business-credit-facilities img {
+    margin-top: -7.5rem;
+    width: 50rem;
+}
+
+#ib-corporate-credit-facilities img {
+    margin-top: -7rem;
+    width: 50rem;
+}
+
+#personal-credit-facilities.testi-slider {
+    margin: 0;
+}
+
+#personal-credit-facilities .personal-credit-read-button,
+#ib-small-business-credit-facilities .personal-credit-read-button {
+    margin-bottom: 5rem;
+    color: var(--ib-white);
+}
+
+#personal-credit-facilities .btn {
+    background: var(--ib-tertiary);
+    color: var(--ib-primary);
+    border: none;
+}
+
+.no-account-with-ib {
+    display: flex;
+    flex-direction: column;
+}
+
+.id-card.no-account {
+    position: absolute;
+    right: 0;
+    top: 6.1rem;
+}
+
+.wpb_wrapper.target-ib-links-inservices a,
+.wpb_wrapper.target-ib-links-inservices span {
+    font-weight: 600;
+    color: var(--ib-primary);
+}
+
+.target-ib-links-inservices a.link-box.pagelink {
+    font-size: 1.4rem;
+    text-decoration: underline;
+}
+
+.no-vacancy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: red;
+}
+
+#ib-hire-wrap {
+    display: flex;
+}
+
+.ib-internship {
+    margin-left: 1rem;
+}
+
+#ib-small-business-credit-facilities .ib-promotion-image img {
+    margin-top: -7rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .ib-internship {
+        margin: 0;
+    }
+
+    .ib-promotion-image {
+        justify-content: center;
+    }
+
+    .ib-promotion-image img {
+        margin-top: 5.5rem;
+    }
+
+    .ib-ads .wpb_text_column.wpb_content_element.text-light {
+        width: 100%;
+    }
+
+    .ib-background-secondary.main-footer {
+        padding: 3rem 2rem;
+    }
+
+    #ib-hire-wrap {
+        margin: -3rem 2rem;
+    }
+
+    #ib-hire-wrap .career-box>h5 {
+        padding: 15px 40px;
+        margin-bottom: 0;
+        color: var(--ib-primary);
+        padding: 1rem 0;
+        background: transparent;
+    }
+
+    .ib-background-secondary.main-footer .ib-footer-logo img {
+        width: 70%;
+    }
+
+    .find-ib-branches .ib-location-pin {
+        width: 3rem;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+
+    img.ib-map-image {
+        height: 20rem;
+        object-fit: contain;
+        margin-top: -3rem;
+        margin-bottom: 4rem;
+    }
+
+    #ib-personal-credit-facilities h6,
+    #ib-personal-credit-facilities h2,
+    #ib-personal-credit-facilities p,
+    #ib-corporate-credit-facilities h6,
+    #ib-corporate-credit-facilities h2,
+    #ib-corporate-credit-facilities p,
+    #ib-corporate-credit-facilities a {
+        margin-left: 2rem;
+        padding-right: 1rem;
+        text-align: left;
+    }
+
+
+    /* padding-top: 50px */
+
+    #ib-personal-credit-facilities h2,
+    #ib-small-business-credit-facilities h2,
+    #ib-corporate-credit-facilities h2 {
+        font-size: 2.5rem;
+    }
+
+    #ib-small-business-credit-facilities.section-padd,
+    #ib-corporate-credit-facilities.section-padd {
+        padding-top: 5rem;
+        padding-bottom: 0;
+    }
+
+
+    #ib-small-business-credit-facilities.section-padd h6,
+    #ib-small-business-credit-facilities.section-padd h2,
+    #ib-small-business-credit-facilities.section-padd p,
+    #ib-small-business-credit-facilities.section-padd a {
+        margin-left: 4rem;
+        margin-right: 3rem;
+        text-align: left;
+    }
+
+    .ib-location p {
+        margin-left: 2rem;
+        margin-right: 1rem;
+    }
+
+    .ib-location .service-box {
+        background: var(--ib-tertiary);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    p.ib-address-wrap.get-in-touch-wrap,
+    p.ib-address-wrap.give-margin-bottom {
+        justify-content: center;
+    }
+
+    h1.about-title,
+    .resources-title,
+    .other-services-title,
+    .money-trans-title,
+    .ebanking-title,
+    .personal-loan-title,
+    .business-credit-title {
+        margin-left: 2rem;
+        font-size: 2.5rem;
+        color: var(--ib-primary);
+    }
+
+    .content-area .ot_service .inner-post {
+        padding: 0 2rem;
+        margin-top: -3rem;
+    }
+
+    .content-area .ot_service .inner-post h2 {
+        display: none;
+    }
+
+    .ib-ads .ib-offer-text h2.custom_heading.text-light {
+        margin: 0 auto 1.2rem;
+    }
+
+    #ib-small-business-credit-facilities .slick-dots,
+    #personal-credit-facilities .slick-dots {
+        bottom: 2rem;
+    }
+
+    #ib-small-business-credit-facilities .ib-promotion-image img {
+        padding: 2rem !important;
+    }
+
+    #ib-corporate-credit-facilities img {
+        padding: 2rem;
+    }
+}
+
+.ib-internship,
+#ib-employment {
+    flex-basis: 50%;
+}
+
+.ib-map img.ib-map-image {
+    width: 40rem;
+}
+
+a.btn.find-branch.web-display-none {
+    color: var(--ib-white);
+}
+
+p.time-to-reach-out {
+    font-size: 1.2rem;
+    color: var(--ib-primary);
+    justify-content: center;
+    text-align: center;
+}
+
+
+img.attachment-medium.size-medium.wp-post-image {
+    height: 380px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.search-result article.post-box.post.type-post.hentry {
+    display: flex;
+}
+
+.search-result img.attachment-medium.size-medium.wp-post-image {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.content-area.ib-post .search-result .inner-post {
+    background: var(--ib-tertiary);
+    width: -webkit-fill-available;
+}
+
+.fab::before {
+    font-family: "FontAwesome";
+}
+
+
+/* GALLERY CSS */
+
+#gallery {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+    -webkit-column-gap: 1rem;
+    -moz-column-gap: 1rem;
+    column-gap: 1rem;
+}
+
+@media (max-width:1200px) {
+    #gallery {
+        -webkit-column-count: 4;
+        -moz-column-count: 4;
+        column-count: 4;
+
+        -webkit-column-gap: 1rem;
+        -moz-column-gap: 1rem;
+        column-gap: 1rem;
+    }
+}
+
+@media (max-width:800px) {
+    #gallery {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+
+        -webkit-column-gap: 1rem;
+        -moz-column-gap: 1rem;
+        column-gap: 1rem;
+    }
+}
+
+@media (max-width:600px) {
+    #gallery {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+#gallery img,
+#gallery video {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.modal-img,
+.model-vid {
+    width: 100%;
+    height: auto;
+}
+
+.modal-body {
+    padding: 0px;
+}
+
+
+
+/* display map */
+
+#ib-map-direction {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#wrap-map-display {
+    background: #00000054;
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+}
+
+#close-ib-map-wrap {
+    position: fixed;
+    margin: 0 auto;
+    width: 100rem;
+    height: 65vh;
+    border: 1px dotted var(--ib-primary); 
+}
+
+#close-ib-map {
+    width: 5rem;
+    background: var(--ib-primary);
+    color: var(--ib-white);
+    height: 5rem;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+#close-ib-map:hover {
+    background: var(--ib-secondary);
+    color: var(--ib-white);
+}
+
+#ib-location .service-box {
+    cursor: pointer;
+}
+
+#ib-partners .image-box .content-box {
+    padding: 10px 15px!important;
+}
+
+#ib-partners .row:not(:last-child) {
+    margin-bottom: 10rem;
+}
+
+.remittance-partners.row {
+    display: flex;
+}

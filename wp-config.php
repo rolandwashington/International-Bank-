@@ -20,17 +20,24 @@
  */
 
 // ** Database settings - You can get this info from your web host ** //
-/** The name of the database for WordPress */
-define( 'DB_NAME', 'local' );
 
-/** Database username */
-define( 'DB_USER', 'root' );
+if ( strstr( $_SERVER['SERVER_NAME'], 'international-bank.local' ) ) {
+	define( 'DB_NAME', 'local' );
+	define( 'DB_USER', 'root' );
+	define( 'DB_PASSWORD', 'root' );
+	define( 'DB_HOST', 'localhost' );
+} else if ( strstr( $_SERVER['SERVER_NAME'], 'international-bank.thekreativezone.com' ) ) {
+	define('DB_NAME', 'thekrea9_WP9UZ');
+	define('DB_USER', 'thekrea9_WP9UZ');
+	define('DB_PASSWORD', '6-{a<}9[#p0K6w}P?');
+	define('DB_HOST', 'localhost');
+} else {
+	define( 'DB_NAME', 'ibliberi_the_kreative_zone' );
+	define( 'DB_USER', 'ibliberi_zone_admin' );
+	define( 'DB_PASSWORD', '#P{~D2dvrF{V' );
+	define( 'DB_HOST', 'localhost' );
+}
 
-/** Database password */
-define( 'DB_PASSWORD', 'root' );
-
-/** Database hostname */
-define( 'DB_HOST', 'localhost' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
@@ -78,6 +85,11 @@ $table_prefix = 'wp_';
  *
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
+
+define( 'WP_DEBUG', true );
+define( 'WP_DEBUG_LOG', true );
+define( 'WP_DEBUG_DISPLAY', false );
+
 if ( ! defined( 'WP_DEBUG' ) ) {
 	define( 'WP_DEBUG', false );
 }
