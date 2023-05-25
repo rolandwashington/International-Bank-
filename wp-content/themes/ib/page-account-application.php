@@ -23,7 +23,7 @@
 				<div class="career-box" id="ib-application-form">
 					<h5>ACCOUNT INFORMATION</h5>
 					<div class="content-box">
-                        <form action="/account-application.php" method="POST" enctype="multipart/form-data">
+                        <form action="/account-application" method="POST" enctype="multipart/form-data">
                             <div class="application-form">
                                 <label for="account-type" class="applicant-account-type">
                                     Select Account Type: <br>

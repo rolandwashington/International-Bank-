@@ -10,7 +10,8 @@
     require_once "PHPMailer/src/Exception.php";
 
     if (isset($_POST["submit-card-services"])) {
-        $ApplicantTitle                 = $_POST["title"];
+        $ApplicantTitleRedio            = $_POST["title"];
+        $ApplicantTitleInput            = $_POST["title-input"];
         $ApplicantFirstName             = $_POST["first-name"];
         $ApplicantMiddleName            = $_POST["middle-name"];
         $ApplicantLastName              = $_POST["last-name"];
@@ -21,6 +22,12 @@
         $AccountNumber                  = $_POST["account-number"];
         $CardType                       = $_POST["card-type"];
         $IsAdditionalService            = $_POST["is-additional-services"];
+
+        if (empty($ApplicantTitleRedio)) {
+            $ApplicantTitle = $ApplicantTitleInput;
+        } else {
+            $ApplicantTitle = $ApplicantTitleRedio;
+        }
 
         if (isset($_POST["sms-banking"])) {
             $SMSBanking = "Yes";
@@ -104,13 +111,13 @@
         $mail->FromName = "$ApplicantTitle $ApplicantFirstName $ApplicantLastName";
         $mail->addAddress("$ibEmail", "International Bank (Liberia) Limited");
         $mail->isHTML(true);
-        $mail->Subject = "ATM Application";
+        $mail->Subject = "Card Service Application";
         $message = "
             <div style=\"width: 100%; background-color: #CCCCCC;\">
                 <div style=\"width:700px; border-top: 30px solid #53622F; border-bottom: 30px solid #53622F; background: #FFFFFF; padding: 50px; font-family:'Trebuchet MS', Arial,sans-serif\">               
                     <div style=\"position: relative;\">
                         <img src=\"https://international-bank.thekreativezone.com/images/ib-brand-logo-with-name.png\" style=\"width: 200px; margin: -10px 0 20px;\" alt=\"Ib-brand-logo-with-\" border=\"0\">
-                        <h1>ATM APPLICATION</h1>
+                        <h1>CARD SERVICE APPLICATION</h1>
                         <div>
                             <h2 style=\"background: #CCCCCC; padding: 5px;\">Personal Data</h2>
                             

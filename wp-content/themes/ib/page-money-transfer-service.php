@@ -33,18 +33,18 @@
 															<div class="wpb_wrapper target-ib-links-inservices">
 																<p>IB Liberia provides a  secured platform for multiple transfer services - across our 13 locations nationwide - including QUICKPAY service that affords you the opportunity to process bill payments. To access any of the below services, kindly visit any of our branches.</p>
 																<p><a href="#" target="_blank">Wire Transfers</a> - IB Liberia's wire transfer is a cost-efficient and secure way to move money conveniently to any account in the world. It's now safer and easier to pay employees, vendors and other invoices in any preferred currency globally.</p>
-																<p><a href="https://www.moneygram.com/mgo/us/en/" target="_blank">Money Gram</a> - Money-gram provides you with a speedy and reliable way to move your money your way.</p>
+																<p><a href="https://www.moneygram.com/intl/" target="_blank">Money Gram</a> - Money-gram provides you with a speedy and reliable way to move your money your way.</p>
 																<p><a href="https://www.westernunion.com/us/en/home.html" target="_blank">Western Union</a> - Whether you need to transfer money to friends down the street or to your family across the globe, Western Union gets your funds there quickly and reliably.</p>
-																<p><a href="https://www.riamoneytransfer.com/" target="_blank">RIA</a> - Fast. Safe. Guaranteed. International Money transfer made easy.</p>
+																<p><a href="https://www.riamoneytransfer.com/en-us/" target="_blank">RIA</a> - Fast. Safe. Guaranteed. International Money transfer made easy.</p>
 																<p><a href="https://www.smallworldfs.com/en" target="_blank">Small World</a> - The simple way to transfer money abroad - Join our Smallworld today.</p>
 																<p><a href="https://www.transfast.com/" target="_blank">Transfast (Mastercard Remittance)</a> -  Transfast is a network provider that supports cross-border remittance services and operates a cash payout network with approximately 280,000* cash pick up locations globally.</p>
 
 																<h5>Our correspondent banking partners include:</h5>
 																<ul>
-																	<li><a href="#" target="_blank">Ghana International Bank, London</a></li>
-																	<li><a href="#" target="_blank">Bank of Beirut, London</a></li>
-																	<li><a href="#" target="_blank">First National Bank, Lebanon</a></li>
-																	<li><a href="#" target="_blank">Crown Agents Bank, United Kingdom (UK)</a></li>
+																	<li><a href="https://www.ghanabank.co.uk/" target="_blank">Ghana International Bank, London</a></li>
+																	<li><a href="https://www.bankofbeirut.co.uk/" target="_blank">Bank of Beirut, London</a></li>
+																	<li><a href=" https://www.bankwith1st.com/" target="_blank">First National Bank, Lebanon</a></li>
+																	<li><a href="https://www.crownagentsbank.com/" target="_blank">Crown Agents Bank, United Kingdom (UK)</a></li>
 																</ul>
 															</div>
 														</div>
