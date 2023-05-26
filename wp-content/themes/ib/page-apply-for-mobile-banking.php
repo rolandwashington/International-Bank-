@@ -32,14 +32,12 @@
                                 </label>
                                 
                                 <div class="is-account">
-                                    <label for="">
+                                    <label for="" class="account-user-title">
                                         Select Title: <br>
-                                        Mr. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" id="" value="Mr." required>
-                                        Mrs. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" id="" value="Mrs.">
-                                        Miss &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" id="" value="Miss">
-                                        Cllr. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" id="" value="Cllr."> 
-                                        Dr. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" id="" value="Dr.">
-                                        Rev. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" id="" value="Rev.">
+                                        Ms. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" value="Ms.">
+                                        Mr. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" value="Mr.">
+                                        Mrs. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" value="Mrs.">
+                                        Other <input type="text" placeholder="Please Specify" name="title-input">
                                     </label>
     
                                     <label for="full-name">
@@ -70,11 +68,14 @@
     
                                     <label for="" class="additional-services ib-hide">
                                         Kindly click all that applies <br>
-                                        <input type="checkbox" name="push-pull" id="" value="Push & Pull"> <span>Push & Pull </span> <br>
+                                        <input type="checkbox" name="sms-banking" id="" value="SMS Banking"> <span>SMS Banking </span> <br>
+                                        <input type="checkbox" name="atm" id="" value="IB Proprietary Card"> <span>IB Proprietary Card</span> <br>
+                                        <input type="checkbox" name="mastercard" id="" value="IB Mastercard"> <span>IB Mastercard</span> <br>
                                         <input type="checkbox" name="internet-banking" id="" value="Internet Banking"> <span>Internet Banking</span> <br>
-                                        <input type="checkbox" name="atm" id="" value="ATM"> <span>ATM</span> <br>
+                                        <input type="checkbox" name="push-pull" id="" value="Push and Pull"> <span>Push and Pull</span> <br>
                                         <input type="checkbox" name="e-alert" id="" value="E-Alerts"> <span>E-Alerts</span> <br> 
                                         <input type="checkbox" name="email-instructions" id="" value="Email Instructions"> <span>Email Instructions</span> <br>
+                                        <input type="checkbox" name="e-statement" id="" value="E-Statement"> <span>E-Statement</span> <br>
                                     </label>
                                     <label for="" class="ib-form-agreement">
                                         <input type="checkbox" name="" id="" required> <span><strong>NOTE:</strong> I agree to be in-person to complete the process</span> <br>

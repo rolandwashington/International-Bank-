@@ -31,11 +31,11 @@
                                 </label>
                                 
                                 <div class="is-account">
-                                    <label for="">
+                                    <label for="" class="account-user-title">
                                         Select Title: <br>
-                                        Ms. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" id="" value="Ms.">
-                                        Mr. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" id="" value="Mr.">
-                                        Mrs. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" id="" value="Mrs.">
+                                        Ms. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" value="Ms.">
+                                        Mr. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" value="Mr.">
+                                        Mrs. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" value="Mrs.">
                                         Other <input type="text" placeholder="Please Specify" name="title-input">
                                     </label>
     

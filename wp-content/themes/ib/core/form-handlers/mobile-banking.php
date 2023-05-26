@@ -3,14 +3,15 @@
     use PHPMailer\PHPMailer\SMTP;
     use PHPMailer\PHPMailer\Exception;
     
-    include "load.php";
+    require_once get_template_directory() . "/core/load.php";
 
     require_once "PHPMailer/src/PHPMailer.php";
     require_once "PHPMailer/src/SMTP.php";
     require_once "PHPMailer/src/Exception.php";
     
     if (isset($_POST["internet-banking"])) {
-        $ApplicantTitle                 = $_POST["title"];
+        $ApplicantTitleRedio            = $_POST["title"];
+        $ApplicantTitleInput            = $_POST["title-input"];
         $ApplicantFirstName             = $_POST["first-name"];
         $ApplicantMiddleName            = $_POST["middle-name"];
         $ApplicantLastName              = $_POST["last-name"];
@@ -20,6 +21,12 @@
         $IsAccountWithIB                = $_POST["is-account-with-ib"];
         $AccountNumber                  = $_POST["account-number"];
         $IsAdditionalService            = $_POST["is-additional-services"];
+
+        if (empty($ApplicantTitleRedio)) {
+            $ApplicantTitle = $ApplicantTitleInput;
+        } else {
+            $ApplicantTitle = $ApplicantTitleRedio;
+        }
 
         if (isset($_POST["push-pull"])) {
             $PushPull = "Yes";
@@ -39,10 +46,28 @@
             $ATM = "N/A";
         }
 
+        if (isset($_POST["mastercard"])) {
+            $Mastercard = "Yes";
+        } else {
+            $Mastercard = "N/A";
+        }
+
+        if (isset($_POST["internet-banking"])) {
+            $InternetBanking = "Yes";
+        } else {
+            $InternetBanking = "N/A";
+        }
+
         if (isset($_POST["e-alert"])) {
             $EAlert = "Yes";
         } else {
             $EAlert = "N/A";
+        }
+
+        if (isset($_POST["e-statement"])) {
+            $EStatement = "Yes";
+        } else {
+            $EStatement = "N/A";
         }
 
         if (isset($_POST["email-instructions"])) {
@@ -155,7 +180,7 @@
                             <div style=\"font-size: 13px;\">
                                 <fieldset style=\"margin-left: 0; color: #000; border: 1px solid #e2e2e2; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; padding: 11px 20px; box-sizing: border-box; outline: none; max-width: 100%; background: #FFF; font-size: 16px; \">
                                     <legend style=\"font-size: 13px; margin-left: -1px;\">Subscribed Services</legend>
-                                    Push & Pull: <b>$PushPull</b> | Internet Banking: <b>$SMSBanking</b> | ATM: <b>$ATM</b> | E-Alert: <b>$EAlert</b> | Email Instruction: <b>$EmailInstructions</b>                                    
+                                    Push & Pull: <b>$PushPull</b> | SMS Banking: <b>$SMSBanking</b> | ATM: <b>$ATM</b> | Mastercard: <b>$Mastercard</b> | Internet Banking: <b>$InternetBanking</b> | E-Alert: <b>$EAlert</b> | Email Instruction: <b>$EmailInstructions</b> | E-Statement: <b>$EStatement</b>                                 
                                 </fieldset>
                             </div><br>
                         </div>
@@ -169,28 +194,35 @@
     
         try {
             $mail->send();
+            global $wpdb;
 
-            $loadFromUser->create("Mobile_Banking", [
-                "HaveAnAccountWithIB"               => $IsAccountWithIB,
-                "AccountHolderTitle"                => $ApplicantTitle,
-                "AccountHolderFirstName"            => $ApplicantFirstName,
-                "AccountHolderMiddleName"           => $ApplicantMiddleName,
-                "AccountHolderLastName"             => $ApplicantLastName,
-                "AccountHolderPhoneNumberOne"       => $ApplicantPhoneNumberOne,
-                "AccountHolderPhoneNumberTwo"       => $ApplicantPhoneNumberTwo,
-                "AccountHolderEmail"                => $ApplicantEmail,
+            $table_name = $wpdb->prefix . 'ib_mobile_banking';
 
-                // ADDITIONAL SERVICES
-                "IsAdditionalEServices"             => $IsAdditionalService,
-                "SMSBanking"                        => $SMSBanking,
-                "ATM"                               => $ATM,
-                "PushAndPull"                       => $PushPull,
-                "Ealerts"                           => $EAlert,
-                "EmailInstructions"                 => $EmailInstructions,
-                "IsAgreedToTerms"                   => "YES"
-            ]);
+            $data = array(
+                'HaveAnAccountWithIB'               => $IsAccountWithIB,
+                'ExistingAccountNumber'             => $AccountNumber,
+                'AccountHolderTitle'                => $ApplicantTitle,
+                'AccountHolderFirstName'            => $ApplicantFirstName,
+                'AccountHolderMiddleName'           => $ApplicantMiddleName,
+                'AccountHolderLastName'             => $ApplicantLastName,
+                'AccountHolderPhoneNumberOne'       => $ApplicantPhoneNumberOne,
+                'AccountHolderPhoneNumberTwo'       => $ApplicantPhoneNumberTwo,
+                'AccountHolderEmail'                => $ApplicantEmail,
+                'IsAdditionalEServices'             => $IsAdditionalService,
+                'SMSBanking'                        => $SMSBanking,
+                'PushAndPull'                       => $PushPull,
+                'ATM'                               => $ATM,
+                'Mastercard'                        => $Mastercard,
+                'InternetBanking'                   => $InternetBanking,
+                'Ealerts'                           => $EAlert,
+                'EmailInstructions'                 => $EmailInstructions,
+                'Estatement'                        => $EStatement,
+                'IsAgreedToTerms'                   => 'YES'
+            );
 
+            $wpdb->insert( $table_name, $data );
             $ThankYou = "Application sent successfully";
+
         } catch (Exception $e) {
             $ThankYou = "Unable to submit application, please try again.";
         }

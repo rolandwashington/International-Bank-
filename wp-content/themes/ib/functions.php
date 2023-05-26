@@ -109,6 +109,36 @@ function create_custom_tables() {
         
         -- ADDITIONAL SERVICES
         IsAdditionalEServices VARCHAR(3) NOT NULL,
+        SMSBanking VARCHAR(20) NOT NULL,
+        InternetBanking VARCHAR(20) NOT NULL,
+        PushAndPull VARCHAR(20) NOT NULL,
+        Ealerts VARCHAR(20) NOT NULL,
+        EmailInstructions VARCHAR(20) NOT NULL,
+        Estatement VARCHAR(10) NOT NULL,
+        Mastercard VARCHAR(10) NOT NULL,
+        ATM VARCHAR(20) NOT NULL,
+        IsAgreedToTerms VARCHAR(3) NOT NULL,
+        PRIMARY KEY  (id)
+    ) $charset_collate;";
+
+    // SMS ALERT
+    $mobile_banking = $wpdb->prefix . 'ib_mobile_banking';
+
+    $mobile_banking_table = "CREATE TABLE $mobile_banking (
+        id INT(11) NOT NULL AUTO_INCREMENT,
+        HaveAnAccountWithIB VARCHAR(3) NOT NULL,
+        ExistingAccountNumber VARCHAR(50) NOT NULL,
+        AccountHolderTitle VARCHAR(10) NOT NULL,
+        AccountHolderFirstName VARCHAR(50) NOT NULL,
+        AccountHolderMiddleName VARCHAR(50),
+        AccountHolderLastName VARCHAR(50) NOT NULL,
+        AccountHolderPhoneNumberOne VARCHAR(50) NOT NULL,
+        AccountHolderPhoneNumberTwo VARCHAR(50),
+        AccountHolderEmail VARCHAR(50) NOT NULL,
+        
+        -- ADDITIONAL SERVICES
+        IsAdditionalEServices VARCHAR(3) NOT NULL,
+        SMSBanking VARCHAR(20) NOT NULL,
         InternetBanking VARCHAR(20) NOT NULL,
         PushAndPull VARCHAR(20) NOT NULL,
         Ealerts VARCHAR(20) NOT NULL,
@@ -129,6 +159,7 @@ function create_custom_tables() {
     dbDelta( $card_services_table );
     dbDelta( $online_banking_table );
     dbDelta( $sms_alert_table );
+    dbDelta( $mobile_banking_table );
 }
 
 add_action( 'after_setup_theme', 'create_custom_tables' );
@@ -253,72 +284,6 @@ add_action( 'after_setup_theme', 'create_custom_tables' );
   
 
 // $DATABASE_TABLES = [
-
-//     'CREATE TABLE ATM (
-//         -- PERSONAL INFO
-//         AccountID INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-//         HaveAnAccountWithIB VARCHAR(3) NOT NULL,
-//         AccountHolderTitle VARCHAR(10) NOT NULL,
-//         AccountHolderFirstName VARCHAR(50) NOT NULL,
-//         AccountHolderMiddleName VARCHAR(50) DEFAULT NULL,
-//         AccountHolderLastName VARCHAR(50) NOT NULL,
-//         AccountHolderPhoneNumberOne VARCHAR(50) NOT NULL,
-//         AccountHolderPhoneNumberTwo VARCHAR(50) DEFAULT NULL,
-//         AccountHolderEmail VARCHAR(50) NOT NULL,
-        
-//         -- ADDITIONAL SERVICES
-//         IsAdditionalEServices VARCHAR(3) NOT NULL,
-//         SMSBanking VARCHAR(20) NOT NULL,
-//         InternetBanking VARCHAR(20) NOT NULL,
-//         PushAndPull VARCHAR(20) NOT NULL,
-//         Ealerts VARCHAR(20) NOT NULL,
-//         EmailInstructions VARCHAR(20) NOT NULL,
-//         IsAgreedToTerms VARCHAR(3) NOT NULL
-//     ) ENGINE = INNODB DEFAULT CHARSET = latin1;',
-
-//     'CREATE TABLE SMS_Alert (
-//         -- PERSONAL INFO
-//         AccountID INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-//         HaveAnAccountWithIB VARCHAR(3) NOT NULL,
-//         AccountHolderTitle VARCHAR(10) NOT NULL,
-//         AccountHolderFirstName VARCHAR(50) NOT NULL,
-//         AccountHolderMiddleName VARCHAR(50) DEFAULT NULL,
-//         AccountHolderLastName VARCHAR(50) NOT NULL,
-//         AccountHolderPhoneNumberOne VARCHAR(50) NOT NULL,
-//         AccountHolderPhoneNumberTwo VARCHAR(50) DEFAULT NULL,
-//         AccountHolderEmail VARCHAR(50) NOT NULL,
-        
-//         -- ADDITIONAL SERVICES
-//         IsAdditionalEServices VARCHAR(3) NOT NULL,
-//         ATM VARCHAR(20) NOT NULL,
-//         InternetBanking VARCHAR(20) NOT NULL,
-//         PushAndPull VARCHAR(20) NOT NULL,
-//         Ealerts VARCHAR(20) NOT NULL,
-//         EmailInstructions VARCHAR(20) NOT NULL,
-//         IsAgreedToTerms VARCHAR(3) NOT NULL
-//     ) ENGINE = INNODB DEFAULT CHARSET = latin1;',
-
-//     'CREATE TABLE Online_Banking (
-//         -- PERSONAL INFO
-//         AccountID INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-//         HaveAnAccountWithIB VARCHAR(3) NOT NULL,
-//         AccountHolderTitle VARCHAR(10) NOT NULL,
-//         AccountHolderFirstName VARCHAR(50) NOT NULL,
-//         AccountHolderMiddleName VARCHAR(50) DEFAULT NULL,
-//         AccountHolderLastName VARCHAR(50) NOT NULL,
-//         AccountHolderPhoneNumberOne VARCHAR(50) NOT NULL,
-//         AccountHolderPhoneNumberTwo VARCHAR(50) DEFAULT NULL,
-//         AccountHolderEmail VARCHAR(50) NOT NULL,
-        
-//         -- ADDITIONAL SERVICES
-//         IsAdditionalEServices VARCHAR(3) NOT NULL,
-//         ATM VARCHAR(20) NOT NULL,
-//         SMSBanking VARCHAR(20) NOT NULL,
-//         PushAndPull VARCHAR(20) NOT NULL,
-//         Ealerts VARCHAR(20) NOT NULL,
-//         EmailInstructions VARCHAR(20) NOT NULL,
-//         IsAgreedToTerms VARCHAR(3) NOT NULL
-//     ) ENGINE = INNODB DEFAULT CHARSET = latin1;',
 
 //     'CREATE TABLE Mobile_Banking (
 //         -- PERSONAL INFO
