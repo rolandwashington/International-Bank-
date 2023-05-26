@@ -26,17 +26,17 @@
                             <div class="application-form">                            
                                 <label for="" class="">
                                     Do you have an account with IB? <br>
-                                    Yes: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="is-account-with-ib" id="" value="Yes" checked="checked" required>
-                                    No: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="is-account-with-ib" id="" value="No">
+                                    Yes: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="is-account-with-ib" value="Yes" checked="checked" required>
+                                    No: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="is-account-with-ib" value="No">
                                 </label>
                                 
                                 <div class="is-account">
                                     <label for="" class="account-user-title">
                                         Select Title: <br>
-                                        Ms. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" id="" value="Ms.">
-                                        Mr. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" id="" value="Mr.">
-                                        Mrs. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" id="" value="Mrs.">
-                                        Other <input type="text" placeholder="Please Specify" name="title">
+                                        Ms. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" value="Ms.">
+                                        Mr. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" value="Mr.">
+                                        Mrs. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" value="Mrs.">
+                                        Other <input type="text" placeholder="Please Specify" name="title-input">
                                     </label>
     
                                     <label for="full-name">
@@ -61,23 +61,23 @@
                                     <h4 class="ib-background-secondary form-header">Additional Services</h4>
                                     <label for="">
                                         Would you like to apply for additional E-services? <br>
-                                        Yes: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="is-additional-services" id="" value="Yes" required>
-                                        No: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="is-additional-services" id="" value="No">
+                                        Yes: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="is-additional-services" value="Yes" required>
+                                        No: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="is-additional-services" value="No">
                                     </label>
     
                                     <label for="" class="additional-services ib-hide">
                                         Kindly click all that applies <br>
-                                        <input type="checkbox" name="sms-banking" id="" value="SMS Banking"> <span>SMS Banking </span> <br>
-                                        <input type="checkbox" name="internet-banking" id="" value="Internet Banking"> <span>Internet Banking</span> <br>
-                                        <input type="checkbox" name="atm" id="" value="ATM"> <span>IB Proprietary Card</span> <br>
-                                        <input type="checkbox" name="mastercard" id="" value="Mastercard"> <span>IB Mastercard</span> <br>
-                                        <input type="checkbox" name="e-alert" id="" value="E-Alerts"> <span>E-Alerts</span> <br> 
-                                        <input type="checkbox" name="email-instructions" id="" value="Email Instructions"> <span>Email Instructions</span> <br>
-                                        <input type="checkbox" name="e-statement" id="" value="E-Statement"> <span>E-Statement</span> <br>
+                                        <input type="checkbox" name="sms-banking" value="SMS Banking"> <span>SMS Banking </span> <br>
+                                        <input type="checkbox" name="internet-banking" value="Internet Banking"> <span>Internet Banking</span> <br>
+                                        <input type="checkbox" name="atm" value="ATM"> <span>IB Proprietary Card</span> <br>
+                                        <input type="checkbox" name="mastercard" value="Mastercard"> <span>IB Mastercard</span> <br>
+                                        <input type="checkbox" name="e-alert" value="E-Alerts"> <span>E-Alerts</span> <br> 
+                                        <input type="checkbox" name="email-instructions" value="Email Instructions"> <span>Email Instructions</span> <br>
+                                        <input type="checkbox" name="e-statement" value="E-Statement"> <span>E-Statement</span> <br>
                                     </label>
                                     <label for="" class="ib-form-agreement">
-                                        <input type="checkbox" name="" id="" required> <span><strong>NOTE:</strong> I agree to be in-person to complete the process</span> <br>
-                                        <input type="checkbox" name="" id="" required> <span>Agree to the terms</span>
+                                        <input type="checkbox" name="" required> <span><strong>NOTE:</strong> I agree to be in-person to complete the process</span> <br>
+                                        <input type="checkbox" name="" required> <span>Agree to the terms</span>
                                     </label>
                                     <button type="submit" name="submit-push-pull" class="wpcf7-form-control wpcf7-submit btn form-half-width service-button">Submit Application</button>                               
                                 </div>

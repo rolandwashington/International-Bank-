@@ -3,7 +3,6 @@
     require_once get_template_directory() . "/core/form-handlers/internet-banking.php";
 ?>
 
-
 <div id="content" class="site-content">
 	<div class="page-header" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/ib-background.jpg);">
 		<div class="container">
@@ -33,11 +32,11 @@
                                 
                                 <div class="is-account">
                                     <label for="" class="account-user-title">
-                                        Select Title: <br>
+                                    Select Title: <br>
                                         Ms. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" id="" value="Ms.">
                                         Mr. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" id="" value="Mr.">
                                         Mrs. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" id="" value="Mrs.">
-                                        Other <input type="text" placeholder="Please Specify" name="title">
+                                        Other <input type="text" placeholder="Please Specify" name="title-input">
                                     </label>
     
                                     <label for="full-name">
@@ -70,10 +69,10 @@
                                         Kindly click all that applies <br>
                                         <input type="checkbox" name="sms-banking" id="" value="SMS Banking"> <span>SMS Banking </span> <br>
                                         <input type="checkbox" name="atm" id="" value="IB Proprietary Card"> <span>IB Proprietary Card</span> <br>
+                                        <input type="checkbox" name="mastercard" id="" value="IB Mastercard"> <span>IB Mastercard</span> <br>
                                         <input type="checkbox" name="push-pull" id="" value="Push and Pull"> <span>Push and Pull</span> <br>
                                         <input type="checkbox" name="e-alert" id="" value="E-Alerts"> <span>E-Alerts</span> <br> 
                                         <input type="checkbox" name="email-instructions" id="" value="Email Instructions"> <span>Email Instructions</span> <br>
-                                        <input type="checkbox" name="mastercard" id="" value="IB Mastercard"> <span>IB Mastercard</span> <br>
                                         <input type="checkbox" name="e-statement" id="" value="E-Statement"> <span>E-Statement</span> <br>
                                     </label>
                                     <label for="" class="ib-form-agreement">

@@ -10,7 +10,8 @@
     require_once "PHPMailer/src/Exception.php";
 
     if (isset($_POST["submit-push-pull"])) {
-        $ApplicantTitle                 = $_POST["title"];
+        $ApplicantTitleRedio            = $_POST["title"];
+        $ApplicantTitleInput            = $_POST["title-input"];
         $ApplicantFirstName             = $_POST["first-name"];
         $ApplicantMiddleName            = $_POST["middle-name"];
         $ApplicantLastName              = $_POST["last-name"];
@@ -21,6 +22,12 @@
         $AccountNumber                  = $_POST["account-number"];
         $IsAdditionalService            = $_POST["is-additional-services"];
 
+        if (empty($ApplicantTitleRedio)) {
+            $ApplicantTitle = $ApplicantTitleInput;
+        } else {
+            $ApplicantTitle = $ApplicantTitleRedio;
+        }
+        
         if (isset($_POST["sms-banking"])) {
             $SMSBanking = "Yes";
         } else {

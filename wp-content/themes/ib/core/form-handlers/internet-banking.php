@@ -10,7 +10,8 @@
     require_once "PHPMailer/src/Exception.php";
     
     if (isset($_POST["submit-internet-banking"])) {
-        $ApplicantTitle                 = $_POST["title"];
+        $ApplicantTitleRedio            = $_POST["title"];
+        $ApplicantTitleInput            = $_POST["title-input"];
         $ApplicantFirstName             = $_POST["first-name"];
         $ApplicantMiddleName            = $_POST["middle-name"];
         $ApplicantLastName              = $_POST["last-name"];
@@ -20,6 +21,12 @@
         $IsAccountWithIB                = $_POST["is-account-with-ib"];
         $AccountNumber                  = $_POST["account-number"];
         $IsAdditionalService            = $_POST["is-additional-services"];
+
+        if (empty($ApplicantTitleRedio)) {
+            $ApplicantTitle = $ApplicantTitleInput;
+        } else {
+            $ApplicantTitle = $ApplicantTitleRedio;
+        }
 
         if (isset($_POST["sms-banking"])) {
             $SMSBanking = "Yes";
@@ -40,9 +47,9 @@
         }
 
         if (isset($_POST["e-alert"])) {
-            $EStatement = "Yes";
+            $EAlert = "Yes";
         } else {
-            $EStatement = "N/A";
+            $EAlert = "N/A";
         }
 
         if (isset($_POST["mastercard"])) {
@@ -52,9 +59,9 @@
         }
 
         if (isset($_POST["e-statement"])) {
-            $Mastercard = "Yes";
+            $EStatement = "Yes";
         } else {
-            $Mastercard = "N/A";
+            $EStatement = "N/A";
         }
 
         if (isset($_POST["email-instructions"])) {
@@ -70,6 +77,9 @@
         if ($IsAccountWithIB == "No") {
             $AccountNumber = "N/A";
         }
+
+        // SMTP CONFIGURATION 
+        // =================================
 
         $ibEmail = "$SMTPEmailAddress";
         $ibEmailPassword = "$SMTPEmailPassword";
@@ -181,7 +191,6 @@
     
         try {
             $mail->send();
-                    
             global $wpdb;
 
             $table_name = $wpdb->prefix . 'ib_online_banking';
@@ -199,17 +208,17 @@
                 'IsAdditionalEServices'             => $IsAdditionalService,
                 'SMSBanking'                        => $SMSBanking,
                 'PushAndPull'                       => $PushPull,
+                'ATM'                               => $ATM,
+                'Mastercard'                        => $Mastercard,
                 'Ealerts'                           => $EAlert,
                 'EmailInstructions'                 => $EmailInstructions,
-                'Mastercard'                        => $Mastercard,
-                'ATM'                               => $ATM,
                 'Estatement'                        => $EStatement,
                 'IsAgreedToTerms'                   => 'YES'
             );
 
             $wpdb->insert( $table_name, $data );
-
             $ThankYou = "Application sent successfully";
+
         } catch (Exception $e) {
             $ThankYou = "Unable to submit application, please try again.";
         }

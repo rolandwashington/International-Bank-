@@ -43,11 +43,11 @@ function create_custom_tables() {
         ExistingAccountNumber VARCHAR(50) NOT NULL,
         AccountHolderTitle VARCHAR(10) NOT NULL,
         AccountHolderFirstName VARCHAR(50) NOT NULL,
-        AccountHolderMiddleName VARCHAR(50) DEFAULT NULL,
+        AccountHolderMiddleName VARCHAR(50),
         AccountHolderLastName VARCHAR(50) NOT NULL,
         CardType VARCHAR(50) NOT NULL,
         AccountHolderPhoneNumberOne VARCHAR(50) NOT NULL,
-        AccountHolderPhoneNumberTwo VARCHAR(50) DEFAULT NULL,
+        AccountHolderPhoneNumberTwo VARCHAR(50),
         AccountHolderEmail VARCHAR(50) NOT NULL,
         
         -- ADDITIONAL SERVICES
@@ -72,10 +72,10 @@ function create_custom_tables() {
         ExistingAccountNumber VARCHAR(50) NOT NULL,
         AccountHolderTitle VARCHAR(10) NOT NULL,
         AccountHolderFirstName VARCHAR(50) NOT NULL,
-        AccountHolderMiddleName VARCHAR(50) DEFAULT NULL,
+        AccountHolderMiddleName VARCHAR(50),
         AccountHolderLastName VARCHAR(50) NOT NULL,
         AccountHolderPhoneNumberOne VARCHAR(50) NOT NULL,
-        AccountHolderPhoneNumberTwo VARCHAR(50) DEFAULT NULL,
+        AccountHolderPhoneNumberTwo VARCHAR(50),
         AccountHolderEmail VARCHAR(50) NOT NULL,
         
         -- ADDITIONAL SERVICES
@@ -118,7 +118,7 @@ add_action( 'after_setup_theme', 'create_custom_tables' );
 //         AccountType VARCHAR(50) NOT NULL,
 //         AccountHolderTitle VARCHAR(10) NOT NULL,
 //         AccountHolderFirstName VARCHAR(50) NOT NULL,
-//         AccountHolderMiddleName VARCHAR(50) DEFAULT NULL,
+//         AccountHolderMiddleName VARCHAR(50),
 //         AccountHolderLastName VARCHAR(50) NOT NULL,
 //         AccountHolderDOB DATE NOT NULL,
 //         AccountHolderGender VARCHAR(10) NOT NULL,
