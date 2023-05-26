@@ -151,7 +151,7 @@ function create_custom_tables() {
     ) $charset_collate;";
 
 
-    // MOBILE BANKING
+    // E-STATEMENT
     $e_statement = $wpdb->prefix . 'ib_e_statement';
 
     $e_statement_table = "CREATE TABLE $e_statement (
@@ -181,6 +181,39 @@ function create_custom_tables() {
     ) $charset_collate;";
 
 
+    // E-ALERT
+    $e_alert = $wpdb->prefix . 'ib_e_alert';
+
+    $e_alert_table = "CREATE TABLE $e_alert (
+        id INT(11) NOT NULL AUTO_INCREMENT,
+        HaveAnAccountWithIB VARCHAR(3) NOT NULL,
+        ExistingAccountNumber VARCHAR(50) NOT NULL,
+        AccountHolderTitle VARCHAR(10) NOT NULL,
+        AccountHolderFirstName VARCHAR(50) NOT NULL,
+        AccountHolderMiddleName VARCHAR(50),
+        AccountHolderLastName VARCHAR(50) NOT NULL,
+        AccountHolderPhoneNumberOne VARCHAR(50) NOT NULL,
+        AccountHolderPhoneNumberTwo VARCHAR(50),
+        AccountHolderEmail VARCHAR(50) NOT NULL,
+        
+        -- ADDITIONAL SERVICES
+        IsAdditionalEServices VARCHAR(3) NOT NULL,
+        SMSBanking VARCHAR(20) NOT NULL,
+        InternetBanking VARCHAR(20) NOT NULL,
+        PushAndPull VARCHAR(20) NOT NULL,
+        Ealerts VARCHAR(20) NOT NULL,
+        EmailInstructions VARCHAR(20) NOT NULL,
+        Estatement VARCHAR(10) NOT NULL,
+        MobileBanking VARCHAR(10) NOT NULL,
+        Mastercard VARCHAR(10) NOT NULL,
+        ATM VARCHAR(20) NOT NULL,
+        IsAgreedToTerms VARCHAR(3) NOT NULL,
+        PRIMARY KEY  (id)
+    ) $charset_collate;";
+
+    
+
+    
 
 
     require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
@@ -190,6 +223,7 @@ function create_custom_tables() {
     dbDelta( $sms_alert_table );
     dbDelta( $mobile_banking_table );
     dbDelta( $e_statement_table );
+    dbDelta( $e_alert_table );
 }
 
 add_action( 'after_setup_theme', 'create_custom_tables' );

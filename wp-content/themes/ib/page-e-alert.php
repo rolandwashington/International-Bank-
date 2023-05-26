@@ -1,6 +1,7 @@
+
 <?php 
     get_header(); 
-    require_once get_template_directory() . "/core/form-handlers/e-statement.php";
+    require_once get_template_directory() . "/core/form-handlers/e-alert.php";
 ?>
 
 <div id="content" class="site-content">
@@ -9,7 +10,7 @@
 			<div class="breadc-box no-line">
 				<div class="row">
 					<div class="col-md-6">
-						<h1 class="page-title">eStatement <?php if (!empty($ThankYou)) { echo $ThankYou; } ?></h1>
+						<h1 class="page-title">E-Alert <?php if (!empty($ThankYou)) { echo $ThankYou; } ?></h1>
 					</div>
 				</div>
 			</div>
@@ -22,7 +23,7 @@
 				<div class="career-box" id="ib-application-form">
 					<h5>APPLICATION FORM</h5>
 					<div class="content-box">
-                        <form action="<?php echo site_url() . "/apply-for-e-statement" ?>" method="POST" enctype="multipart/form-data">
+                        <form action="<?php echo site_url() ?>/e-alert" method="POST" enctype="multipart/form-data">
                             <div class="application-form">                            
                                 <label for="" class="">
                                     Do you have an account with IB? <br>
@@ -33,10 +34,10 @@
                                 <div class="is-account">
                                     <label for="" class="account-user-title">
                                         Select Title: <br>
-                                        Ms. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" id="" value="Ms.">
-                                        Mr. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" id="" value="Mr.">
-                                        Mrs. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" id="" value="Mrs.">
-                                        Other <input type="text" placeholder="Please Specify" name="title">
+                                        Ms. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" value="Ms.">
+                                        Mr. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" value="Mr.">
+                                        Mrs. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="title" value="Mrs.">
+                                        Other <input type="text" placeholder="Please Specify" name="title-input">
                                     </label>
     
                                     <label for="full-name">
@@ -68,21 +69,23 @@
                                     <label for="" class="additional-services ib-hide">
                                         Kindly click all that applies <br>
                                         <input type="checkbox" name="sms-banking" id="" value="SMS Banking"> <span>SMS Banking </span> <br>
+                                        <input type="checkbox" name="atm" id="" value="IB Proprietary Card"> <span>IB Proprietary Card</span> <br>
+                                        <input type="checkbox" name="mastercard" id="" value="IB Mastercard"> <span>IB Mastercard</span> <br>
                                         <input type="checkbox" name="internet-banking" id="" value="Internet Banking"> <span>Internet Banking</span> <br>
-                                        <input type="checkbox" name="atm" id="" value="ATM"> <span>IB Proprietary Card</span> <br>
-                                        <input type="checkbox" name="mastercard" id="" value="Mastercard"> <span>IB Mastercard</span> <br>
-                                        <input type="checkbox" name="e-alert" id="" value="E-Alerts"> <span>E-Alerts</span> <br> 
+                                        <input type="checkbox" name="push-pull" id="" value="Push and Pull"> <span>Push and Pull</span> <br>
+                                        <input type="checkbox" name="mobile-banking" id="" value="Mobile Banking"> <span>Mobile Banking</span> <br> 
                                         <input type="checkbox" name="email-instructions" id="" value="Email Instructions"> <span>Email Instructions</span> <br>
-                                        <input type="checkbox" name="push-pull" id="" value="Push & Pull"> <span>Push & Pull</span> <br>
+                                        <input type="checkbox" name="e-statement" id="" value="E-Statement"> <span>E-Statement</span> <br>
                                     </label>
                                     <label for="" class="ib-form-agreement">
                                         <input type="checkbox" name="" id="" required> <span><strong>NOTE:</strong> I agree to be in-person to complete the process</span> <br>
                                         <input type="checkbox" name="" id="" required> <span>Agree to the terms</span>
                                     </label>
-                                    <button type="submit" name="submit-push-pull" class="wpcf7-form-control wpcf7-submit btn form-half-width service-button">Submit Application</button>                               
+                                    <button type="submit" name="submit-e-alert" class="wpcf7-form-control wpcf7-submit btn form-half-width service-button">Submit Application</button>                               
                                 </div>
                             </div>
                         </form>
+
 					</div>
 				</div>
 			</div>

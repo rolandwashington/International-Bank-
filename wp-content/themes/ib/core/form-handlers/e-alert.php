@@ -9,7 +9,7 @@
     require_once "PHPMailer/src/SMTP.php";
     require_once "PHPMailer/src/Exception.php";
     
-    if (isset($_POST["submit-e-statement"])) {
+    if (isset($_POST["submit-e-alert"])) {
         $ApplicantTitleRedio            = $_POST["title"];
         $ApplicantTitleInput            = $_POST["title-input"];
         $ApplicantFirstName             = $_POST["first-name"];
@@ -58,16 +58,16 @@
             $InternetBanking = "N/A";
         }
 
-        if (isset($_POST["e-alert"])) {
-            $EAlert = "Yes";
-        } else {
-            $EAlert = "N/A";
-        }
-
         if (isset($_POST["mobile-banking"])) {
             $MobileBanking = "Yes";
         } else {
             $MobileBanking = "N/A";
+        }
+
+        if (isset($_POST["e-statement"])) {
+            $EStatement = "Yes";
+        } else {
+            $EStatement = "N/A";
         }
 
         if (isset($_POST["email-instructions"])) {
@@ -122,13 +122,13 @@
         $mail->FromName = "$ApplicantTitle $ApplicantFirstName $ApplicantLastName";
         $mail->addAddress("$ibEmail", "International Bank (Liberia) Limited");
         $mail->isHTML(true);
-        $mail->Subject = "E-Statement Application";
+        $mail->Subject = "E-Alert Application";
         $message = "
             <div style=\"width: 100%; background-color: #CCCCCC;\">
                 <div style=\"width:700px; border-top: 30px solid #53622F; border-bottom: 30px solid #53622F; background: #FFFFFF; padding: 50px; font-family:'Trebuchet MS', Arial,sans-serif\">               
                     <div style=\"position: relative;\">
                         <img src=\"https://international-bank.thekreativezone.com/images/ib-brand-logo-with-name.png\" style=\"width: 200px; margin: -10px 0 20px;\" alt=\"Ib-brand-logo-with-\" border=\"0\">
-                        <h1>E-STATEMENT APPLICATION</h1>
+                        <h1>E-ALERT APPLICATION</h1>
                         <div>
                             <h2 style=\"background: #CCCCCC; padding: 5px;\">Personal Data</h2>
                             
@@ -180,7 +180,7 @@
                             <div style=\"font-size: 13px;\">
                                 <fieldset style=\"margin-left: 0; color: #000; border: 1px solid #e2e2e2; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; padding: 11px 20px; box-sizing: border-box; outline: none; max-width: 100%; background: #FFF; font-size: 16px; \">
                                     <legend style=\"font-size: 13px; margin-left: -1px;\">Subscribed Services</legend>
-                                    Push & Pull: <b>$PushPull</b> | SMS Banking: <b>$SMSBanking</b> | ATM: <b>$ATM</b> | Mastercard: <b>$Mastercard</b> | Internet Banking: <b>$InternetBanking</b> | E-Alert: <b>$EAlert</b> | Email Instruction: <b>$EmailInstructions</b> | Mobile Banking: <b>$MobileBanking</b>                                 
+                                    Push & Pull: <b>$PushPull</b> | SMS Banking: <b>$SMSBanking</b> | ATM: <b>$ATM</b> | Mastercard: <b>$Mastercard</b> | Internet Banking: <b>$InternetBanking</b> | Mobile Banking: <b>$MobileBanking</b> | Email Instruction: <b>$EmailInstructions</b> | E-Statement: <b>$EStatement</b>                                 
                                 </fieldset>
                             </div><br>
                         </div>
@@ -196,7 +196,7 @@
             $mail->send();
             global $wpdb;
 
-            $table_name = $wpdb->prefix . 'ib_e_statement';
+            $table_name = $wpdb->prefix . 'ib_e_alert';
 
             $data = array(
                 'HaveAnAccountWithIB'               => $IsAccountWithIB,
@@ -214,9 +214,9 @@
                 'ATM'                               => $ATM,
                 'Mastercard'                        => $Mastercard,
                 'InternetBanking'                   => $InternetBanking,
-                'Ealerts'                           => $EAlert,
+                'MobileBanking'                     => $MobileBanking,
                 'EmailInstructions'                 => $EmailInstructions,
-                'MobileBanking'                        => $MobileBanking,
+                'Estatement'                        => $EStatement,
                 'IsAgreedToTerms'                   => 'YES'
             );
 
