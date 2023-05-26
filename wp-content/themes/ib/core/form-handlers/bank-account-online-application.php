@@ -3,7 +3,7 @@
     use PHPMailer\PHPMailer\SMTP;
     use PHPMailer\PHPMailer\Exception;
     
-    include "load.php";
+    require_once get_template_directory() . "/core/load.php";
 
     require_once "PHPMailer/src/PHPMailer.php";
     require_once "PHPMailer/src/SMTP.php";
@@ -11,7 +11,8 @@
 
     if (isset($_POST["bank-account-application"])) {
         $AccountType                    = $_POST["account-type"];
-        $ApplicantTitle                 = $_POST["title"];
+        $ApplicantTitleRedio            = $_POST["title"];
+        $ApplicantTitleInput            = $_POST["title-input"];
         $ApplicantFirstName             = $_POST["first-name"];
         $ApplicantMiddleName            = $_POST["middle-name"];
         $ApplicantLastName              = $_POST["last-name"];
@@ -72,6 +73,12 @@
         $PassportExpiryDate             = $_POST["passport-expiry-date"];
         $PermitNumber                   = $_POST["permit-number"];
         $IsAdditionalService            = $_POST["is-additional-services"];
+
+        if (empty($ApplicantTitleRedio)) {
+            $ApplicantTitle = $ApplicantTitleInput;
+        } else {
+            $ApplicantTitle = $ApplicantTitleRedio;
+        }
 
         if (isset($_POST["sms-banking"])) {
             // $SMSBanking = $_POST["sms-banking"];
@@ -187,8 +194,6 @@
 
         $tmpPassportSizeLocation    = $_FILES['passport-size']['tmp_name'];
         $passportSizeName           = $_FILES['passport-size']['name'];
-
-
 
         //Provide username and password     
         $mail->Username = "$ibEmail";
@@ -601,7 +606,11 @@
     
         try {
             $mail->send();
-            $loadFromUser->create("CreateNewAccount", [
+            global $wpdb;
+
+            $table_name = $wpdb->prefix . 'ib_online_bank_account';
+
+            $data = array(
                 "AccountType"                       => $AccountType,
                 "AccountHolderTitle"                => $ApplicantTitle,
                 "AccountHolderFirstName"            => $ApplicantFirstName,
@@ -611,9 +620,9 @@
                 "AccountHolderGender"               => $ApplicantGender,
                 "AccountHolderNationality"          => $ApplicantNationality,
                 "AccountHolderCitizenshipStatus"    => $ApplicantCitizenshipStatus,
-                // "AccountHolderIDCard"               TEXT NOT NULL,
+                "AccountHolderIDCard"               => $passportSizeName,
                 "AccountHolderIDCardNumber"         => $ApplicantIDNumber,
-                // "AccountHolderPassportSizePicture"  TEXT NOT NULL,
+                "AccountHolderPassportSizePicture"  => $idCardFileName,
                 "AccountHolderMaritalStatus"        => $ApplicantMaritalStatus,
                 "SpouseName"                        => $ApplicantSpouseName,
                 "AccountHolderCity"                 => $ApplicantCity,
@@ -678,9 +687,9 @@
                 "Ealerts"                           => $EAlert,
                 "EmailInstructions"                 => $EmailInstructions,
                 "IsAgreedToTerms"                   => "YES"
+            );
 
-                // ADD TRAVEL TO THE DATABASE 
-            ]);    
+            $wpdb->insert( $table_name, $data );
             $ThankYou = "Application sent successfully";
         } catch (Exception $e) {
             $ThankYou = "Unable to submit application, please try again.";
