@@ -92,6 +92,34 @@ function create_custom_tables() {
     ) $charset_collate;";
 
 
+    // SMS ALERT
+    $sms_alert = $wpdb->prefix . 'ib_sms_alert';
+
+    $sms_alert_table = "CREATE TABLE $sms_alert (
+        id INT(11) NOT NULL AUTO_INCREMENT,
+        HaveAnAccountWithIB VARCHAR(3) NOT NULL,
+        ExistingAccountNumber VARCHAR(50) NOT NULL,
+        AccountHolderTitle VARCHAR(10) NOT NULL,
+        AccountHolderFirstName VARCHAR(50) NOT NULL,
+        AccountHolderMiddleName VARCHAR(50),
+        AccountHolderLastName VARCHAR(50) NOT NULL,
+        AccountHolderPhoneNumberOne VARCHAR(50) NOT NULL,
+        AccountHolderPhoneNumberTwo VARCHAR(50),
+        AccountHolderEmail VARCHAR(50) NOT NULL,
+        
+        -- ADDITIONAL SERVICES
+        IsAdditionalEServices VARCHAR(3) NOT NULL,
+        InternetBanking VARCHAR(20) NOT NULL,
+        PushAndPull VARCHAR(20) NOT NULL,
+        Ealerts VARCHAR(20) NOT NULL,
+        EmailInstructions VARCHAR(20) NOT NULL,
+        Estatement VARCHAR(10) NOT NULL,
+        Mastercard VARCHAR(10) NOT NULL,
+        ATM VARCHAR(20) NOT NULL,
+        IsAgreedToTerms VARCHAR(3) NOT NULL,
+        PRIMARY KEY  (id)
+    ) $charset_collate;";
+
 
 
 
@@ -100,6 +128,7 @@ function create_custom_tables() {
     dbDelta( $push_pull_table );
     dbDelta( $card_services_table );
     dbDelta( $online_banking_table );
+    dbDelta( $sms_alert_table );
 }
 
 add_action( 'after_setup_theme', 'create_custom_tables' );
