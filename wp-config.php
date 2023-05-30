@@ -32,9 +32,9 @@ if ( strstr( $_SERVER['SERVER_NAME'], 'international-bank.local' ) ) {
 	define('DB_PASSWORD', '6-{a<}9[#p0K6w}P?');
 	define('DB_HOST', 'localhost');
 } else {
-	define( 'DB_NAME', 'ibliberi_the_kreative_zone' );
-	define( 'DB_USER', 'ibliberi_zone_admin' );
-	define( 'DB_PASSWORD', '#P{~D2dvrF{V' );
+	define( 'DB_NAME', 'ibliberi_WP1NG' );
+	define( 'DB_USER', 'ibliberi_WP1NG' );
+	define( 'DB_PASSWORD', '1@%@@fYSHgoyFjJoq' );
 	define( 'DB_HOST', 'localhost' );
 }
 
