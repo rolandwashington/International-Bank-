@@ -40,10 +40,36 @@
                                         </span>
                                     </div>
                                 </header>
+                                
+                                <?php 
+                                    if(strpos($_SERVER['REQUEST_URI'], 'ib-recruitment') !== false ) { 
+                                        ?>
+                                            <h3>Job Title: <?php the_title()?></h3>
+                                        <?php
+                                    }    
+                                ?>
 
                                 <div class="entry-summary">
                                     <?php the_content(); ?>
                                 </div>
+
+                                <?php 
+                                    if(strpos($_SERVER['REQUEST_URI'], 'ib-recruitment') !== false ) { 
+                                        ?>
+
+				                            <p>To apply, please send your cover letter and CV to:</p>
+
+                                            <p>
+                                                <strong>Attn: HR Manager</strong><br>
+                                                International Bank (Liberia) Limited <br>
+                                                Tubman Boulevard, between 11th and 12th Streets <br>
+                                                Monrovia, Liberia
+                                            </p>
+                                        <?php
+                                    }    
+                                ?>
+
+                                <a class="btn" href="mailto:erequest@ibliberia.com">Apply Now</a>
                             </div>
                         </article>
 

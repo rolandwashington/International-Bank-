@@ -313,3 +313,65 @@ function create_custom_tables() {
 add_action( 'after_setup_theme', 'create_custom_tables' );
 
 
+function create_ib_recruitment_post_type() {
+    $labels = array(
+        'name' => 'IB Recruitment',
+        'singular_name' => 'IB Recruitment',
+        'add_new' => 'Add New',
+        'add_new_item' => 'Add New Job Position',
+        'edit_item' => 'Edit Job Position',
+        'new_item' => 'New Job Position',
+        'view_item' => 'View Job Position',
+        'search_items' => 'Search IB Recruitment',
+        'not_found' => 'No Recruitment found',
+        'not_found_in_trash' => 'No Recruitment found in Trash',
+        'parent_item_colon' => '',
+        'menu_name' => 'IB Recruitment'
+    );
+
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'has_archive' => true,
+        'rewrite' => array('slug' => 'ib-recruitment'),
+        'menu_icon' => 'dashicons-businessman',
+        'supports' => array('title', 'editor', 'thumbnail'),
+        'taxonomies' => array('category'),
+    );
+
+    register_post_type('ib_recruitment', $args);
+}
+add_action('init', 'create_ib_recruitment_post_type');
+
+// Display custom fields on the edit screen
+function display_ib_recruitment_custom_fields() {
+    // Get the current values from the database
+    $minSalary = get_post_meta(get_the_ID(), 'min_salary', true);
+    $maxSalary = get_post_meta(get_the_ID(), 'max_salary', true);
+    $jobAddress = get_post_meta(get_the_ID(), 'job_address', true);
+    ?>
+    <input type="text" name="min_salary" value="<?php echo esc_attr($minSalary); ?>" placeholder="Minimum Salary">
+    <input type="text" name="max_salary" value="<?php echo esc_attr($maxSalary); ?>" placeholder="Maximum Salary">
+    <input type="text" name="job_address" value="<?php echo esc_attr($jobAddress); ?>" placeholder="Job Address">
+    <?php
+}
+
+// Save custom fields when the post is updated
+function save_ib_recruitment_custom_fields($post_id) {
+    if (isset($_POST['min_salary'])) {
+        update_post_meta($post_id, 'min_salary', sanitize_text_field($_POST['min_salary']));
+    }
+    if (isset($_POST['max_salary'])) {
+        update_post_meta($post_id, 'max_salary', sanitize_text_field($_POST['max_salary']));
+    }
+    if (isset($_POST['job_address'])) {
+        update_post_meta($post_id, 'job_address', sanitize_text_field($_POST['job_address']));
+    }
+}
+
+add_action('edit_form_after_title', 'display_ib_recruitment_custom_fields');
+add_action('save_post_ib_recruitment', 'save_ib_recruitment_custom_fields');
+
+
+
+

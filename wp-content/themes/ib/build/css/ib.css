@@ -1646,3 +1646,34 @@ img.attachment-medium.size-medium.wp-post-image {
 .remittance-partners.row {
     display: flex;
 }
+
+button.btn.appointment {
+    width: min-content;
+    margin-top: 2rem;
+}
+
+.ib-job-list-item {
+    background-color: var(--ib-tertiary);
+    padding: 3rem 2rem;
+    margin-bottom: 3rem;
+}
+
+.ib-job-list-item ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.ib-job-list-item ul li:first-child {
+    color: red;
+    font-weight: 700;
+}
+
+.align-items-center {
+    display: flex;
+    align-items: center;
+}
+

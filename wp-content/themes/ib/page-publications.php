@@ -14,39 +14,86 @@
 	</div>
 	<div class="entry-content">
 		<div class="container">
-			<div class="boxed-content" id="ib-hire-wrap">
+			<div class="boxed-content">
 				<!-- IB EMPLOYMENT / INTERNSHIP -->
-				<div class="career-box" id="ib-employment">
-					<h5>EMPLOYMENT</h5>
-					<div class="content-box display-row">
-						<div class="employment">
-							<p>IB offers professional employment to professionals and competent individuals in various aspects of Banking and related services.</p>
-							<p>IB is an equal opportunity employer and accepts applications on an ongoing basis for available positions. All applicants must have a minimum education requirement of a bachelor’s/first degree.  Applications are reviewed by the Human Resources Department.</p>
-							
-							<div class="no-vacancy">
-								<p>No vacancy</p>
-							</div>
-							<!-- <a class="btn" href="mailto:hr@ibliberia.com">APPLY NOW</a>  -->
-						</div>
-					</div>
-				</div>
-				<br>
-				<div class="career-box ib-internship">
-					<h5>INTERNSHIP</h5>
-					<div class="content-box display-row">
-						<div class="internship">
-							<p>IB offers University students the opportunity to learn from professionals in the field of banking through internship programs. IB internships are usually three to six months.  Internship applicants are encouraged to apply at least one month prior to their desired internship start date. Internship applications must also include a referral letter from applicant’s Dean of College.</p>
-							<p>If you are interested in any of the above listed position(s), please send a cover letter and your CV to:</p>
-							<p>
-								Attn: HR Manager <br>
-								International Bank (Liberia) Limited <br>
-								Tubman Boulevard <br>
-								Between 11th and 12th Streets <br>
-								Monrovia-Liberia <br>
-							</p>
-						</div>
-					</div>
-				</div>
+				<p>IB offers professional employment opportunities in various aspects of banking and related services. We are an equal opportunity employer and accept applications on an ongoing basis for available positions. Applicants should possess a minimum bachelor's/first degree. All applications are carefully reviewed by our Human Resources Department.</p>
+				<p>For university students, IB provides internship programs where they can learn from experienced professionals in the banking industry. Internships typically last for three to six months. We encourage internship applicants to apply at least one month before their desired start date and include a referral letter from their Dean of College.</p>
+
+				<?php
+					// Query the IB Recruitment custom post type
+					$ib_recruitment_args = array(
+						'post_type' => 'ib_recruitment',
+						'posts_per_page' => -1, // Display all job positions
+					);
+
+					$ib_recruitment_query = new WP_Query($ib_recruitment_args);
+
+					// Check if there are job positions
+					if ($ib_recruitment_query->have_posts()) {
+						while ($ib_recruitment_query->have_posts()) {
+							$ib_recruitment_query->the_post();
+							$min_salary = get_post_meta(get_the_ID(), 'min_salary', true);
+							$max_salary = get_post_meta(get_the_ID(), 'max_salary', true);
+							$job_address = get_post_meta(get_the_ID(), 'job_address', true);
+							?>
+								<div class="col-lg-8 ib-job-list-item">
+									<div class="job-card-two">
+										<div class="row align-items-center">
+											<div class="col-md-9">
+												<div class="job-info">
+													<h4>
+														<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+													</h4>
+													<ul>
+														<li>
+															<i class="bx bx-briefcase"></i>
+															<?php
+																// Get the categories for the current job position
+																$categories = get_the_terms(get_the_ID(), 'category');
+																if ($categories && !is_wp_error($categories)) {
+																	$category_names = array();
+																	foreach ($categories as $category) {
+																		$category_names[] = $category->name;
+																	}
+																	echo implode(', ', $category_names);
+																}
+															?>
+														</li>
+														<li>
+															<i class="bx bx-money"></i>
+															<?php echo $min_salary . "-" . $max_salary; ?>
+														</li>
+														<li>
+															<i class="bx bx-location-plus"></i>
+															<?php echo $job_address; ?>
+														</li>
+														<li>
+															<i class="bx bx-stopwatch"></i>
+															<?php echo human_time_diff(get_the_time('U'), current_time('timestamp')) . ' ago'; ?>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="col-md-3">
+												<div class="theme-btn text-end">
+													<a href="<?php the_permalink(); ?>" class="btn">
+														Apply Now
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							<?php
+						}
+					} else {
+						echo 'No job positions found.';
+					}
+
+					// Restore original post data
+					wp_reset_postdata();
+					?>
+
 			</div>
 		</div>
 	</div>
