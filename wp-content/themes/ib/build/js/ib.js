@@ -334,66 +334,51 @@ $(document).ready(function () {
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    // Get the elements for the menu and sub header
-    const menuEls = {
-      smallBusiness: {
-        linkEl: document.querySelectorAll(".ib-small-business"),
-        subHeaderEl: document.querySelector("#ib-small-business-sub-header"),
-      },
-      // personal: {
-      //     linkEl: document.querySelector('.ib-personal'),
-      //     subHeaderEl: document.querySelector('#ib-personal-sub-header')
-      // },
-      // about: {
-      //     linkEl: document.querySelector('.ib-about'),
-      //     subHeaderEl: document.querySelector('#ib-about-sub-header')
-      // },
-      // publications: {
-      //     linkEl: document.querySelector('.ib-publications'),
-      //     subHeaderEl: document.querySelector('#ib-publications-sub-header')
-      // }
-    };
-  
-    // Add a mouseover event listener to each menu link
-    Object.keys(menuEls).forEach((key) => {
-      const linkEl = menuEls[key].linkEl;
-      const subHeaderEl = menuEls[key].subHeaderEl;
-  
-      if (linkEl) {
-        linkEl.forEach((el) => {
-          el.addEventListener("mouseover", function (event) {
-            // Show the subHeaderEl when the mouse is over the menu link and not over .the-sub-menu
-            if (
-              event.target.classList.contains("ib-small-business") &&
-              !event.target.closest(".the-sub-menu")
-            ) {
-              subHeaderEl.style.display = "flex";
-              document
-                .querySelector(".the-sub-menu")
-                .style.setProperty("display", "flex");
-            }
-          });
-        });
-  
-        linkEl.forEach((el) => {
-          el.addEventListener("mouseleave", function () {
-            // Hide the subHeaderEl when the mouse leaves the menu link and .the-sub-menu
-            setTimeout(() => {
-              if (
-                !subHeaderEl.matches(":hover") &&
-                !document.querySelector(".the-sub-menu:hover")
-              ) {
-                subHeaderEl.style.display = "none";
-                document
-                  .querySelector(".the-sub-menu")
-                  .style.removeProperty("display");
-              }
-            }, 100);
-          });
-        });
-      }
+
+
+// NAVIGATION HOVER EFFECT
+$(document).ready(function() {
+    // Hide all submenus initially
+    $('.ib-sub-header').hide();
+
+    // Check URL and show corresponding submenu
+    var currentURL = window.location.href;
+
+    if (currentURL.includes('personal')) {
+        $('.ib-sub-header:eq(0)').show();
+    } else if (currentURL.includes('small-business')) {
+        $('.ib-sub-header:eq(1)').show();
+    } else if (currentURL.includes('corporate-institutional')) {
+        $('.ib-sub-header:eq(2)').show();
+    } else if (currentURL.includes('about')) {
+        $('.ib-sub-header:eq(3)').show();
+    } else if (currentURL.includes('publications')) {
+        $('.ib-sub-header:eq(4)').show();
+    }
+
+    // Show submenu when hovering over the corresponding menu item
+    $('.ib-personal').hover(function() {
+        $('.ib-sub-header').hide();
+        $('.ib-sub-header:eq(0)').show();
     });
-  });
-  
-  
+
+    $('.ib-small-business').hover(function() {
+        $('.ib-sub-header').hide();
+        $('.ib-sub-header:eq(1)').show();
+    });
+
+    $('.ib-corporate-institutional').hover(function() {
+        $('.ib-sub-header').hide();
+        $('.ib-sub-header:eq(2)').show();
+    });
+
+    $('.ib-about').hover(function() {
+        $('.ib-sub-header').hide();
+        $('.ib-sub-header:eq(3)').show();
+    });
+
+    $('.ib-resources').hover(function() {
+        $('.ib-sub-header').hide();
+        $('.ib-sub-header:eq(4)').show();
+    });
+});

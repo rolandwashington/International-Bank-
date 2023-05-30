@@ -64,30 +64,6 @@
             </div>
         </div>
         <!-- Top bar close -->
-        
-
-        <!-- Main header start -->
-        <div class="ib-main-header">
-            <div class="ib-main-header-wrap">
-                <div class="ib-navigation">
-                    <a href="<?php echo site_url() ?>" class="ib-brand-logo">
-                        <img src="<?php echo get_theme_file_uri( '/images/ib-brand-logo-with-name.png' ) ?>" alt="">
-                    </a>
-                    <a href="<?php echo site_url( '/personal' ) ?>" class="ib-menu-link ib-personal">PERSONAL</a>
-                    <a href="<?php echo site_url( '/small-business' ) ?>" class="ib-menu-link ib-small-business">SMALL BUSINESS</a>
-                    <a href="<?php echo site_url( '/corporate-institutional' ) ?>" class="ib-menu-link ib-corporate-institutional">CORPORATE & INSTITUTIONAL</a>
-                    <a href="<?php echo site_url( '/about' ) ?>" class="ib-menu-link ib-about">ABOUT</a>
-                    <a href="<?php echo site_url( '/publications' ) ?>" class="ib-menu-link ib-resources">PUBLICATIONS</a>
-                </div>
-
-                <a target="_blank" href="https://onlinebanking.ibliberia.com/Trustbank_InternetBanking/" class="ib-internet-banking">
-                    <img src="<?php echo get_theme_file_uri( '/icons/online-banking.png' ) ?>" alt="">
-                </a>
-                <a target="_blank" href="https://onlinebanking.ibliberia.com/Trustbank_InternetBanking/" class="ib-internet-banking-icon">
-                    <img src="<?php echo get_theme_file_uri( '/icons/online-banking-icon.png' ) ?>" alt="">
-                </a>
-            </div>
-        </div>
 
 
         <!-- MOBILE HEADER -->
@@ -106,26 +82,26 @@
                             <li class="current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children">
                                 <a href="<?php echo site_url( '/personal' ) ?>">PERSONAL</a>
                                 <ul class="sub-menu">
-                                    <li class="menu-item-2016"><a href="<?php echo site_url( '/personal#ib-personal-get-an-account' ) ?>">GET AN ACCOUNT</a></li>
-                                    <li class="menu-item-2015"><a href="<?php echo site_url( '/personal#ib-personal-credit-facilities' ) ?>">CREDIT FACILITIES</a></li>
-                                    <li class="menu-item-2059"><a href="<?php echo site_url( '/personal#ib-e-banking' ) ?>">E-BANKING</a></li>
+                                    <li class="menu-item-2016"><a href="<?php echo site_url( '/personal/#ib-personal-get-an-account' ) ?>">GET AN ACCOUNT</a></li>
+                                    <li class="menu-item-2015"><a href="<?php echo site_url( '/personal/#ib-personal-credit-facilities' ) ?>">CREDIT FACILITIES</a></li>
+                                    <li class="menu-item-2059"><a href="<?php echo site_url( '/personal/#ib-e-banking' ) ?>">E-BANKING</a></li>
                                 </ul>
                             </li>
                             <li class="menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1731">
                                 <a href="<?php echo site_url( '/small-business' ) ?>">SMALL BUSINESS</a>
                                 <ul class="sub-menu">
-                                    <li class="menu-item-1738"><a href="<?php echo site_url( '/small-business#ib-small-business-get-an-account' ) ?>">GET AN ACCOUNT</a></li>
-                                    <li class="menu-item-1745"><a href="<?php echo site_url( '/small-business#ib-small-business-credit-facilities' ) ?>">BUSINESS CREDIT FACILITIES</a></li>
-                                    <li class="menu-item-1742"><a href="<?php echo site_url( '/small-business#ib-small-business-e-banking' ) ?>">BUSINESS E-BANKING</a></li>
+                                    <li class="menu-item-1738"><a href="<?php echo site_url( '/small-business/#ib-small-business-get-an-account' ) ?>">GET AN ACCOUNT</a></li>
+                                    <li class="menu-item-1745"><a href="<?php echo site_url( '/small-business/#ib-small-business-credit-facilities' ) ?>">BUSINESS CREDIT FACILITIES</a></li>
+                                    <li class="menu-item-1742"><a href="<?php echo site_url( '/small-business/#ib-small-business-e-banking' ) ?>">BUSINESS E-BANKING</a></li>
                                     <li class="menu-item-1746"><a href="<?php echo site_url( '/other-services' ) ?>">OTHER SERVICES</a></li>
                                 </ul>
                             </li>
                             <li class="menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1789">
-                                <a href="<?php echo site_url() ?>/corporate-institutional">CORPORATE & INSTITUTIONAL</a>
+                                <a href="<?php echo site_url( '/corporate-institutional' ) ?>">CORPORATE & INSTITUTIONAL</a>
                                 <ul class="sub-menu">
-                                    <li class="menu-item-1791"><a href="<?php echo site_url( '/corporate-institutional#ib-corporate-get-an-account' ) ?>">GET AN ACCOUNT</a></li>
-                                    <li class="menu-item-1758"><a href="<?php echo site_url( '/corporate-institutional#ib-corporate-credit-facilities' ) ?>">CREDIT FACILITIES</a></li>
-                                    <li class="menu-item-1790"><a href="<?php echo site_url( '/corporate-institutional#ib-e-banking' ) ?>">E-BANKING</a></li>
+                                    <li class="menu-item-1791"><a href="<?php echo site_url( '/corporate-institutional/#ib-corporate-get-an-account' ) ?>">GET AN ACCOUNT</a></li>
+                                    <li class="menu-item-1758"><a href="<?php echo site_url( '/corporate-institutional/#ib-corporate-credit-facilities' ) ?>">CREDIT FACILITIES</a></li>
+                                    <li class="menu-item-1790"><a href="<?php echo site_url( '/corporate-institutional/#ib-e-banking' ) ?>">E-BANKING</a></li>
                                 </ul>
                             </li>
                             <li class="menu-item-has-children"><a href="<?php echo site_url( '/about' ) ?>">ABOUT</a>
@@ -161,7 +137,48 @@
 
 
 
-        <div id="ib-small-business-sub-header" class="the-sub-menu ib-sub-header">
+        
+        
+
+
+
+
+
+
+
+        <div class="ib-main-header">
+            <div class="ib-main-header-wrap">
+                <div class="ib-navigation">
+                    <a href="<?php echo site_url() ?>" class="ib-brand-logo">
+                        <img src="<?php echo get_theme_file_uri( '/images/ib-brand-logo-with-name.png' ) ?>" alt="">
+                    </a>
+                    <a href="<?php echo site_url( '/personal' ) ?>" class="ib-menu-link ib-personal">PERSONAL</a>
+                    <a href="<?php echo site_url( '/small-business' ) ?>" class="ib-menu-link ib-small-business">SMALL BUSINESS</a>
+                    <a href="<?php echo site_url( '/corporate-institutional' ) ?>" class="ib-menu-link ib-corporate-institutional">CORPORATE & INSTITUTIONAL</a>
+                    <a href="<?php echo site_url( '/about' ) ?>" class="ib-menu-link ib-about">ABOUT</a>
+                    <a href="<?php echo site_url( '/publications' ) ?>" class="ib-menu-link ib-resources">PUBLICATIONS</a>
+                </div>
+
+                <a target="_blank" href="https://onlinebanking.ibliberia.com/Trustbank_InternetBanking/" class="ib-internet-banking">
+                    <img src="<?php echo get_theme_file_uri( '/icons/online-banking.png' ) ?>" alt="">
+                </a>
+                <a target="_blank" href="https://onlinebanking.ibliberia.com/Trustbank_InternetBanking/" class="ib-internet-banking-icon">
+                    <img src="<?php echo get_theme_file_uri( '/icons/online-banking-icon.png' ) ?>" alt="">
+                </a>
+            </div>
+        </div>
+
+        <!-- sub header start -->
+        <div class="ib-sub-header">
+            <div class="ib-sub-header-wrap">
+                <div class="ib-navigation">
+                    <a href="<?php echo site_url( '/personal/#ib-personal-get-an-account' ) ?>" class="ib-menu-link" id="personal-get-account">GET AN ACCOUNT</a>
+                    <a href="<?php echo site_url( '/personal/#ib-personal-credit-facilities' ) ?>" class="ib-menu-link" id="personal-credit">CREDIT FACILITIES</a>
+                    <a href="<?php echo site_url( '/personal/#ib-e-banking" class="ib-menu-link' ) ?>" id="personal-ebanking">E-BANKING</a>
+                </div>
+            </div>
+        </div>
+        <div class="ib-sub-header">
             <div class="ib-sub-header-wrap">
                 <div class="ib-navigation">
                     <a href="<?php echo site_url( '/small-business/#ib-small-business-get-an-account' ) ?>" class="ib-menu-link" id="small-business-get-account">GET AN ACCOUNT</a>
@@ -171,7 +188,50 @@
                 </div>
             </div>
         </div>
+        <div class="ib-sub-header">
+            <div class="ib-sub-header-wrap">
+                <div class="ib-navigation">
+                    <a href="<?php echo site_url( '/corporate-institutional/#ib-corporate-get-an-account' ) ?>" id="corporate-get-account" class="ib-menu-link">GET AN ACCOUNT</a>
+                    <a href="<?php echo site_url( '/corporate-institutional/#ib-corporate-credit-facilities' ) ?>" id="corporate-credit" class="ib-menu-link">CREDIT FACILITIES</a>
+                    <a href="<?php echo site_url( '/corporate-institutional/#ib-e-banking' ) ?>" id="corporate-e-banking" class="ib-menu-link">E-BANKING</a>
+                </div>
+            </div>
+        </div>
+        <div class="ib-sub-header">
+            <div class="ib-sub-header-wrap">
+                <div class="ib-navigation">
+                    <a href="<?php echo site_url( '/about/#ib-team' ) ?>" class="ib-menu-link" id="ib-team-nav">Our Team</a>
+                    <a href="<?php echo site_url( '/our-partners' ) ?>" class="ib-menu-link" id="ib-partners-nav">IB Partners</a>
+                    <a href="<?php echo site_url( '/ib-community' ) ?>" class="ib-menu-link" id="ib-community-nav">IB in the Community</a>
+                    <a href="<?php echo site_url( '/locations' ) ?>" class="ib-menu-link" id="ib-location-nav">IB Locations</a>
+                </div>
+            </div>
+        </div>
+        <div class="ib-sub-header">
+            <div class="ib-sub-header-wrap">
+                <div class="ib-navigation">
+                    <a href="<?php echo site_url( '/publications' ) ?>" class="ib-menu-link">Announcement</a>
+                    <a href="<?php echo site_url( '/online-forms' ) ?>" class="ib-menu-link">Online Application Forms</a>
+                    <a href="<?php echo site_url( '/media-gallery' ) ?>" class="ib-menu-link">Media & Gallery</a>
+                    <a href="<?php echo site_url( '/blog' ) ?>" class="ib-menu-link">Blog</a>
+                </div>
+            </div>
+        </div>
         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <?php 
             if(strpos($_SERVER['REQUEST_URI'], 'personal') !== false ) {
                 ?>
