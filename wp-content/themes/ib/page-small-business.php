@@ -12,7 +12,7 @@
                         <p><spna>Get A Business<br>Account</span></p>
                     </div>
                     <div class="tp-caption tp-resizeme sh3" data-x="['left']" data-hoffset="['0','15','15','40']" data-y="center" data-voffset="['60','60','60','80']" data-width="['580','580','480','300']" data-transform_idle="o:1;" data-whitespace="['normal','normal','normal','normal']" data-transform_in="x:100px;opacity:0;s:800;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1900" data-fontsize="['16','16','14','12']" data-lineheight="['24','24','18','16']" data-responsive_offset="on">
-                        <p class="ib-about-caption">An account that adds value to your business. Get our small-business banking solutions that makes managing your account easy and rewarding.</p>
+                        <p class="ib-about-caption">An account that adds value to your business.<br> Get our small-business banking solutions that makes managing your account easy and rewarding.</p>
                     </div>
                     <div class="tp-caption" data-x="['left']" data-hoffset="['0','15','15','40']" data-y="bottom" data-voffset="['200','185','185','140']" data-transform_idle="o:1;" data-transform_in="x:100px;opacity:0;s:800;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="2100">
                         <a class="btn" href="<?php echo site_url() ?>/account-application">GET STARTED</a>
@@ -27,7 +27,7 @@
                         <p><span>Small Business<br>Credit Facilities</span></p>
                     </div>
                     <div class="tp-caption tp-resizeme" data-x="['left']" data-hoffset="['0','15','15','40']" data-y="center" data-voffset="['45','60','60','90']" data-width="['580','580','480','300']" data-transform_idle="o:1;" data-whitespace="['normal','normal','normal','normal']" data-transform_in="x:100px;opacity:0;s:800;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1900" data-fontsize="['16','16','14','12']" data-lineheight="['24','24','18','16']" data-responsive_offset="on">
-                        <p class="ib-about-caption">Lending solutions that fit your small business. Our credit solutions are designed to address what your growing business needs—along with the convenience, personalized service, and guidance you deserve.</p>
+                        <p class="ib-about-caption">Lending solutions that fit your small business. <br>Our credit solutions are designed to address what your growing business needs—along with the convenience, personalized service, and guidance you deserve.</p>
                     </div>
                     <div class="tp-caption" data-x="['left']" data-hoffset="['0','15','15','40']" data-y="bottom" data-voffset="['200','185','185','90']" data-transform_idle="o:1;" data-transform_in="x:100px;opacity:0;s:800;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="2100">
                         <a class="btn" href="<?php echo site_url() ?>/small-business#ib-small-business-credit-facilities" id="small-business-loan">Access Credit Facilities</a>

@@ -12,7 +12,7 @@
                         <p><span>Get an Account</span></p>
                     </div>
                     <div class="tp-caption tp-resizeme sh3" data-x="['left']" data-hoffset="['0','15','15','40']" data-y="center" data-voffset="['20','60','60','60']" data-width="['580','580','480','300']" data-transform_idle="o:1;" data-whitespace="['normal','normal','normal','normal']" data-transform_in="x:100px;opacity:0;s:800;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1900" data-fontsize="['16','16','14','12']" data-lineheight="['24','24','18','16']" data-responsive_offset="on">
-                        <p class="ib-about-caption">Let's help you manage your everyday finances. With the best solutions that work for you.</p>
+                        <p class="ib-about-caption">Let's help you manage your everyday finances.<br>With the best solutions that work for you.</p>
                     </div>
                     <div class="tp-caption" data-x="['left']" data-hoffset="['0','15','15','40']" data-y="bottom" data-voffset="['250','185','185','185']" data-transform_idle="o:1;" data-transform_in="x:100px;opacity:0;s:800;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="2100">
                         <a class="btn" href="<?php echo site_url( '/personal#ib-personal-get-an-account' ) ?>" id="ib-personal-account">GET AN ACCOUNT</a>
@@ -27,7 +27,7 @@
                         <p><span>Access Personal <br>Loans</span></p>
                     </div>
                     <div class="tp-caption tp-resizeme" data-x="['left']" data-hoffset="['0','15','15','40']" data-y="center" data-voffset="['60','60','60','80']" data-width="['580','580','480','300']" data-transform_idle="o:1;" data-whitespace="['normal','normal','normal','normal']" data-transform_in="x:100px;opacity:0;s:800;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1900" data-fontsize="['16','16','14','12']" data-lineheight="['24','24','18','16']" data-responsive_offset="on">
-                        <p class="ib-about-caption">No matter your need, we have the capital. We are committed to providing you with financing to achieve your dreams.</p>
+                        <p class="ib-about-caption">No matter your need, we have the capital. <br>We are committed to providing you with financing to achieve your dreams.</p>
                     </div>
                     <div class="tp-caption" data-x="['left']" data-hoffset="['0','15','15','40']" data-y="bottom" data-voffset="['200','185','185','150']" data-transform_idle="o:1;" data-transform_in="x:100px;opacity:0;s:800;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="2100">
                         <a class="btn" href="<?php echo site_url( '/loans' ) ?>">access options</a>
