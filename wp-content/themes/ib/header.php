@@ -143,7 +143,7 @@
                     <a target="_blank" href="https://onlinebanking.ibliberia.com/Trustbank_InternetBanking/" class="ib-internet-banking-icon">
                         <img src="<?php echo get_theme_file_uri( '/icons/online-banking-icon.png' ) ?>" alt="">
                     </a>
-                    <i class="fab fa-instagram"></i>
+                    <!-- <i class="fab fa-instagram"></i> -->
                 </div>
             </div>
 
