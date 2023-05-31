@@ -336,7 +336,6 @@ $(document).ready(function () {
 
 
 
-// NAVIGATION HOVER EFFECT
 $(document).ready(function() {
     // Hide all submenus initially
     $('.ib-sub-header').hide();
@@ -356,29 +355,44 @@ $(document).ready(function() {
         $('.ib-sub-header:eq(4)').show();
     }
 
-    // Show submenu when hovering over the corresponding menu item
-    $('.ib-personal').hover(function() {
+    // Hide submenu on mobile devices
+    if ($(window).width() <= 650) {
         $('.ib-sub-header').hide();
-        $('.ib-sub-header:eq(0)').show();
+    }
+
+    // Show submenu when hovering over the corresponding menu item (for non-mobile devices)
+    $('.ib-personal').hover(function() {
+        if ($(window).width() > 650) {
+            $('.ib-sub-header').hide();
+            $('.ib-sub-header:eq(0)').show();
+        }
     });
 
     $('.ib-small-business').hover(function() {
-        $('.ib-sub-header').hide();
-        $('.ib-sub-header:eq(1)').show();
+        if ($(window).width() > 650) {
+            $('.ib-sub-header').hide();
+            $('.ib-sub-header:eq(1)').show();
+        }
     });
 
     $('.ib-corporate-institutional').hover(function() {
-        $('.ib-sub-header').hide();
-        $('.ib-sub-header:eq(2)').show();
+        if ($(window).width() > 650) {
+            $('.ib-sub-header').hide();
+            $('.ib-sub-header:eq(2)').show();
+        }
     });
 
     $('.ib-about').hover(function() {
-        $('.ib-sub-header').hide();
-        $('.ib-sub-header:eq(3)').show();
+        if ($(window).width() > 650) {
+            $('.ib-sub-header').hide();
+            $('.ib-sub-header:eq(3)').show();
+        }
     });
 
     $('.ib-resources').hover(function() {
-        $('.ib-sub-header').hide();
-        $('.ib-sub-header:eq(4)').show();
+        if ($(window).width() > 650) {
+            $('.ib-sub-header').hide();
+            $('.ib-sub-header:eq(4)').show();
+        }
     });
 });

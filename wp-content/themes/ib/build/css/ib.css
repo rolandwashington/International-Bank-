@@ -295,7 +295,7 @@ a.ib-menu-link:hover {
 }
 
 .prev-nav.slick-arrow {
-    left: -5rem;
+    left: 0rem;
     top: 3.7rem;
 }
 
@@ -862,7 +862,7 @@ h1.page-title {
 #ib-personal-credit-facilities .next-nav.slick-arrow,
 #ib-small-business-credit-facilities .next-nav.slick-arrow,
 #ib-corporate-credit-facilities .next-nav.slick-arrow {
-    right: -5rem;
+    right: -10rem;
     top: 12rem;
     background: var(--ib-white);
 }
@@ -870,7 +870,7 @@ h1.page-title {
 #ib-personal-credit-facilities .prev-nav.slick-arrow,
 #ib-small-business-credit-facilities .prev-nav.slick-arrow,
 #ib-corporate-credit-facilities .prev-nav.slick-arrow {
-    left: -5rem;
+    left: -10rem;
     top: 12rem;
     background: var(--ib-white);
 }
