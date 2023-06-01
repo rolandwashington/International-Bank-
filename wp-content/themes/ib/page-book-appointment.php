@@ -26,7 +26,7 @@
 								<div class="column-inner">
 									<div class="wpb_wrapper">
 										<div class="section-head ">
-											<h2 class="section-title">Book Appointment with the CEO</h2>
+											<h2 class="section-title">Book an Appointment with the CEO</h2>
 										</div>
 										<div class="empty_space_30"></div>
 									</div>
@@ -72,7 +72,7 @@
                                             <label for="contact-info">
                                                 <textarea name="message" id="" cols="30" rows="10" placeholder="State your reason for the visit"></textarea>
                                             </label> 
-                                            <button type="submit" name="book-appointment" class="wpcf7-form-control wpcf7-submit btn form-half-width service-button">Submit Application</button> 
+                                            <button type="submit" name="book-appointment" class="wpcf7-form-control wpcf7-submit btn form-half-width service-button">Submit</button> 
 											<?php echo $ThankYou; ?>                              
                                         </div>
                                     </form>

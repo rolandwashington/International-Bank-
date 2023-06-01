@@ -396,3 +396,24 @@ $(document).ready(function() {
         }
     });
 });
+
+
+$(document).ready(function() {
+    $('.search-button').click(function() {
+        $('.ib-internet-banking').hide();
+        $('.search-button').hide();
+        $('#search-form').show();
+        $('.hide-search-field').show();
+    });
+});
+
+$(document).ready(function() {
+    $('.hide-search-field').click(function() {
+        $('.ib-internet-banking').show();
+        $('.search-button').show();
+        $('#search-form').hide();
+        $('.hide-search-field').hide();
+    });
+});
+  
+  

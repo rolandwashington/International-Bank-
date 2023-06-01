@@ -138,13 +138,24 @@
                         <a href="<?php echo site_url( '/publications' ) ?>" class="ib-menu-link ib-resources">PUBLICATIONS</a>
                     </div>
 
-                    <a target="_blank" href="https://onlinebanking.ibliberia.com/Trustbank_InternetBanking/" class="ib-internet-banking">
-                        <img src="<?php echo get_theme_file_uri( '/icons/online-banking.png' ) ?>" alt="">
-                    </a>
-                    <a target="_blank" href="https://onlinebanking.ibliberia.com/Trustbank_InternetBanking/" class="ib-internet-banking-icon">
-                        <img src="<?php echo get_theme_file_uri( '/icons/online-banking-icon.png' ) ?>" alt="">
-                    </a>
-                    <!-- <i class="fab fa-instagram"></i> -->
+                    <div class="wrap-online-banking-and-search">
+                        <a target="_blank" href="https://onlinebanking.ibliberia.com/Trustbank_InternetBanking/" class="ib-internet-banking">
+                            <img src="<?php echo get_theme_file_uri( '/icons/online-banking.png' ) ?>" alt="">
+                        </a>
+                        <a target="_blank" href="https://onlinebanking.ibliberia.com/Trustbank_InternetBanking/" class="ib-internet-banking-icon">
+                            <img src="<?php echo get_theme_file_uri( '/icons/online-banking-icon.png' ) ?>" alt="">
+                        </a>
+                        <button class="search-button">
+                            <i class="fab fa-search"></i>
+                        </button>
+                        <button class="hide-search-field">
+                            <i class="fab fa-arrow-left"></i>
+                        </button>
+                        <form role="search" method="get" id="search-form" class="search-form header-search" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+                            <input type="search" class="search-field" placeholder="Enter keyword..." value="" name="s">
+                            <button type="submit" class="search-submit"><i class="fab fa-search"></i></button>
+                        </form>
+                    </div>
                 </div>
             </div>
 

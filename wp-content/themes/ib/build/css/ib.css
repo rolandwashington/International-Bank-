@@ -1711,3 +1711,26 @@ button.wpcf7-form-control.wpcf7-submit.btn.form-half-width.service-button {
         width: 100%;
     }
 }
+
+.wrap-online-banking-and-search {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+button.search-button {
+    border: 1px dotted var(--ib-secondary);
+    background: var(--ib-primary);
+    color: var(--ib-white);
+}
+
+#search-form.header-search {
+    display: none;
+}
+
+.hide-search-field {
+    display: none;
+    border: 1px dotted var(--ib-secondary);
+    background: var(--ib-primary);
+    color: var(--ib-white);
+}
