@@ -111,8 +111,10 @@
 
                                 <label for="">
                                     <!-- ATM Card Request - Kindly provide the following details <br> -->
-                                    ID / Passport Number: <br>
-                                    <input type="text" name="id-number" id="" placeholder="Ex: L202000" class="form-half-width" required>
+                                    ID / Passport Number, Issue Date, and Expiration Date<br>
+                                    <input type="text" name="id-number" id="" placeholder="Ex: L202000" required>
+                                    <input type="date" name="issue-date" required>
+                                    <input type="date" name="expiration-date" required>
                                 </label>
                                 
                                 <label for="">

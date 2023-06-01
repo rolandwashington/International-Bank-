@@ -229,6 +229,8 @@ function create_custom_tables() {
         AccountHolderCitizenshipStatus VARCHAR(50) NOT NULL,
         AccountHolderIDCard TEXT NOT NULL,
         AccountHolderIDCardNumber VARCHAR(100) NOT NULL,
+        IDIssueDate DATE,
+        IDExpirationDate DATE,
         AccountHolderPassportSizePicture TEXT NOT NULL,
         AccountHolderMaritalStatus VARCHAR(50) NOT NULL,
         SpouseName VARCHAR(50) NOT NULL,

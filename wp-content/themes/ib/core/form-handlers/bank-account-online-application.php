@@ -21,6 +21,8 @@
         $ApplicantNationality           = $_POST["nationality"];
         $ApplicantCitizenshipStatus     = $_POST["citizenship-status"];
         $ApplicantIDNumber              = $_POST["id-number"];
+        $IDIssueDate                    = $_POST["issue-date"];
+        $IDExpirationDate               = $_POST["expiration-date"];
         $ApplicantMaritalStatus         = $_POST["marital-status"];
         $ApplicantSpouseName            = $_POST["spouse-name"];
         $ApplicantCity                  = $_POST["applicant-city"];
@@ -272,6 +274,14 @@
                                 <fieldset style=\"margin-left: 0; color: #000; border: 1px solid #e2e2e2; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; padding: 11px 20px; box-sizing: border-box; outline: none; max-width: 48%; background: #FFF; font-size: 16px; \">
                                     <legend style=\"font-size: 13px; margin-left: -1px;\">Applicant Passport / ID #</legend>
                                     $ApplicantIDNumber
+                                </fieldset>
+                                <fieldset style=\"margin-left: 0; color: #000; border: 1px solid #e2e2e2; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; padding: 11px 20px; box-sizing: border-box; outline: none; max-width: 48%; background: #FFF; font-size: 16px; \">
+                                    <legend style=\"font-size: 13px; margin-left: -1px;\">ID Issue Date</legend>
+                                    $IDIssueDate
+                                </fieldset>
+                                <fieldset style=\"margin-left: 0; color: #000; border: 1px solid #e2e2e2; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; padding: 11px 20px; box-sizing: border-box; outline: none; max-width: 48%; background: #FFF; font-size: 16px; \">
+                                    <legend style=\"font-size: 13px; margin-left: -1px;\">ID Expiration Date</legend>
+                                    $IDExpirationDate 
                                 </fieldset>
                             </div><br>
 
@@ -622,6 +632,8 @@
                 "AccountHolderCitizenshipStatus"    => $ApplicantCitizenshipStatus,
                 "AccountHolderIDCard"               => $passportSizeName,
                 "AccountHolderIDCardNumber"         => $ApplicantIDNumber,
+                "IDIssueDate"                       => $IDIssueDate,
+                "IDExpirationDate"                  => $IDExpirationDate,
                 "AccountHolderPassportSizePicture"  => $idCardFileName,
                 "AccountHolderMaritalStatus"        => $ApplicantMaritalStatus,
                 "SpouseName"                        => $ApplicantSpouseName,

@@ -72,7 +72,8 @@
                                             <label for="contact-info">
                                                 <textarea name="message" id="" cols="30" rows="10" placeholder="State your reason for the visit"></textarea>
                                             </label> 
-                                            <button type="submit" name="book-appointment" class="wpcf7-form-control wpcf7-submit btn form-half-width service-button">Submit Application</button>                               
+                                            <button type="submit" name="book-appointment" class="wpcf7-form-control wpcf7-submit btn form-half-width service-button">Submit Application</button> 
+											<?php echo $ThankYou; ?>                              
                                         </div>
                                     </form>
                                 </div>
