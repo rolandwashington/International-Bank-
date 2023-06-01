@@ -110,6 +110,7 @@
                                     <li><a href="<?php echo site_url( '/about#ib-partners' ) ?>">IB PARTNERS</a></li>
                                     <li><a href="<?php echo site_url( '/about#ib-community' ) ?>">IB IN THE COMMUNITY</a></li>
                                     <li><a href="<?php echo site_url( '/locations' ) ?>">IB LOCATIONS</a></li>
+                                    <li><a href="<?php echo site_url( '/book-appointment' ) ?>">BOOK APPOINTMENT</a></li>
                                 </ul>
                             </li>
                             <li class="menu-item-has-children"><a href="<?php echo site_url() ?>/publications">PUBLICATIONS</a>
@@ -183,6 +184,7 @@
                         <a href="<?php echo site_url( '/our-partners' ) ?>" class="ib-menu-link" id="ib-partners-nav">IB Partners</a>
                         <a href="<?php echo site_url( '/ib-community' ) ?>" class="ib-menu-link" id="ib-community-nav">IB in the Community</a>
                         <a href="<?php echo site_url( '/locations' ) ?>" class="ib-menu-link" id="ib-location-nav">IB Locations</a>
+                        <a href="<?php echo site_url( '/book-appointment' ) ?>" class="ib-menu-link">Book Appointment</a>
                     </div>
                 </div>
             </div>
@@ -276,6 +278,7 @@
                                 <a href="<?php echo site_url( '/our-partners' ) ?>" class="ib-menu-link" id="ib-partners-nav">IB Partners</a>
                                 <a href="<?php echo site_url( '/ib-community' ) ?>" class="ib-menu-link" id="ib-community-nav">IB in the Community</a>
                                 <a href="<?php echo site_url( '/locations' ) ?>" class="ib-menu-link" id="ib-location-nav">IB Locations</a>
+                                <a href="<?php echo site_url( '/book-appointment' ) ?>" class="ib-menu-link">Book Appointment</a>
                             </div>
                         </div>
                     </div>

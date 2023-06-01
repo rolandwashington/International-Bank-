@@ -178,7 +178,7 @@
                         </p>
                         <p class="time-to-reach-out web-display-none">Monday to Friday - 9AM to 2PM<br>Saturday 9AM to 12 Noon</p>
                         <a class="btn find-branch mobile-display-none" href="<?php echo site_url( '/locations' ) ?>">Find a branch</a>
-                        <!-- <button class="btn appointment">Book Appointment</button> -->
+                        <a href="<?php echo site_url( '/book-appointment' ) ?>" class="btn appointment">Book Appointment</a>
                     </div>
                     <div class="ib-map">
                         <img src="<?php echo get_template_directory_uri() . '/images/ib-map.png' ?>" class="ib-map-image mobile-display-none" alt="">

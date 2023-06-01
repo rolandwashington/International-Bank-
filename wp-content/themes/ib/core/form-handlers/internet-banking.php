@@ -124,7 +124,7 @@
             <div style=\"width: 100%; background-color: #CCCCCC;\">
                 <div style=\"width:700px; border-top: 30px solid #53622F; border-bottom: 30px solid #53622F; background: #FFFFFF; padding: 50px; font-family:'Trebuchet MS', Arial,sans-serif\">               
                     <div style=\"position: relative;\">
-                        <img src=\"https://international-bank.thekreativezone.com/images/ib-brand-logo-with-name.png\" style=\"width: 200px; margin: -10px 0 20px;\" alt=\"Ib-brand-logo-with-\" border=\"0\">
+                        <img src=\"https://ibliberia.com/wp-content/themes/ib/images/mail-logo.png\" style=\"width: 200px; margin: -10px 0 20px;\" alt=\"Ib-brand-logo-with-\" border=\"0\">
                         <h1>INTERNET BANKING APPLICATION</h1>
                         <div>
                             <h2 style=\"background: #CCCCCC; padding: 5px;\">Personal Data</h2>

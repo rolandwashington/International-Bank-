@@ -1647,9 +1647,10 @@ img.attachment-medium.size-medium.wp-post-image {
     display: flex;
 }
 
-button.btn.appointment {
+a.btn.appointment {
     width: min-content;
     margin-top: 2rem;
+    color: var(--ib-white);
 }
 
 .ib-job-list-item {
@@ -1677,3 +1678,36 @@ button.btn.appointment {
     align-items: center;
 }
 
+#appointment .content-box {
+    padding: 1rem 2rem;
+}
+
+
+#appointment .content-box .application-form {
+    width: 100%;
+}
+
+#appointment .content-box .application-form .input-group{
+    display: flex;
+    gap: 0.5rem;
+}
+
+#appointment .content-box .application-form .input-group input,
+#appointment .content-box .application-form .input-group select {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+button.wpcf7-form-control.wpcf7-submit.btn.form-half-width.service-button {
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 992px) {
+    #appointment .content-box .application-form .input-group{
+        flex-direction: column;
+    }
+
+    button.wpcf7-form-control.wpcf7-submit.btn.form-half-width.service-button {
+        width: 100%;
+    }
+}

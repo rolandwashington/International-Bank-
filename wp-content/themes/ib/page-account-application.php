@@ -35,7 +35,7 @@
                                         <option value="Business Saving">Business Saving</option>
                                         <option value="Corporate Checking">Corporate Checking</option>
                                         <option value="Corporate Saving">Corporate Saving</option>
-                                        <option value="Time Deposite">Time Deposite</option>
+                                        <option value="Time Deposit">Time Deposit</option>
                                     </select>
                                 </label>
                                 <br>
