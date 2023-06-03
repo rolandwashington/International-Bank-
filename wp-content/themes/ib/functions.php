@@ -314,6 +314,7 @@ function create_custom_tables() {
 
 add_action( 'after_setup_theme', 'create_custom_tables' );
 
+add_theme_support('post-thumbnails');
 
 function create_ib_recruitment_post_type() {
     $labels = array(
@@ -336,7 +337,7 @@ function create_ib_recruitment_post_type() {
         'public' => true,
         'has_archive' => true,
         'rewrite' => array('slug' => 'ib-recruitment'),
-        'menu_icon' => 'dashicons-businessman',
+        'menu_icon' => 'dashicons-portfolio',
         'supports' => array('title', 'editor', 'thumbnail'),
         'taxonomies' => array('category'),
     );
@@ -345,35 +346,105 @@ function create_ib_recruitment_post_type() {
 }
 add_action('init', 'create_ib_recruitment_post_type');
 
-// Display custom fields on the edit screen
-function display_ib_recruitment_custom_fields() {
-    // Get the current values from the database
-    $minSalary = get_post_meta(get_the_ID(), 'min_salary', true);
-    $maxSalary = get_post_meta(get_the_ID(), 'max_salary', true);
-    $jobAddress = get_post_meta(get_the_ID(), 'job_address', true);
-    ?>
-    <input type="text" name="min_salary" value="<?php echo esc_attr($minSalary); ?>" placeholder="Minimum Salary">
-    <input type="text" name="max_salary" value="<?php echo esc_attr($maxSalary); ?>" placeholder="Maximum Salary">
-    <input type="text" name="job_address" value="<?php echo esc_attr($jobAddress); ?>" placeholder="Job Address">
-    <?php
+// Display custom fields on the edit screen for 'IB Recruitment'
+function display_ib_recruitment_custom_fields($post) {
+    if ($post->post_type === 'ib_recruitment') {
+        // Get the current values from the database
+        $minSalary = get_post_meta($post->ID, 'min_salary', true);
+        $maxSalary = get_post_meta($post->ID, 'max_salary', true);
+        $jobAddress = get_post_meta($post->ID, 'job_address', true);
+        ?>
+        <input type="text" name="min_salary" value="<?php echo esc_attr($minSalary); ?>" placeholder="Minimum Salary">
+        <input type="text" name="max_salary" value="<?php echo esc_attr($maxSalary); ?>" placeholder="Maximum Salary">
+        <input type="text" name="job_address" value="<?php echo esc_attr($jobAddress); ?>" placeholder="Job Address">
+        <?php
+    }
 }
 
-// Save custom fields when the post is updated
+// Save custom fields when the 'IB Recruitment' post is updated
 function save_ib_recruitment_custom_fields($post_id) {
-    if (isset($_POST['min_salary'])) {
-        update_post_meta($post_id, 'min_salary', sanitize_text_field($_POST['min_salary']));
-    }
-    if (isset($_POST['max_salary'])) {
-        update_post_meta($post_id, 'max_salary', sanitize_text_field($_POST['max_salary']));
-    }
-    if (isset($_POST['job_address'])) {
-        update_post_meta($post_id, 'job_address', sanitize_text_field($_POST['job_address']));
+    $post_type = get_post_type($post_id);
+    if ($post_type === 'ib_recruitment') {
+        if (isset($_POST['min_salary'])) {
+            update_post_meta($post_id, 'min_salary', sanitize_text_field($_POST['min_salary']));
+        }
+        if (isset($_POST['max_salary'])) {
+            update_post_meta($post_id, 'max_salary', sanitize_text_field($_POST['max_salary']));
+        }
+        if (isset($_POST['job_address'])) {
+            update_post_meta($post_id, 'job_address', sanitize_text_field($_POST['job_address']));
+        }
     }
 }
 
 add_action('edit_form_after_title', 'display_ib_recruitment_custom_fields');
-add_action('save_post_ib_recruitment', 'save_ib_recruitment_custom_fields');
+add_action('save_post', 'save_ib_recruitment_custom_fields');
 
+
+
+
+
+// IB TEAM MEMBERS
+function ib_team_members() {
+    $labels = array(
+        'name' => 'IB Team Member',
+        'singular_name' => 'IB Team Member',
+        'add_new' => 'Add New',
+        'add_new_item' => 'Add New Member',
+        'edit_item' => 'Edit Member',
+        'new_item' => 'New Member',
+        'view_item' => 'View Member',
+        'search_items' => 'Search IB Team Member',
+        'not_found' => 'No Team Member found',
+        'not_found_in_trash' => 'No Team Member found in Trash',
+        'parent_item_colon' => '',
+        'menu_name' => 'IB Team Member'
+    );
+
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'has_archive' => true,
+        'rewrite' => array('slug' => 'ib-team_member'),
+        'menu_icon' => 'dashicons-businessman',
+        'supports' => array('title', 'editor', 'thumbnail'),
+        'taxonomies' => array('category')
+    );
+
+    register_post_type('ib_team_member', $args);
+}
+add_action('init', 'ib_team_members');
+
+// Display custom fields on the edit screen for 'IB Team Member'
+function team_member_extra_details($post) {
+    if ($post->post_type === 'ib_team_member') {
+        // Get the current values from the database
+        $position = get_post_meta($post->ID, 'job_position', true);
+        ?>
+        <input type="text" name="job_position" value="<?php echo esc_attr($position); ?>" placeholder="Position">
+        <?php
+    }
+}
+
+
+// Save custom fields when the 'IB Team Member' post is updated
+function save_team_member_extra_details($post_id) {
+    $post_type = get_post_type($post_id);
+    if ($post_type === 'ib_team_member' && isset($_POST['job_position'])) {
+        update_post_meta($post_id, 'job_position', sanitize_text_field($_POST['job_position']));
+    }
+}
+
+function change_title_placeholder_text($title_placeholder, $post) {
+    if ($post->post_type === 'ib_team_member') {
+        $title_placeholder = 'Add Member Name';
+    }
+    return $title_placeholder;
+}
+add_filter('enter_title_here', 'change_title_placeholder_text', 10, 2);
+
+add_action('edit_form_after_title', 'team_member_extra_details');
+add_action('save_post', 'save_team_member_extra_details');
 
 
 

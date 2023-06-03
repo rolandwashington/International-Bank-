@@ -41,163 +41,127 @@
 				<section id="ib-team" class="wpb_row row-fluid section-padd no-top">
 					<div class="container">
 						<div class="row">
-							<div class="wpb_column column_container col-sm-12">
-								<div class="column-inner">
-									<div class="wpb_wrapper">
-										<div class="section-head ">
-											<h2 class="section-title">Board of Directors</h2>
-										</div>
-										<div class="empty_space_30"></div>
-									</div>
-								</div>
-							</div>
-							<div class="wpb_column column_container col-sm-6 col-md-3">
-								<div class="column-inner">
-									<div class="wpb_wrapper">
-										<div class="member-item radius">
-											<div class="avatar">
-												<img src="<?php echo get_template_directory_uri(); ?>/images/our-team/Pa_Macoumba_Njie1.jpg" alt=""> <span class="overlay"></span>
-											</div>
-											<div class="mem-info">
-												<h5>Pa Macoumba Njie<span class="font12 normal">Chairman</span></h5>
-												<p></p>
-											</div>
-										</div>
-										<div class="empty_space_30"></div>
-									</div>
-								</div>
-							</div>
-							<div class="wpb_column column_container col-sm-6 col-md-3">
-								<div class="column-inner">
-									<div class="wpb_wrapper">
-										<div class="member-item radius">
-											<div class="avatar">
-												<img src="<?php echo get_template_directory_uri(); ?>/images/our-team/Stephen_Cashin.jpg" alt=""> <span class="overlay"></span>
-											</div>
-											<div class="mem-info">
-												<h5>Stephen D. Cashin<span class="font12 normal">Director</span></h5>
-												<p></p>
+							<?php 
+								$args = array(
+									'post_type' => 'ib_team_member',
+									'posts_per_page' => -1,
+									'tax_query' => array(
+										array(
+											'taxonomy' => 'category',
+											'field' => 'slug',
+											'terms' => 'directors',
+										),
+									),
+								);
+								
+								$query = new WP_Query($args);
+								
+								if ($query->have_posts()) :
+									?>
+										<div class="wpb_column column_container col-sm-12">
+											<div class="column-inner">
+												<div class="wpb_wrapper">
+													<div class="section-head ">
+														<h2 class="section-title">Board of Directors</h2>
+													</div>
+													<div class="empty_space_30"></div>
+												</div>
 											</div>
 										</div>
-										<div class="empty_space_30"></div>
-									</div>
-								</div>
-							</div>
-							<div class="wpb_column column_container col-sm-6 col-md-3">
-								<div class="column-inner">
-									<div class="wpb_wrapper">
-										<div class="member-item radius">
-											<div class="avatar">
-												<img src="<?php echo get_template_directory_uri(); ?>/images/our-team/Brumskine_Charlyne.jpg" alt=""> <span class="overlay"></span>
+									<?php
+									while ($query->have_posts()) :
+										$query->the_post();
+										?>
+											<div class="wpb_column column_container col-sm-6 col-md-3">
+												<div class="column-inner">
+													<div class="wpb_wrapper">
+														<div class="member-item radius">
+															<div class="avatar">
+																<?php the_post_thumbnail(); ?>
+															</div>
+															<div class="mem-info">
+																<h5>
+																	<a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+																	<span class="font12 normal"><?php echo get_post_meta(get_the_ID(), 'job_position', true); ?></span>
+																</h5>
+															</div>
+														</div>
+														<div class="empty_space_30"></div>
+													</div>
+												</div>
 											</div>
-											<div class="mem-info">
-												<h5>Charlyne M. Brumskine<span class="font12 normal">Director</span></h5>
-												<p></p>
-											</div>
-										</div>
-										<div class="empty_space_30"></div>
-									</div>
-								</div>
-							</div>
-							<div class="wpb_column column_container col-sm-6 col-md-3">
-								<div class="column-inner">
-									<div class="wpb_wrapper">
-										<div class="member-item radius">
-											<div class="avatar">
-												<img src="<?php echo get_template_directory_uri(); ?>/images/our-team/Franklin_Hayford.jpg" alt=""> <span class="overlay"></span>
-											</div>
-											<div class="mem-info">
-												<h5>Franklin Afedzi Hayford<span class="font12 normal">Director</span></h5>
-												<p></p>
-											</div>
-										</div>
-										<div class="empty_space_30"></div>
-									</div>
-								</div>
-							</div>
-							<div class="wpb_column column_container col-sm-6 col-md-3">
-								<div class="column-inner">
-									<div class="wpb_wrapper">
-										<div class="member-item radius">
-											<div class="avatar">
-												<img src="<?php echo get_template_directory_uri(); ?>/images/our-team/NJILAN_SENGHORE.jpg" alt=""> <span class="overlay"></span>
-											</div>
-											<div class="mem-info">
-												<h5>Njilan Senghore<span class="font12 normal">Director</span></h5>
-												<p></p>
-											</div>
-										</div>
-										<div class="empty_space_30  lg-hidden"></div>
-									</div>
-								</div>
-							</div>
-							
-							<div class="wpb_column column_container col-sm-6 col-md-3">
-								<div class="column-inner">
-									<div class="wpb_wrapper">
-										<div class="member-item radius">
-											<div class="avatar">
-												<img src="<?php echo get_template_directory_uri(); ?>/images/our-team/5.png" alt=""> <span class="overlay"></span>
-											</div>
-											<div class="mem-info">
-												<h5>Abigail Urey Miller<span class="font12 normal">Director</span></h5>
-												<p></p>
-											</div>
-			                            </div>
-			                        </div>
-			                    </div>
-			                </div>
+										<?php
+									endwhile;
+									wp_reset_postdata();
+								else :
+									echo 'No IB Team Members found.';
+								endif;
+
+							?>
 			            </div>
 			        </div>
 				</section>
 
 				<section id="ib-team" class="wpb_row row-fluid section-padd no-top">
 					<div class="container">
-						<div class="row">
-							<div class="wpb_column column_container col-sm-12">
-								<div class="column-inner">
-									<div class="wpb_wrapper">
-										<div class="section-head ">
-											<h2 class="section-title">Executive Management</h2>
-										</div>
-										<div class="empty_space_30"></div>
-									</div>
-								</div>
-							</div>
-							
-							<div class="wpb_column column_container col-sm-6 col-md-3">
-								<div class="column-inner">
-									<div class="wpb_wrapper">
-										<div class="member-item radius">
-											<div class="avatar">
-												<img src="<?php echo get_template_directory_uri(); ?>/images/our-team/2.png" alt=""> <span class="overlay"></span>
+						<div class="row">							
+							<?php 
+								$args = array(
+									'post_type' => 'ib_team_member',
+									'posts_per_page' => -1,
+									'tax_query' => array(
+										array(
+											'taxonomy' => 'category',
+											'field' => 'slug',
+											'terms' => 'executive-managers',
+										),
+									),
+								);
+								
+								$query = new WP_Query($args);
+								
+								if ($query->have_posts()) :
+									?>
+										<div class="wpb_column column_container col-sm-12">
+											<div class="column-inner">
+												<div class="wpb_wrapper">
+													<div class="section-head ">
+														<h2 class="section-title">Executive Management</h2>
+													</div>
+													<div class="empty_space_30"></div>
+												</div>
 											</div>
-											<div class="mem-info">
-												<h5>Prince E. Biney<span class="font12 normal">General Manager</span></h5>
-												<p></p>
-											</div>
 										</div>
-										<div class="empty_space_30  lg-hidden"></div>
-									</div>
-								</div>
-							</div>
+									<?php
+									while ($query->have_posts()) :
+										$query->the_post();
+										?>
+											<div class="wpb_column column_container col-sm-6 col-md-3">
+												<div class="column-inner">
+													<div class="wpb_wrapper">
+														<div class="member-item radius">
+															<div class="avatar">
+																<?php the_post_thumbnail(); ?>
+															</div>
+															<div class="mem-info">
+																<h5>
+																	<a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+																	<span class="font12 normal"><?php echo get_post_meta(get_the_ID(), 'job_position', true); ?></span>
+																</h5>
+															</div>
+														</div>
+														<div class="empty_space_30"></div>
+													</div>
+												</div>
+											</div>
+										<?php
+									endwhile;
+									wp_reset_postdata();
+								else :
+									echo 'No IB Executive Members found.';
+								endif;
 
-							<div class="wpb_column column_container col-sm-6 col-md-3">
-								<div class="column-inner">
-									<div class="wpb_wrapper">
-										<div class="member-item radius">
-											<div class="avatar">
-												<img src="<?php echo get_template_directory_uri(); ?>/images/our-team/Henry_Saamoi.jpg" alt=""> <span class="overlay"></span>
-											</div>
-											<div class="mem-info">
-												<h5>Henry Fallah Saamoi<span class="font12 normal">Chief Executive Officer</span></h5>
-												<p></p>
-											</div>
-										</div>
-										<div class="empty_space_30  lg-hidden"></div>
-									</div>
-								</div>
-							</div>
+							?>
 			            </div>
 			        </div>
 				</section>

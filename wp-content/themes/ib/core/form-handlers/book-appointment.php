@@ -80,7 +80,7 @@
     
         try {
             $mail->send();
-            $ThankYou = "You have successfully booked your appointment";
+            $ThankYou = "You have successfully booked your appointment.";
 
         } catch (Exception $e) {
             $ThankYou = "Unable to submit form, please try again.";

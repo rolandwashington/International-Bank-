@@ -1702,6 +1702,11 @@ button.wpcf7-form-control.wpcf7-submit.btn.form-half-width.service-button {
     margin-top: 2rem;
 }
 
+button.wpcf7-form-control.wpcf7-submit.btn.form-half-width.service-button {
+    margin-top: 1rem;
+    margin-bottom: .8rem;
+}
+
 @media screen and (max-width: 992px) {
     #appointment .content-box .application-form .input-group{
         flex-direction: column;
@@ -1733,4 +1738,8 @@ button.search-button {
     border: 1px dotted var(--ib-secondary);
     background: var(--ib-primary);
     color: var(--ib-white);
+}
+
+#primary .entry-media.thumbnail {
+    width: 30rem;
 }

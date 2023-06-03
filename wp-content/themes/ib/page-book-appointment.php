@@ -66,7 +66,7 @@
                                                     <option value="Private">Private</option>
                                                 </select>
                                                 <input type="date" name="date" required>
-                                                <input type="time" name="time" placeholder="Enter Mobile Number" required>
+												<input type="time" value="09:00" name="time" placeholder="Enter Mobile Number" required>
                                             </label>
                                             
                                             <label for="contact-info">
