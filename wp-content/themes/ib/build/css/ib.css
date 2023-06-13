@@ -1743,3 +1743,7 @@ button.search-button {
 #primary .entry-media.thumbnail {
     width: 30rem;
 }
+
+.mem-info h5 a {
+    color: #fff;
+}
