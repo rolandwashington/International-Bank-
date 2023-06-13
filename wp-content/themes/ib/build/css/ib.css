@@ -448,6 +448,10 @@ a.find-branch {
         width: 10rem;
     }
 
+    .ib-literature-wrap {
+        margin-top: -3rem;
+    }
+
     .find-ib-branches .row,
     .ib-literature-wrap {
         flex-direction: column;
@@ -460,6 +464,10 @@ a.find-branch {
     }
 
     .ib-map-literature a.find-branch {
+        margin: 0 auto;
+    }
+
+    .ib-map-literature a.appointment {
         margin: 1rem auto 4rem;
     }
 
@@ -593,8 +601,13 @@ a.find-branch {
 
     .section-title {
         font-size: 2.5rem;
-        padding-left: 2rem;
-        margin-top: -3rem;
+        margin-top: -2rem;
+    }
+
+    .section-title.choice {
+        font-size: 2rem;
+        margin-top: -2rem;
+        text-align: center;
     }
 
     .career-box .content-box {
@@ -1096,6 +1109,18 @@ input[type="checkbox"] {
     .career-box input {
         width: 100%;
     }
+    .career-box .account-user-title input:last-child {
+        width: 10rem;
+    }
+
+    div#ib-application-form {
+        margin-top: -5.6rem;
+    }
+
+    .career-box>h5 {
+        background: var(--ib-primary);
+        text-align: center;
+    }
 
     .form-half-width:not(:last-child) {
         margin-bottom: 1rem;
@@ -1158,10 +1183,11 @@ input[type="checkbox"] {
 }
 
 .ib-background-secondary.form-header {
-    color: var(--ib-white);
-    padding: .5rem 1.5rem;
+    color: var(--ib-secondary);
     width: 97%;
     margin: 0;
+    background: transparent;
+    padding: 0;
 }
 
 .government-official-position,
@@ -1335,7 +1361,7 @@ input[type="checkbox"] {
     }
 
     .ib-promotion-image img {
-        margin-top: 5.5rem;
+        margin-top: 4.5rem;
     }
 
     .ib-ads .wpb_text_column.wpb_content_element.text-light {
@@ -1412,9 +1438,8 @@ input[type="checkbox"] {
         text-align: left;
     }
 
-    .ib-location p {
-        margin-left: 2rem;
-        margin-right: 1rem;
+    .ib-location:first-child {
+        margin-top: 0;
     }
 
     .ib-location .service-box {
@@ -1422,6 +1447,10 @@ input[type="checkbox"] {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    #close-ib-map-wrap {
+        width: 97vw!important;
     }
 
     p.ib-address-wrap.get-in-touch-wrap,

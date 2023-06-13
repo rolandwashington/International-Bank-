@@ -107,8 +107,8 @@
                             <li class="menu-item-has-children"><a href="<?php echo site_url( '/about' ) ?>">ABOUT</a>
                                 <ul class="sub-menu">
                                     <li><a href="<?php echo site_url( '/about#ib-team' ) ?>">OUR TEAM</a></li>
-                                    <li><a href="<?php echo site_url( '/about#ib-partners' ) ?>">IB PARTNERS</a></li>
-                                    <li><a href="<?php echo site_url( '/about#ib-community' ) ?>">IB IN THE COMMUNITY</a></li>
+                                    <li><a href="<?php echo site_url( '/our-partners' ) ?>">IB PARTNERS</a></li>
+                                    <li><a href="<?php echo site_url( '/ib-community' ) ?>">IB IN THE COMMUNITY</a></li>
                                     <li><a href="<?php echo site_url( '/locations' ) ?>">IB LOCATIONS</a></li>
                                     <li><a href="<?php echo site_url( '/book-appointment' ) ?>">BOOK APPOINTMENT</a></li>
                                 </ul>

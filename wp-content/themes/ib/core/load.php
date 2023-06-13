@@ -6,7 +6,9 @@
         $AppointmentEmail          = 'admin@international-bank.thekreativezone.com';
         $SMTPReciverEmailAddress   = 'admin@international-bank.thekreativezone.com';
     }
-    $SMTPEmailAddress   = 'admin@international-bank.thekreativezone.com';
-    $SMTPEmailPassword  = 'p$TpsM!!BTFkzx8Q&pJK!';
-    $SMTPHost           = 'box2064.bluehost.com';
+    $SMTPEmailAddress   = 'tkz@ibliberia.com';
+    $SMTPEmailPassword  = 'rqQ06Ufub!^)';
+    $SMTPHost           = 'box5735.bluehost.com';
     $SMTPPortNumber     = 25;
+
+    

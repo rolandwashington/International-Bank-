@@ -66,7 +66,7 @@
                     <div class="column-inner">
                         <div class="wpb_wrapper">
                             <div class="section-head">
-                                <h3 class="section-title">Choose what's right for you</h3>
+                                <h3 class="section-title choice">Choose what's right for you</h3>
                             </div>
 
                             <div id="ib-services" class="testi-slider" data-show="5" data-arrow="true">
@@ -156,6 +156,8 @@
                         <h4 class="web-display-none">Visit Us</h4>
                         <p class="contact-branches">9 branches across Liberia</p>
                         <a class="btn find-branch web-display-none" href="<?php echo site_url( '/locations' ) ?>">Find a branch</a>
+                        <a href="<?php echo site_url( '/book-appointment' ) ?>" class="btn appointment web-display-none">Book Appointment</a>
+
                         <img src="<?php echo get_template_directory_uri() . '/images/ib-map.png' ?>" class="ib-map-image web-display-none" alt="">
 
                         <img src="<?php echo get_template_directory_uri() . '/icons/get-in-touch.png' ?>" alt="" class="ib-location-pin web-display-none">
@@ -178,7 +180,7 @@
                         </p>
                         <p class="time-to-reach-out web-display-none">Monday to Friday - 9AM to 2PM<br>Saturday 9AM to 12 Noon</p>
                         <a class="btn find-branch mobile-display-none" href="<?php echo site_url( '/locations' ) ?>">Find a branch</a>
-                        <a href="<?php echo site_url( '/book-appointment' ) ?>" class="btn appointment">Book Appointment</a>
+                        <a href="<?php echo site_url( '/book-appointment' ) ?>" class="btn appointment mobile-display-none">Book Appointment</a>
                     </div>
                     <div class="ib-map">
                         <img src="<?php echo get_template_directory_uri() . '/images/ib-map.png' ?>" class="ib-map-image mobile-display-none" alt="">
