@@ -19,7 +19,7 @@
 				while (have_posts()) {
 					the_post();
 					?>
-						<div class="row">
+						<div class="resources-wrap">
 							<?php
 							$args = array(
 								'post_type'      => 'ib_resource',
@@ -32,19 +32,13 @@
 								while ($query->have_posts()) :
 									$query->the_post();
 									?>
-										<div class="wpb_column column_container col-xs-12 col-sm-6 col-md-4">
-											<div class="column-inner">
-												<div class="wpb_wrapper">
-													<div class="member-item-3 radius resources">
-														<div class="avatar">
-															<img src="<?php echo get_template_directory_uri(); ?>/images/pdf.png" alt=""> 
-														</div>
-														<div class="mem-info">
-															<h5><?php the_title(); ?></h5>
-															<a href="<?php the_field("upload_pdf") ?>">Download PDF</a>
-														</div>
-													</div>
-												</div>
+										<div class="wrap-resource">
+											<div class="resource-img">
+												<img src="<?php echo get_template_directory_uri(); ?>/images/pdf.png" alt=""> 
+											</div>
+											<div class="resource-info">
+												<h5><?php the_title(); ?></h5>
+												<a href="<?php the_field("upload_pdf") ?>">Download PDF</a>
 											</div>
 										</div>
 									<?php
