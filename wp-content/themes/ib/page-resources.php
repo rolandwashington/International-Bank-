@@ -38,7 +38,7 @@
 											</div>
 											<div class="resource-info">
 												<h5><?php the_title(); ?></h5>
-												<a href="<?php the_field("upload_pdf") ?>">Download PDF</a>
+												<a href="<?php the_field("upload_pdf") ?>" target="_blank">Download PDF</a>
 											</div>
 										</div>
 									<?php
