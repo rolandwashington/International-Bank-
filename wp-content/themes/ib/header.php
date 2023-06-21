@@ -115,7 +115,10 @@
                             </li>
                             <li class="menu-item-has-children"><a href="<?php echo site_url() ?>/publications">PUBLICATIONS</a>
                                 <ul class="sub-menu">
-                                    <li><a href="<?php echo site_url( '/publications' ) ?>">PUBLICATIONS</a></li>
+                                    <li><a href="<?php echo site_url( '/publications' ) ?>">ANNOUNCEMENT</a></li>
+                                    <li><a href="<?php echo site_url( '/online-forms' ) ?>">ONLINE APPLICATION FORMS</a></li>
+                                    <li><a href="<?php echo site_url( '/resources' ) ?>">RESOURCES</a></li>
+                                    <li><a href="<?php echo site_url( '/media-gallery' ) ?>">MEDIA & GALLERY</a></li>
                                     <li><a href="<?php echo site_url( '/blog' ) ?>">BLOG</a></li>
                                 </ul>
                             </li>
@@ -204,6 +207,7 @@
                     <div class="ib-navigation">
                         <a href="<?php echo site_url( '/publications' ) ?>" class="ib-menu-link">Announcement</a>
                         <a href="<?php echo site_url( '/online-forms' ) ?>" class="ib-menu-link">Online Application Forms</a>
+                        <a href="<?php echo site_url( '/resources' ) ?>" class="ib-menu-link">Resources</a>
                         <a href="<?php echo site_url( '/media-gallery' ) ?>" class="ib-menu-link">Media & Gallery</a>
                         <a href="<?php echo site_url( '/blog' ) ?>" class="ib-menu-link">Blog</a>
                     </div>
@@ -309,6 +313,7 @@
                             <div class="ib-navigation">
                                 <a href="<?php echo site_url( '/publications' ) ?>" class="ib-menu-link">Announcement</a>
                                 <a href="<?php echo site_url( '/online-forms' ) ?>" class="ib-menu-link">Online Application Forms</a>
+                                <a href="<?php echo site_url( '/resources' ) ?>" class="ib-menu-link">Resources</a>
                                 <a href="<?php echo site_url( '/media-gallery' ) ?>" class="ib-menu-link">Media & Gallery</a>
                                 <a href="<?php echo site_url( '/blog' ) ?>" class="ib-menu-link">Blog</a>
                             </div>

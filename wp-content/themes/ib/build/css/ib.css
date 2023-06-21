@@ -1776,3 +1776,37 @@ button.search-button {
 .mem-info h5 a {
     color: #fff;
 }
+
+.member-item-3.resources > div {
+    width: 2%;
+}
+
+.wpb_column.column_container.col-sm-12.col-md-4 {
+    margin-bottom: 2rem;
+}
+
+.resources .mem-info a {
+    background: var(--ib-gray);
+    color: var(--ib-white);
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    font-weight: 500;
+}
+
+.resources .mem-info h5 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2; /* Number of lines to display */
+    line-height: 1.2; /* Adjust as needed */
+    max-height: 2.4em; /* Adjust as needed based on line height */
+}
+
+.resources .mem-info a:hover {
+    background: var(--ib-primary);
+}
+
+.member-item-3 .mem-info {
+    padding: 2rem 2.5rem;
+}

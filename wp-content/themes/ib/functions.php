@@ -448,3 +448,33 @@ add_action('save_post', 'save_team_member_extra_details');
 
 
 
+// UPLOAD RESOURCES (.PDF)
+// Register custom post type: IB Resource
+function custom_ib_resource_post_type() {
+    $labels = array(
+        'name'               => 'IB Resources',
+        'singular_name'      => 'IB Resource',
+        'add_new'            => 'Add New',
+        'add_new_item'       => 'Add New IB Resource',
+        'edit_item'          => 'Edit IB Resource',
+        'new_item'           => 'New IB Resource',
+        'all_items'          => 'All IB Resources',
+        'view_item'          => 'View IB Resource',
+        'search_items'       => 'Search IB Resources',
+        'not_found'          => 'No IB Resources found',
+        'not_found_in_trash' => 'No IB Resources found in Trash',
+        'menu_name'          => 'IB Resources'
+    );
+
+    $args = array(
+        'labels'      => $labels,
+        'public'      => true,
+        'menu_icon'   => 'dashicons-book',
+        'supports'    => array('title'),
+        'has_archive' => true,
+        'rewrite'     => array('slug' => 'ib-resources')
+    );
+
+    register_post_type('ib_resource', $args);
+}
+add_action('init', 'custom_ib_resource_post_type');
