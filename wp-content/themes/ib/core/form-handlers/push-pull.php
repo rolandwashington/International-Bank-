@@ -2,12 +2,14 @@
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\SMTP;
     use PHPMailer\PHPMailer\Exception;
+    use Dompdf\Dompdf;
 
     require_once get_template_directory() . "/core/load.php";
     
     require_once "PHPMailer/src/PHPMailer.php";
     require_once "PHPMailer/src/SMTP.php";
     require_once "PHPMailer/src/Exception.php";
+    require get_template_directory() . "/vendor/autoload.php";
 
     if (isset($_POST["submit-push-pull"])) {
         $ApplicantTitleRedio            = $_POST["title"];
@@ -186,9 +188,17 @@
             </div>
             <br>
         ";
-        
-        $mail->Body = $message;
-    
+
+        // Generate PDF
+        $dompdf = new Dompdf;
+        $dompdf->loadHtml($message);
+        $dompdf->setPaper('A4', 'portrait');
+        $dompdf->render();
+        $pdfContent = $dompdf->output();
+
+        // Send PDF as an attachment
+        $mail->addStringAttachment($pdfContent, 'application.pdf', 'base64', 'application/pdf');
+
         try {
             $mail->send();
             global $wpdb;
@@ -222,6 +232,5 @@
         } catch (Exception $e) {
             $ThankYou = "Unable to submit application, please try again.";
         }
-        
     }
 ?>

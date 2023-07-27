@@ -27,7 +27,7 @@
 
 										<div class="wpb_text_column wpb_content_element about-text">
 											<div class="wpb_wrapper">
-												<p>International Bank (Liberia) Limited has been providing quality banking services to the Liberian community for over 50 years. IBLL was Formally, known as ITC, which was established in 1947 by an act of legislature to manage the Liberian maritime program. ITC opened its commercial banking department in 1960 to handle customers account, money transfers and provide credit facilities, and in 2000 became a standalone commercial bank, adopting the name - International Bank (Liberia) Limited. </p>
+												<p>International Bank (Liberia) Limited has been providing quality banking services to the Liberian community for over 50 years. IBLL was formally, known as ITC, which was established in 1947 by an act of legislature to manage the Liberian maritime program. ITC opened its commercial banking department in 1960 to handle customers account, money transfers and provide credit facilities, and in 2000 became a standalone commercial bank, adopting the name - International Bank (Liberia) Limited. </p>
 												<p>Over the years, IB has provided excellent and unparalleled 1st class services to its customers and is committed to empowering Liberians and playing its role in the building of the nation.</p>
 											</div>
 										</div>

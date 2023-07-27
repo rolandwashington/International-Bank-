@@ -9,7 +9,7 @@
 			<div class="breadc-box no-line">
 				<div class="row">
 					<div class="col-md-6">
-                        <h6><span>GET AN ACCOUNT</span></h6>
+                        <h6><span>OPEN AN ACCOUNT</span></h6>
 						<h1 class="page-title">Application Form <?php if (!empty($ThankYou)) { echo $ThankYou; } ?></h1>
 					</div>
 				</div>
@@ -47,7 +47,7 @@
                                     </div> 
                                     <div class="ib-upload-image-wrap ib-upload-image">
                                         <span>SELECT IMAGE</span>
-                                        <input type="file" class="" name="passport-size" id="ib-input-image" required>
+                                        <input type="file" class="" name="passport-size" id="ib-input-image">
                                     </div>
                                 </div>
 
@@ -105,7 +105,7 @@
                                     </div> 
                                     <div class="ib-upload-image-wrap ib-upload-image">
                                         <span>SELECT CARD</span>
-                                        <input type="file" class="" name="id-card" id="id-card" required>
+                                        <input type="file" class="" name="id-card" id="id-card">
                                     </div>
                                 </div>
 

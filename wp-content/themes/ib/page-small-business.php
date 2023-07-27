@@ -61,7 +61,7 @@
                         <div class="wpb_wrapper">
                             <div class="section-head ">
                                 <!-- <h6><span>OUR SERVICES</span></h6> -->
-                                <h2 class="section-title">Get An Account</h2>
+                                <h2 class="section-title">Open An Account</h2>
                             </div>
                         </div>
                     </div>

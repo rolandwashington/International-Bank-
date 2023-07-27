@@ -82,7 +82,7 @@
                             <li class="current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children">
                                 <a href="<?php echo site_url( '/personal' ) ?>">PERSONAL</a>
                                 <ul class="sub-menu">
-                                    <li class="menu-item-2016"><a href="<?php echo site_url( '/personal/#ib-personal-get-an-account' ) ?>">GET AN ACCOUNT</a></li>
+                                    <li class="menu-item-2016"><a href="<?php echo site_url( '/personal/#ib-personal-get-an-account' ) ?>">OPEN AN ACCOUNT</a></li>
                                     <li class="menu-item-2015"><a href="<?php echo site_url( '/personal/#ib-personal-credit-facilities' ) ?>">CREDIT FACILITIES</a></li>
                                     <li class="menu-item-2059"><a href="<?php echo site_url( '/personal/#ib-e-banking' ) ?>">E-BANKING</a></li>
                                 </ul>
@@ -90,7 +90,7 @@
                             <li class="menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1731">
                                 <a href="<?php echo site_url( '/small-business' ) ?>">SMALL BUSINESS</a>
                                 <ul class="sub-menu">
-                                    <li class="menu-item-1738"><a href="<?php echo site_url( '/small-business/#ib-small-business-get-an-account' ) ?>">GET AN ACCOUNT</a></li>
+                                    <li class="menu-item-1738"><a href="<?php echo site_url( '/small-business/#ib-small-business-get-an-account' ) ?>">OPEN AN ACCOUNT</a></li>
                                     <li class="menu-item-1745"><a href="<?php echo site_url( '/small-business/#ib-small-business-credit-facilities' ) ?>">BUSINESS CREDIT FACILITIES</a></li>
                                     <li class="menu-item-1742"><a href="<?php echo site_url( '/small-business/#ib-small-business-e-banking' ) ?>">BUSINESS E-BANKING</a></li>
                                     <li class="menu-item-1746"><a href="<?php echo site_url( '/other-services' ) ?>">OTHER SERVICES</a></li>
@@ -99,7 +99,7 @@
                             <li class="menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1789">
                                 <a href="<?php echo site_url( '/corporate-institutional' ) ?>">CORPORATE & INSTITUTIONAL</a>
                                 <ul class="sub-menu">
-                                    <li class="menu-item-1791"><a href="<?php echo site_url( '/corporate-institutional/#ib-corporate-get-an-account' ) ?>">GET AN ACCOUNT</a></li>
+                                    <li class="menu-item-1791"><a href="<?php echo site_url( '/corporate-institutional/#ib-corporate-get-an-account' ) ?>">OPEN AN ACCOUNT</a></li>
                                     <li class="menu-item-1758"><a href="<?php echo site_url( '/corporate-institutional/#ib-corporate-credit-facilities' ) ?>">CREDIT FACILITIES</a></li>
                                     <li class="menu-item-1790"><a href="<?php echo site_url( '/corporate-institutional/#ib-e-banking' ) ?>">E-BANKING</a></li>
                                 </ul>
@@ -166,7 +166,7 @@
             <div class="ib-sub-header">
                 <div class="ib-sub-header-wrap">
                     <div class="ib-navigation">
-                        <a href="<?php echo site_url( '/personal/#ib-personal-get-an-account' ) ?>" class="ib-menu-link" id="personal-get-account">GET AN ACCOUNT</a>
+                        <a href="<?php echo site_url( '/personal/#ib-personal-get-an-account' ) ?>" class="ib-menu-link" id="personal-get-account">OPEN AN ACCOUNT</a>
                         <a href="<?php echo site_url( '/personal/#ib-personal-credit-facilities' ) ?>" class="ib-menu-link" id="personal-credit">CREDIT FACILITIES</a>
                         <a href="<?php echo site_url( '/personal/#ib-e-banking" class="ib-menu-link' ) ?>" id="personal-ebanking">E-BANKING</a>
                     </div>
@@ -175,7 +175,7 @@
             <div class="ib-sub-header">
                 <div class="ib-sub-header-wrap">
                     <div class="ib-navigation">
-                        <a href="<?php echo site_url( '/small-business/#ib-small-business-get-an-account' ) ?>" class="ib-menu-link" id="small-business-get-account">GET AN ACCOUNT</a>
+                        <a href="<?php echo site_url( '/small-business/#ib-small-business-get-an-account' ) ?>" class="ib-menu-link" id="small-business-get-account">OPEN AN ACCOUNT</a>
                         <a href="<?php echo site_url( '/small-business/#ib-small-business-credit-facilities' ) ?>" class="ib-menu-link" id="small-business-credit">BUSINESS CREDIT FACILITIES</a>
                         <a href="<?php echo site_url( '/small-business/#ib-small-business-e-banking' ) ?>" class="ib-menu-link" id="small-business-ebanking">BUSINESS E-BANKING</a>
                         <a href="<?php echo site_url( '/other-services' ) ?>" class="ib-menu-link">OTHER SERVICES</a>
@@ -185,7 +185,7 @@
             <div class="ib-sub-header">
                 <div class="ib-sub-header-wrap">
                     <div class="ib-navigation">
-                        <a href="<?php echo site_url( '/corporate-institutional/#ib-corporate-get-an-account' ) ?>" id="corporate-get-account" class="ib-menu-link">GET AN ACCOUNT</a>
+                        <a href="<?php echo site_url( '/corporate-institutional/#ib-corporate-get-an-account' ) ?>" id="corporate-get-account" class="ib-menu-link">OPEN AN ACCOUNT</a>
                         <a href="<?php echo site_url( '/corporate-institutional/#ib-corporate-credit-facilities' ) ?>" id="corporate-credit" class="ib-menu-link">CREDIT FACILITIES</a>
                         <a href="<?php echo site_url( '/corporate-institutional/#ib-e-banking' ) ?>" id="corporate-e-banking" class="ib-menu-link">E-BANKING</a>
                     </div>
@@ -228,7 +228,7 @@
                     <div class="ib-sub-header">
                         <div class="ib-sub-header-wrap">
                             <div class="ib-navigation">
-                                <a href="#ib-personal-get-an-account" class="ib-menu-link" id="personal-get-account">GET AN ACCOUNT</a>
+                                <a href="#ib-personal-get-an-account" class="ib-menu-link" id="personal-get-account">OPEN AN ACCOUNT</a>
                                 <a href="#ib-personal-credit-facilities" class="ib-menu-link" id="personal-credit">CREDIT FACILITIES</a>
                                 <a href="#ib-e-banking" class="ib-menu-link" id="personal-ebanking">E-BANKING</a>
                             </div>
@@ -248,7 +248,7 @@
                     <div class="ib-sub-header">
                         <div class="ib-sub-header-wrap">
                             <div class="ib-navigation">
-                                <a href="<?php echo site_url( '/small-business/#ib-small-business-get-an-account' ) ?>" class="ib-menu-link" id="small-business-get-account">GET AN ACCOUNT</a>
+                                <a href="<?php echo site_url( '/small-business/#ib-small-business-get-an-account' ) ?>" class="ib-menu-link" id="small-business-get-account">OPEN AN ACCOUNT</a>
                                 <a href="<?php echo site_url( '/small-business/#ib-small-business-credit-facilities' ) ?>" class="ib-menu-link" id="small-business-credit">BUSINESS CREDIT FACILITIES</a>
                                 <a href="<?php echo site_url( '/small-business/#ib-small-business-e-banking' ) ?>" class="ib-menu-link" id="small-business-ebanking">BUSINESS E-BANKING</a>
                                 <a href="<?php echo site_url( '/other-services' ) ?>" class="ib-menu-link">OTHER SERVICES</a>
@@ -269,7 +269,7 @@
                     <div class="ib-sub-header">
                         <div class="ib-sub-header-wrap">
                             <div class="ib-navigation">
-                                <a href="#ib-corporate-get-an-account" id="corporate-get-account" class="ib-menu-link">GET AN ACCOUNT</a>
+                                <a href="#ib-corporate-get-an-account" id="corporate-get-account" class="ib-menu-link">OPEN AN ACCOUNT</a>
                                 <a href="#ib-corporate-credit-facilities" id="corporate-credit" class="ib-menu-link">CREDIT FACILITIES</a>
                                 <a href="#ib-e-banking" id="corporate-e-banking" class="ib-menu-link">E-BANKING</a>
                             </div>

@@ -9,13 +9,13 @@
                         <img class="img-responsive md-hidden sm-hidden xs-hidden" src="<?php echo get_template_directory_uri(); ?>/images/ib-building.png" alt="Image">
                     </div>
                     <div class="tp-caption tp-resizeme font-second text-second bolder" data-x="['left']" data-hoffset="['0','15','15','40']" data-y="center" data-voffset="['-45','-45','-45','-25']" data-width="['670','580','480','320']" data-transform_idle="o:1;" data-transform_in="x:100px;opacity:0;s:800;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1700" data-whitespace="['normal']" data-fontsize="['50','50','40','30']" data-lineheight="['60','60','50','40']" data-responsive_offset="on">
-                        <p><span>Get an Account</span></p>
+                        <p><span>Open an Account</span></p>
                     </div>
                     <div class="tp-caption tp-resizeme sh3" data-x="['left']" data-hoffset="['0','15','15','40']" data-y="center" data-voffset="['20','60','60','60']" data-width="['580','580','480','300']" data-transform_idle="o:1;" data-whitespace="['normal','normal','normal','normal']" data-transform_in="x:100px;opacity:0;s:800;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1900" data-fontsize="['16','16','14','12']" data-lineheight="['24','24','18','16']" data-responsive_offset="on">
                         <p class="ib-about-caption">Let's help you manage your everyday finances.<br>With the best solutions that work for you.</p>
                     </div>
                     <div class="tp-caption" data-x="['left']" data-hoffset="['0','15','15','40']" data-y="bottom" data-voffset="['250','185','185','185']" data-transform_idle="o:1;" data-transform_in="x:100px;opacity:0;s:800;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="2100">
-                        <a class="btn" href="<?php echo site_url( '/personal#ib-personal-get-an-account' ) ?>" id="ib-personal-account">GET AN ACCOUNT</a>
+                        <a class="btn" href="<?php echo site_url( '/personal#ib-personal-get-an-account' ) ?>" id="ib-personal-account">OPEN AN ACCOUNT</a>
                     </div>
                 </li>
 
@@ -62,7 +62,7 @@
                     <div class="column-inner">
                         <div class="wpb_wrapper">
                             <div class="section-head ">
-                                <h2 class="section-title">Get An Account</h2>
+                                <h2 class="section-title">Open An Account</h2>
                             </div>
                         </div>
                     </div>

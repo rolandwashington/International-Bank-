@@ -1,4 +1,4 @@
-<?php    
+<?php
     if ( strstr( $_SERVER['SERVER_NAME'], 'ibliberia.com' ) ) {
         $SMTPReciverEmailAddress   = 'erequest@ibliberia.com';
         $AppointmentEmail          = 'e-appointment@ibliberia.com';

@@ -70,7 +70,7 @@ $('input[type=radio][name=is-account-with-ib]').change(function () {
         if (window.location.href.indexOf("account-application") > -1) {
             // Do nothing!
         } else {
-            $(document).find(".application-form").append('<a class="btn btn-account" href="/account-application.php">GET AN ACCOUNT</a>')
+            $(document).find(".application-form").append('<a class="btn btn-account" href="/account-application.php">OPEN AN ACCOUNT</a>')
         }
     }
 });

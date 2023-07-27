@@ -15,7 +15,7 @@
                         <p class="ib-about-caption">Corporate banking solutions designed to accelerate your institution's growth and manage your finances effectively.</p>
                     </div>
                     <div class="tp-caption" data-x="['left']" data-hoffset="['0','15','15','40']" data-y="bottom" data-voffset="['200','185','185','150']" data-transform_idle="o:1;" data-transform_in="x:100px;opacity:0;s:800;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="2100">
-                        <a class="btn" href="<?php echo site_url() ?>/account-application">Get An Account</a>
+                        <a class="btn" href="<?php echo site_url() ?>/account-application">Open An Account</a>
                     </div>
                 </li>
 
@@ -60,7 +60,7 @@
                         <div class="wpb_wrapper">
                             <div class="section-head ">
                                 <!-- <h6><span>OUR SERVICES</span></h6> -->
-                                <h2 class="section-title">Get An Account</h2>
+                                <h2 class="section-title">Open An Account</h2>
                             </div>
                         </div>
                     </div>
