@@ -63,21 +63,56 @@
                     <div class="col-md-3 col-sm-6 subscribe">
                         <section id="mc4wp_form_widget-1" class="widget widget_mc4wp_form_widget">
                             <h4 class="widget-title">Stay informed of our products and services</h4>
-                            <!-- Mailchimp for WordPress v4.5.2 - https://wordpress.org/plugins/mailchimp-for-wp/ -->
-                            <form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-1696" method="post" data-id="1696" data-name="Consultax Subscribe">
+                            
+                            <form action="https://ibliberia.us11.list-manage.com/subscribe/post?u=0607f2e146792511ba67d651a&amp;id=3cc10a7ba2&amp;f_id=00c1a2e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="mc4wp-form mc4wp-form-1696 validate" target="_blank">
                                 <div class="mc4wp-form-fields">
-                                    <div class="footer-sub">
-                                        <input type="text" name="NAME" placeholder="Name" required="">
-                                        <input type="email" name="EMAIL" placeholder="Email Address" required="">
-                                        <input type="submit" class="btn" value="Subscribe">
+                                    <div id="mc_embed_signup_scroll">
+                                        <div class="mc-field-group">
+                                            <label for="mce-FNAME">First Name <span class="asterisk">*</span></label>
+                                            <input type="text" name="FNAME" class="required text" id="mce-FNAME" required="" value="">
+                                        </div>
+                                        <div class="mc-field-group">
+                                            <label for="mce-LNAME">Last Name <span class="asterisk">*</span></label>
+                                            <input type="text" name="LNAME" class="required text" id="mce-LNAME" required="" value="">
+                                        </div>
+                                        <div class="mc-field-group">
+                                            <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
+                                            <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="">
+                                        </div>
+                                        <div class="mc-field-group">
+                                            <label for="mce-PHONE">Phone Number <span class="asterisk">*</span></label>
+                                            <input type="text" name="PHONE" class="REQ_CSS" id="mce-PHONE" value="">
+                                        </div>
+                                        <div id="mce-responses" class="clear">
+                                            <div class="response" id="mce-error-response" style="display: none;"></div>
+                                            <div class="response" id="mce-success-response" style="display: none;">
+                                                Thank you for subscribing!
+                                            </div>
+                                        </div>
+                                        <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                                            <input type="text" name="b_0607f2e146792511ba67d651a_3cc10a7ba2" tabindex="-1" value="">
+                                        </div>
+                                        <div class="clear">
+                                            <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn" value="Subscribe">
+                                        </div>
                                     </div>
                                 </div>
-                                <input type="hidden" name="_mc4wp_timestamp" value="1560227031">
-                                <input type="hidden" name="_mc4wp_form_id" value="1696">
-                                <input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1">
-                                <div class="mc4wp-response"></div>
                             </form>
-                            <!-- / Mailchimp for WordPress Plugin -->
+                            <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+                            <script type="text/javascript">(function($) {
+                                window.fnames = new Array();
+                                window.ftypes = new Array();
+                                fnames[1]='FNAME';ftypes[1]='text';
+                                fnames[2]='LNAME';ftypes[2]='text';
+                                fnames[0]='EMAIL';ftypes[0]='email';
+                                fnames[4]='PHONE';ftypes[4]='phone';
+                                fnames[3]='ADDRESS';ftypes[3]='address';
+                                fnames[5]='BIRTHDAY';ftypes[5]='birthday';
+                            }(jQuery));
+                            var $mcj = jQuery.noConflict(true);
+                            </script>
+
+                            
                         </section>
                     </div>
                     <!-- end col-lg-3 -->

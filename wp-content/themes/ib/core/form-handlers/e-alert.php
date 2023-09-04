@@ -226,6 +226,5 @@
         } catch (Exception $e) {
             $ThankYou = "Unable to submit application, please try again.";
         }
-        
     }
 ?>
