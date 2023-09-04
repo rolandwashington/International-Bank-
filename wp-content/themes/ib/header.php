@@ -13,6 +13,7 @@
 	<link rel="stylesheet" id="slick-slider-css" href="<?php echo get_template_directory_uri() . '/build/css/slick.css' ?>" type="text/css" media="all">
 	<link rel="stylesheet" id="slick-theme-css" href="<?php echo get_template_directory_uri() . '/build/css/slick-theme.css' ?>" type="text/css" media="all">
 	<link rel="stylesheet" id="consultax-style-css" href="<?php echo get_template_directory_uri() . '/build/css/style.css' ?>" type="text/css" media="all">
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/0607f2e146792511ba67d651a/d764dc28a465b991cd17248a9.js");</script>
 
     <!-- RS5.0 Main Stylesheet -->
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() . '/build/revolution/css/settings.css' ?>">
@@ -40,7 +41,6 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/0607f2e146792511ba67d651a/d764dc28a465b991cd17248a9.js");</script>
 </head>
 	<div id="page" class="site">
 
