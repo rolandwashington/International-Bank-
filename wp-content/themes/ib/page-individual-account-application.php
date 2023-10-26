@@ -20,11 +20,11 @@
 		<div class="container">
 			<div class="boxed-content">
 				<!-- IB EMPLOYMENT / INTERNSHIP -->
+				<embed src="<?php echo get_template_directory_uri() ?>/personal-account-form.pdf" type="" width="100%" height="1600">
 				<div class="career-box" id="ib-application-form">
 					<h5>ACCOUNT INFORMATION</h5>
 					<div class="content-box">
                         <form action="/account-application" method="POST" enctype="multipart/form-data">
-							<embed src="<?php echo get_template_directory_uri() ?>/personal-account-form.pdf" type="" width="100%" height="600">
                         </form>
 					</div>
 				</div>
