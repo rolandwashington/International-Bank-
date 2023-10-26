@@ -24,10 +24,7 @@
 					<h5>ACCOUNT INFORMATION</h5>
 					<div class="content-box">
                         <form action="/account-application" method="POST" enctype="multipart/form-data">
-							<embed src="<?php echo get_template_directory_uri() ?>/personal-account-form.pdf" type="">
-                            <iframe src="<?php echo get_template_directory_uri() ?>/personal-account-form.pdf" width="100%" height="600">
-								<h1>Loading....</h1>
-							</iframe>
+							<embed src="<?php echo get_template_directory_uri() ?>/personal-account-form.pdf" type="" width="100%" height="600">
                         </form>
 					</div>
 				</div>
