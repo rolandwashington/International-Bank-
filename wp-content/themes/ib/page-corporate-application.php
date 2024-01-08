@@ -21,11 +21,11 @@
 			<div class="boxed-content">
 				<!-- IB EMPLOYMENT / INTERNSHIP -->
 				<div class="career-box" id="ib-application-form">
-					<h5>INSTRUCTIONS TO DOWNLOAD AND SUBMIT APPLICATION FORM</h5>
+                <h5>INSTRUCTIONS TO DOWNLOAD AND SUBMIT APPLICATION FORM</h5>
 					<div class="content-box">
-                        <form action="/account-application" method="POST" enctype="multipart/form-data">
+                        <form action="/corporate-application" method="POST" enctype="multipart/form-data">
                             <h5>Instructions:</h5>
-                            <p>To access the fillable Personal Account Application Form, simply click on the "Download Form" button below:</p>
+                            <p>To access the fillable Corporate Account Application Form, simply click on the "Download Form" button below:</p>
                             <a class="btn download-btn" target="_blank" href="<?php echo get_template_directory_uri() ?>/personal-account-form.pdf">Download Form</a>
                             <p>After filling in the application, kindly submit the completed PDF using the upload feature provided or email it to <b>erequest@ibliberia.com</b>.</p>
                             <input type="file" class="" name="account-application-form-pdf" id="upload-account-application-form">

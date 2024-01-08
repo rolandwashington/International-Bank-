@@ -1829,3 +1829,21 @@ button.search-button {
     font-size: 1.3rem;
     margin-bottom: 1rem;
 }
+
+#upload-account-application-form {
+    background-color: var(--ib-white);
+    padding: .9rem;
+}
+
+#submit-account-application-form {
+    margin-top: -0.2rem;
+    margin-left: -0.3rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+}
+
+.btn.download-btn {
+    margin-top: 0;
+    margin-bottom: 50px;
+}

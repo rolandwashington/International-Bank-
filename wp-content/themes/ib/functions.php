@@ -298,6 +298,16 @@ function create_custom_tables() {
         IsAgreedToTerms VARCHAR(3) NOT NULL,
         PRIMARY KEY  (id)
     ) $charset_collate;";
+
+
+    // ACCOUNT APPLICATION FORM PDF PATH
+    $individual_account_application_form = $wpdb->prefix . 'ib_individual_account_application_form';
+
+    $individual_account_application_form_table = "CREATE TABLE $individual_account_application_form (
+        id INT(11) NOT NULL AUTO_INCREMENT,
+        AccountApplicationFormPDF TEXT NOT NULL,
+        PRIMARY KEY  (id)
+    ) $charset_collate;";
     
 
 
@@ -310,6 +320,7 @@ function create_custom_tables() {
     dbDelta( $e_statement_table );
     dbDelta( $e_alert_table );
     dbDelta( $online_bank_account_table );
+    dbDelta( $individual_account_application_form_table );
 }
 
 add_action( 'after_setup_theme', 'create_custom_tables' );

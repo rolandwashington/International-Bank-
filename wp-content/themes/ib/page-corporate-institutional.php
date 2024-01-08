@@ -75,8 +75,7 @@
                                     <h4>Corporate Checking Account</h4>
                                     <p>Is a convenient way to manage your business cash flow easily.  Ideal for businesses with high transactions volume.</p>
                                     <div class="ib-account-button-wrap">
-                                        <a class="link-box pagelink" href="<?php echo site_url() ?>/account-application">Apply Online</a>
-                                        <a class="link-box pagelink" target="_blank" href="<?php echo get_template_directory_uri() ?>/personal-account-form.pdf">Download Form</a>
+                                        <a class="link-box pagelink" href="<?php echo site_url() ?>/corporate-application">Get Account Application Form</a>
                                     </div>
                                 </div>
                             </div>
@@ -96,8 +95,7 @@
                                     <p>Savings to power your business growth in the future. The most convenient savings solution for your organization.</p>
                                     
                                     <div class="ib-account-button-wrap">
-                                        <a class="link-box pagelink" href="<?php echo site_url() ?>/account-application">Apply Online</a>
-                                        <a class="link-box pagelink" target="_blank" href="<?php echo get_template_directory_uri() ?>/personal-account-form.pdf">Download Form</a>
+                                        <a class="link-box pagelink" href="<?php echo site_url() ?>/corporate-application">Get Account Application Form</a>
                                     </div>
                                 </div>
                             </div>

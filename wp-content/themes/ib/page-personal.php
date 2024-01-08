@@ -77,8 +77,7 @@
                                     <h4>Checking Account</h4>
                                     <p>Simplify your spending. With our checking solution equipped to conveniently help you manage your everyday banking.</p>
                                     <div class="ib-account-button-wrap">
-                                        <a class="link-box pagelink" href="<?php echo site_url() ?>/account-application">Apply Online</a>
-                                        <a class="link-box pagelink" target="_blank" href="<?php echo get_template_directory_uri() ?>/personal-account-form.pdf">Download Form</a>
+                                        <a class="link-box pagelink" href="<?php echo site_url() ?>/account-application">Get Account Application Form</a>
                                     </div>
                                 </div>
                             </div>
@@ -95,10 +94,8 @@
                                 <div class="mem-info">
                                     <h4>Savings Account</h4>
                                     <p>With our experts and powerful digital tools, our personal savings solution is designed to help you achieve all of your saving goals.</p>
-                                    
                                     <div class="ib-account-button-wrap">
-                                        <a class="link-box pagelink" href="<?php echo site_url() ?>/account-application">Apply Online</a>
-                                        <a class="link-box pagelink" target="_blank" href="<?php echo get_template_directory_uri() ?>/personal-account-form.pdf">Download Form</a>
+                                        <a class="link-box pagelink" href="<?php echo site_url() ?>/account-application">Get Account Application Form</a>
                                     </div>
                                 </div>
                             </div>
