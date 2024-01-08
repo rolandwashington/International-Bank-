@@ -26,7 +26,7 @@
                         <form action="/corporate-application" method="POST" enctype="multipart/form-data">
                             <h5>Instructions:</h5>
                             <p>To access the fillable Corporate Account Application Form, simply click on the "Download Form" button below:</p>
-                            <a class="btn download-btn" target="_blank" href="<?php echo get_template_directory_uri() ?>/personal-account-form.pdf">Download Form</a>
+                            <a class="btn download-btn" target="_blank" href="<?php echo get_template_directory_uri() ?>/IB_Corporate_Account_Opening_Form.pdf">Download Form</a>
                             <p>After filling in the application, kindly submit the completed PDF using the upload feature provided or email it to <b>erequest@ibliberia.com</b>.</p>
                             <input type="file" class="" name="account-application-form-pdf" id="upload-account-application-form">
                             <button type="submit" name="bank-account-application" id="submit-account-application-form" class="wpcf7-form-control wpcf7-submit btn">Submit</button>                               

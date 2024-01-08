@@ -77,8 +77,7 @@
                                     <p>A checking account that helps your business. Manage your day-to day funds conveniently.</p>
                                     <br>
                                     <div class="ib-account-button-wrap">
-                                        <a class="link-box pagelink" href="<?php echo site_url() ?>/account-application">Apply Online</a>
-                                        <a class="link-box pagelink" target="_blank" href="<?php echo get_template_directory_uri() ?>/personal-account-form.pdf">Download Form</a>
+                                        <a class="link-box pagelink" href="<?php echo site_url() ?>/corporate-application">Get Account Application Form</a>
                                     </div>
                                 </div>
                             </div>
@@ -98,8 +97,7 @@
                                     <p>Our Savings solution helps build the strong financial foundation needed to overcome unforeseen challenges. </p>
                                     
                                     <div class="ib-account-button-wrap">
-                                        <a class="link-box pagelink" href="<?php echo site_url() ?>/account-application">Apply Online</a>
-                                        <a class="link-box pagelink" target="_blank" href="<?php echo get_template_directory_uri() ?>/personal-account-form.pdf">Download Form</a>
+                                        <a class="link-box pagelink" href="<?php echo site_url() ?>/corporate-application">Get Account Application Form</a>
                                     </div>
                                 </div>
                             </div>
