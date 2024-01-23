@@ -29,9 +29,18 @@
                             <a class="btn download-btn" target="_blank" href="<?php echo get_template_directory_uri() ?>/personal-account-form.pdf">Download Form</a>
                             <p>After filling in the application, kindly submit the completed PDF using the upload feature provided or email it to <b>erequest@ibliberia.com</b>.</p>
                             <input type="file" class="" name="account-application-form-pdf" id="upload-account-application-form">
-                            <button type="submit" name="bank-account-application" id="submit-account-application-form" class="wpcf7-form-control wpcf7-submit btn">Submit</button>                               
-                            
-                            <!-- <div class="application-form">
+                            <button type="submit" name="bank-account-application" id="submit-account-application-form" class="wpcf7-form-control wpcf7-submit btn" onclick="onClick(event)">Submit</button>                            
+                        </form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<?php get_footer(); ?>
+
+ <!-- <div class="application-form">
                                 <label for="account-type" class="applicant-account-type">
                                     Select Account Type: <br>
                                     <select name="account-type" id="account-type" class="form-half-width" required>
@@ -347,12 +356,3 @@
                                 </label>
                                 <button type="submit" name="bank-account-application" class="wpcf7-form-control wpcf7-submit btn form-half-width">Submit Application</button>                               
                             </div> -->
-                        </form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<?php get_footer(); ?>

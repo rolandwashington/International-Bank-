@@ -417,3 +417,14 @@ $(document).ready(function() {
 });
   
   
+
+// RECAPTCHA
+// ====================
+function onClick(e) {
+    e.preventDefault();
+    grecaptcha.enterprise.ready(async () => {
+        const token = await grecaptcha.enterprise.execute('6Ldr_VkpAAAAABQazvtEGH-HkHGE2KLyNs-c1Kol', {action: 'submit'});
+        document.getElementById("submit-account-application-form").click(); // Trigger form submission after reCAPTCHA validation
+    });
+}
+

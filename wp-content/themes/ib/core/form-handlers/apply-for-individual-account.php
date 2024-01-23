@@ -9,6 +9,21 @@ require_once "PHPMailer/src/SMTP.php";
 require_once "PHPMailer/src/Exception.php";
 
 if (isset($_POST["bank-account-application"])) {
+    // Verify reCAPTCHA
+    $recaptchaToken = $_POST['g-recaptcha-response'];
+
+    // Replace 'YOUR_RECAPTCHA_SECRET_KEY' with your actual reCAPTCHA secret key
+    $recaptchaSecretKey = '6Ldr_VkpAAAAABQazvtEGH-HkHGE2KLyNs-c1Kol';
+
+    $recaptchaResponse = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret={$recaptchaSecretKey}&response={$recaptchaToken}");
+    $recaptchaData = json_decode($recaptchaResponse);
+
+    if (!$recaptchaData->success) {
+        // Handle reCAPTCHA validation failure (you can redirect the user back to the form with an error message)
+        echo "reCAPTCHA validation failed. Please try again.";
+        return;
+    }
+
     // Get the uploaded file details
     $tmpAccountOpeningForm = $_FILES['account-application-form-pdf']['tmp_name'];
     $accountOpeningForm = $_FILES['account-application-form-pdf']['name'];
