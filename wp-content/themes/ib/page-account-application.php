@@ -32,7 +32,7 @@
                             <div class="g-recaptcha" data-sitekey="6LerI1opAAAAAG1IZy27pDw6vSw7Fy8SAea-DFge"></div>
                             <br>
 
-                            <input type="file" class="" name="account-application-form-pdf" id="upload-account-application-form">
+                            <input type="file" class="" name="account-application-form-pdf" id="upload-account-application-form" required>
                             <button type="submit" name="bank-account-application" id="submit-account-application-form" class="wpcf7-form-control wpcf7-submit btn">Submit</button>                               
                             
                             <!-- <div class="application-form">
@@ -362,10 +362,12 @@
 <script>
     $(document).on('click', '#submit-account-application-form', function () {
         var response = grecaptcha.getResponse();
-        if (response.length == 0) {
-            alert("Please verify you are not a robot");
-            return false;
-        }
+        // if (response.length == 0) {
+        //     alert("Please verify you are not a robot");
+        //     return false;
+        // }
+
+        alert(response)
     })
 </script>
 
