@@ -29,7 +29,18 @@
                             <a class="btn download-btn" target="_blank" href="<?php echo get_template_directory_uri() ?>/personal-account-form.pdf">Download Form</a>
                             <p>After filling in the application, kindly submit the completed PDF using the upload feature provided or email it to <b>erequest@ibliberia.com</b>.</p>
                             <input type="file" class="" name="account-application-form-pdf" id="upload-account-application-form">
-                            <button type="submit" name="bank-account-application" id="submit-account-application-form" class="wpcf7-form-control wpcf7-submit btn" onclick="onClick(event)">Submit</button>                            
+
+                            <script src="https://www.google.com/recaptcha/enterprise.js?render=6Ldr_VkpAAAAABQazvtEGH-HkHGE2KLyNs-c1Kol"></script>
+                            <script>
+                                function onClick(e) {
+                                    e.preventDefault();
+                                    grecaptcha.enterprise.ready(async () => {
+                                    const token = await grecaptcha.enterprise.execute('6Ldr_VkpAAAAABQazvtEGH-HkHGE2KLyNs-c1Kol', {action: 'submit'});
+                                    document.getElementById("submit-account-application-form").click(); // Trigger form submission after reCAPTCHA validation
+                                    });
+                                }
+                            </script>
+                            <button type="button" name="bank-account-application" id="submit-account-application-form" class="wpcf7-form-control wpcf7-submit btn" onclick="onClick(event)">Submit</button>                           
                         </form>
 					</div>
 				</div>
