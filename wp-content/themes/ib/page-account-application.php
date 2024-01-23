@@ -29,8 +29,10 @@
                             <a class="btn download-btn" target="_blank" href="<?php echo get_template_directory_uri() ?>/personal-account-form.pdf">Download Form</a>
                             <p>After filling in the application, kindly submit the completed PDF using the upload feature provided or email it to <b>erequest@ibliberia.com</b>.</p>
                             
+                            <!-- Your form content -->
                             <div class="g-recaptcha" data-sitekey="6LerI1opAAAAAG1IZy27pDw6vSw7Fy8SAea-DFge"></div>
                             <br>
+
 
                             <input type="file" class="" name="account-application-form-pdf" id="upload-account-application-form" required>
                             <button type="submit" name="bank-account-application" id="submit-account-application-form" class="wpcf7-form-control wpcf7-submit btn">Submit</button>                               
@@ -359,16 +361,18 @@
 	</div>
 </div>
 
+
 <script>
     $(document).on('click', '#submit-account-application-form', function () {
         var response = grecaptcha.getResponse();
-        // if (response.length == 0) {
-        //     alert("Please verify you are not a robot");
-        //     return false;
-        // }
+        if (response.length == 0) {
+            alert("Please verify you are not a robot");
+            return false;
+        }
 
-        alert(response)
-    })
+        // Proceed with form submission or additional logic
+        // alert(response)
+    });
 </script>
 
 <?php get_footer(); ?>

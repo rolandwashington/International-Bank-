@@ -15,9 +15,11 @@
 	<link rel="stylesheet" id="consultax-style-css" href="<?php echo get_template_directory_uri() . '/build/css/style.css' ?>" type="text/css" media="all">
     <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/0607f2e146792511ba67d651a/d764dc28a465b991cd17248a9.js");</script>
 
-    <!-- GOOGLE RECAPTCHA --> 
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- Include jQuery first -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Include reCAPTCHA API script asynchronously -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <!-- RS5.0 Main Stylesheet -->
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() . '/build/revolution/css/settings.css' ?>">
