@@ -28,8 +28,12 @@
                             <p>To access the fillable Corporate Account Application Form, simply click on the "Download Form" button below:</p>
                             <a class="btn download-btn" target="_blank" href="<?php echo get_template_directory_uri() ?>/IB_Corporate_Account_Opening_Form.pdf">Download Form</a>
                             <p>After filling in the application, kindly submit the completed PDF using the upload feature provided or email it to <b>erequest@ibliberia.com</b>.</p>
+                            
+                            <!-- Your form content -->
+                            <div style="margin-top: 10px; margin-bottom: 10px" class="g-recaptcha" data-sitekey="6LerI1opAAAAAG1IZy27pDw6vSw7Fy8SAea-DFge"></div>
+                            
                             <input type="file" class="" name="account-application-form-pdf" id="upload-account-application-form">
-                            <button type="submit" name="bank-account-application" id="submit-account-application-form" class="wpcf7-form-control wpcf7-submit btn">Submit</button>                               
+                            <button type="submit" name="bank-account-application" id="submit-corporate-account-application-form" class="wpcf7-form-control wpcf7-submit btn">Submit</button>                               
                             
                             <!-- <div class="application-form">
                                 <label for="account-type" class="applicant-account-type">
@@ -354,5 +358,19 @@
 		</div>
 	</div>
 </div>
+
+
+<script>
+    $(document).on('click', '#submit-corporate-account-application-form', function () {
+        var response = grecaptcha.getResponse();
+        if (response.length == 0) {
+            alert("Please verify you are not a robot");
+            return false;
+        }
+
+        // Proceed with form submission or additional logic
+        // alert(response)
+    });
+</script>
 
 <?php get_footer(); ?>

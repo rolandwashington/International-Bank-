@@ -72,7 +72,11 @@
                                             <label for="contact-info">
                                                 <textarea name="message" id="" cols="30" rows="10" placeholder="State your reason for the visit"></textarea>
                                             </label> 
-                                            <button type="submit" name="book-appointment" class="wpcf7-form-control wpcf7-submit btn form-half-width service-button">Submit</button> 
+
+											<!-- Your form content -->
+											<div style="margin-top: 10px; margin-bottom: 10px" class="g-recaptcha" data-sitekey="6LerI1opAAAAAG1IZy27pDw6vSw7Fy8SAea-DFge"></div>
+
+                                            <button type="submit" id="submit-book-appointment-application-form" name="book-appointment" class="wpcf7-form-control wpcf7-submit btn form-half-width service-button">Submit</button> 
 											<?php echo $ThankYou; ?>                              
                                         </div>
                                     </form>
@@ -85,5 +89,18 @@
 		</div>
 	</div>
 </div>
+
+<script>
+    $(document).on('click', '#submit-book-appointment-application-form', function () {
+        var response = grecaptcha.getResponse();
+        if (response.length == 0) {
+            alert("Please verify you are not a robot");
+            return false;
+        }
+
+        // Proceed with form submission or additional logic
+        // alert(response)
+    });
+</script>
 
 <?php get_footer(); ?>

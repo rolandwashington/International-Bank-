@@ -79,7 +79,11 @@
                                         <input type="checkbox" name="" id="" required> <span><strong>NOTE:</strong> I agree to be in-person to complete the process</span> <br>
                                         <input type="checkbox" name="" id="" required> <span>Agree to the terms</span>
                                     </label>
-                                    <button type="submit" name="submit-internet-banking" class="wpcf7-form-control wpcf7-submit btn form-half-width service-button">Submit Application</button>                               
+
+                                    <!-- Your form content -->
+                                    <div style="margin-top: 10px; margin-bottom: 10px" class="g-recaptcha" data-sitekey="6LerI1opAAAAAG1IZy27pDw6vSw7Fy8SAea-DFge"></div>
+
+                                    <button type="submit" id="submit-internet-banking" name="submit-internet-banking" class="wpcf7-form-control wpcf7-submit btn form-half-width service-button">Submit Application</button>                               
                                 </div>
                             </div>
                         </form>
@@ -90,5 +94,19 @@
 		</div>
 	</div>
 </div>
+
+
+<script>
+    $(document).on('click', '#submit-internet-banking', function () {
+        var response = grecaptcha.getResponse();
+        if (response.length == 0) {
+            alert("Please verify you are not a robot");
+            return false;
+        }
+
+        // Proceed with form submission or additional logic
+        // alert(response)
+    });
+</script>
 
 <?php get_footer(); ?>
