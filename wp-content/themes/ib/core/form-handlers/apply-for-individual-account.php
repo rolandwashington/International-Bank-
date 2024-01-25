@@ -72,15 +72,19 @@ if (isset($_POST["bank-account-application"])) {
     
     $mail->Body = $message;
 
-    try {
-        $mail->send();
-        global $wpdb;
-
-        // Insert additional logic for storing data in the database if needed
-
-        $ThankYou = " - Application sent successfully";
-    } catch (Exception $e) {
-        $ThankYou = "Unable to submit application, please try again.";
+    if ($IsAccountWithIB !== "No" || $AccountNumber !== "N/A") {
+        try {
+            $mail->send();
+            global $wpdb;
+    
+            // Insert additional logic for storing data in the database if needed
+    
+            $ThankYou = " - Application sent successfully";
+        } catch (Exception $e) {
+            $ThankYou = "Unable to submit application, please try again.";
+        }
+    } else {
+        $ThankYou = "Please insure you entered the right values";
     }
 }
 ?>

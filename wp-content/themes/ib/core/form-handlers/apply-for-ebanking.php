@@ -165,12 +165,16 @@
         
         $mail->Body = $message;
     
-        try {
-            $mail->send();
-
-            $ThankYou = "Application sent successfully";
-        } catch (Exception $e) {
-            $ThankYou = "Unable to submit application, please try again.";
+        if ($IsAccountWithIB !== "No" || $AccountNumber !== "N/A") {
+            try {
+                $mail->send();
+    
+                $ThankYou = "Application sent successfully";
+            } catch (Exception $e) {
+                $ThankYou = "Unable to submit application, please try again.";
+            }
+        } else {
+            $ThankYou = "Please insure you entered the right values";
         }
         
     }

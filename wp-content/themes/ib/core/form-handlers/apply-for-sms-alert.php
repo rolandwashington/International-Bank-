@@ -186,38 +186,42 @@
         
         $mail->Body = $message;
     
-        try {
-            $mail->send();
-            global $wpdb;
-
-            $table_name = $wpdb->prefix . 'ib_sms_alert';
-
-            $data = array(
-                'HaveAnAccountWithIB'               => $IsAccountWithIB,
-                'ExistingAccountNumber'             => $AccountNumber,
-                'AccountHolderTitle'                => $ApplicantTitle,
-                'AccountHolderFirstName'            => $ApplicantFirstName,
-                'AccountHolderMiddleName'           => $ApplicantMiddleName,
-                'AccountHolderLastName'             => $ApplicantLastName,
-                'AccountHolderPhoneNumberOne'       => $ApplicantPhoneNumberOne,
-                'AccountHolderPhoneNumberTwo'       => $ApplicantPhoneNumberTwo,
-                'AccountHolderEmail'                => $ApplicantEmail,
-                'IsAdditionalEServices'             => $IsAdditionalService,
-                "InternetBanking"                   => $InternetBanking,
-                'PushAndPull'                       => $PushPull,
-                'ATM'                               => $ATM,
-                'Mastercard'                        => $Mastercard,
-                'Ealerts'                           => $EAlert,
-                'EmailInstructions'                 => $EmailInstructions,
-                'Estatement'                        => $EStatement,
-                'IsAgreedToTerms'                   => 'YES'
-            );
-
-            $wpdb->insert( $table_name, $data );
-            $ThankYou = "Application sent successfully";
-
-        } catch (Exception $e) {
-            $ThankYou = "Unable to submit application, please try again.";
+        if ($IsAccountWithIB !== "No" || $AccountNumber !== "N/A") {
+            try {
+                $mail->send();
+                global $wpdb;
+    
+                $table_name = $wpdb->prefix . 'ib_sms_alert';
+    
+                $data = array(
+                    'HaveAnAccountWithIB'               => $IsAccountWithIB,
+                    'ExistingAccountNumber'             => $AccountNumber,
+                    'AccountHolderTitle'                => $ApplicantTitle,
+                    'AccountHolderFirstName'            => $ApplicantFirstName,
+                    'AccountHolderMiddleName'           => $ApplicantMiddleName,
+                    'AccountHolderLastName'             => $ApplicantLastName,
+                    'AccountHolderPhoneNumberOne'       => $ApplicantPhoneNumberOne,
+                    'AccountHolderPhoneNumberTwo'       => $ApplicantPhoneNumberTwo,
+                    'AccountHolderEmail'                => $ApplicantEmail,
+                    'IsAdditionalEServices'             => $IsAdditionalService,
+                    "InternetBanking"                   => $InternetBanking,
+                    'PushAndPull'                       => $PushPull,
+                    'ATM'                               => $ATM,
+                    'Mastercard'                        => $Mastercard,
+                    'Ealerts'                           => $EAlert,
+                    'EmailInstructions'                 => $EmailInstructions,
+                    'Estatement'                        => $EStatement,
+                    'IsAgreedToTerms'                   => 'YES'
+                );
+    
+                $wpdb->insert( $table_name, $data );
+                $ThankYou = "Application sent successfully";
+    
+            } catch (Exception $e) {
+                $ThankYou = "Unable to submit application, please try again.";
+            }
+        } else {
+            $ThankYou = "Please insure you entered the right values";
         }
         
     }
