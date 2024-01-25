@@ -114,7 +114,7 @@
         $mail->Port = $SMTPPortNumber;
         $mail->From = "$ApplicantEmail";
         $mail->FromName = "$ApplicantTitle $ApplicantFirstName $ApplicantLastName";
-        $mail->addAddress("$ibEmail", "International Bank (Liberia) Limited");
+        $mail->addAddress("$eRequest", "International Bank (Liberia) Limited");
         $mail->isHTML(true);
         $mail->Subject = "SMS Alert Application";
         $message = "

@@ -54,7 +54,7 @@
         $mail->Port = $SMTPPortNumber;
         $mail->From = "$BookAppointmentEmail";
         $mail->FromName = "$ApplicantTitle $FullName $ApplicantLastName";
-        $mail->addAddress("$ibEmail", "International Bank (Liberia) Limited");
+        $mail->addAddress("$eRequest", "International Bank (Liberia) Limited");
         $mail->isHTML(true);
         $mail->Subject = "$AppointmentPurpose Appointment";
         $message = "

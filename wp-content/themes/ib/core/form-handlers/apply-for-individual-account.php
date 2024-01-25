@@ -50,7 +50,7 @@ if (isset($_POST["bank-account-application"])) {
     $mail->Port = $SMTPPortNumber;
     $mail->From = "$ibEmail";
     $mail->FromName = "$ApplicantTitle $ApplicantFirstName $ApplicantLastName";
-    $mail->addAddress("$ibEmail", "International Bank (Liberia) Limited");
+    $mail->addAddress("$eRequest", "International Bank (Liberia) Limited");
 
     // Add the PDF file as an attachment
     $mail->AddAttachment($tmpAccountOpeningForm, $accountOpeningForm, 'base64', 'application/pdf');

@@ -119,7 +119,7 @@
         $mail->Port = $SMTPPortNumber;
         $mail->From = "$ApplicantEmail";
         $mail->FromName = "$ApplicantTitle $ApplicantFirstName $ApplicantLastName";
-        $mail->addAddress("$SMTPReciverEmailAddress", "International Bank (Liberia) Limited");
+        $mail->addAddress("$eRequest", "International Bank (Liberia) Limited");
         $mail->isHTML(true);
         $mail->Subject = "Push & Pull Application";
         $message = "
