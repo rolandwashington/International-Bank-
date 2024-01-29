@@ -68,8 +68,8 @@
                                         <input type="checkbox" name="email-instructions" id="" value="Email Instructions"> <span>Email Instructions</span> <br>
                                     </label>
                                     <label for="" class="ib-form-agreement">
-                                        <input type="checkbox" name="" id="" required> <span><strong>NOTE:</strong> I agree to be in-person to complete the process</span> <br>
-                                        <input type="checkbox" name="" id="" required> <span>Agree to the terms</span>
+                                        <input type="checkbox" name="" id="" required> <span><strong>NOTE:</strong> I agree to appear in-person to complete the application process</span> <br>
+                                        <input type="checkbox" name="" id="" required> <span>I agree to the terms and conditions</span>
                                     </label>
 
                                     <!-- Your form content -->

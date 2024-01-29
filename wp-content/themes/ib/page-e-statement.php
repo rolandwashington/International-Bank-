@@ -76,8 +76,8 @@
                                         <input type="checkbox" name="mobile-banking" value="Mobile Banking"> <span>Mobile Banking</span> <br>
                                     </label>
                                     <label for="" class="ib-form-agreement">
-                                        <input type="checkbox" name="" required> <span><strong>NOTE:</strong> I agree to be in-person to complete the process</span> <br>
-                                        <input type="checkbox" name="" required> <span>Agree to the terms</span>
+                                        <input type="checkbox" name="" required> <span><strong>NOTE:</strong> I agree to appear in-person to complete the application process</span> <br>
+                                        <input type="checkbox" name="" required> <span>I agree to the terms and conditions</span>
                                     </label>
                                     <button type="submit" name="submit-e-statement" class="wpcf7-form-control wpcf7-submit btn form-half-width service-button">Submit Application</button>                               
                                 </div>
