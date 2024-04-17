@@ -160,7 +160,6 @@
 								else :
 									echo 'No IB Executive Members found.';
 								endif;
-
 							?>
 			            </div>
 			        </div>

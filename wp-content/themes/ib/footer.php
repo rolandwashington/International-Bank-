@@ -1,4 +1,4 @@
-<footer id="site-footer" class="site-footer bg-second">
+    <footer id="site-footer" class="site-footer bg-second">
         <div class="ib-background-secondary main-footer">
             <div class="container">
                 <div class="row">

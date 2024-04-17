@@ -6,6 +6,23 @@
             <ul>
                 <li data-transition="fade" data-slotamount="10" data-masterspeed="default" data-thumb="">
                     <div class="tp-caption tp-resizeme image" data-x="right" data-hoffset="['0']" data-y="bottom" data-voffset="['-20','-35','40','25']" data-width="['auto','450','450','320']" data-transform_idle="o:1;" data-transform_in="x:550px;opacity:0;s:800;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000" data-responsive_offset="on">
+                        <img class="img-responsive" src="<?php echo get_template_directory_uri() . '/images/ib-agency-banking.png' ?>" alt="Image">
+                    </div>
+                    <div class="ib-slider-text">
+                        <div class="tp-caption tp-resizeme font-second text-second bolder" data-x="['left']" data-hoffset="['0','15','15','40']" data-y="center" data-voffset="['-120','-135','-150','-150']" data-width="['670','500','450','320']" data-transform_idle="o:1;" data-transform_in="x:100px;opacity:0;s:800;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1700" data-whitespace="['normal']" data-fontsize="['50','40','35','30']" data-lineheight="['60','55','50','40']" data-responsive_offset="on">
+                            <p><span class="display">Agency </span><span class="">Banking</span></p>
+                        </div>
+                        <div class="tp-caption tp-resizeme sh3" data-x="['left']" data-hoffset="['0','15','15','40']" data-y="center" data-voffset="['-50','-35','-70','20']" data-width="['580','580','480','300']" data-transform_idle="o:1;" data-whitespace="['normal','normal','normal','normal']" data-transform_in="x:100px;opacity:0;s:800;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1900" data-fontsize="['16','16','14','12']" data-lineheight="['24','24','18','16']" data-responsive_offset="on">
+                            <p class="ib-about-caption">Embrace Convenience. <br>Access our financial services right in your Area.</p>
+                        </div>
+                        <div class="tp-caption" data-x="['left']" data-hoffset="['0','15','15','40']" data-y="bottom" data-voffset="['325','300','350','220']" data-transform_idle="o:1;" data-transform_in="x:100px;opacity:0;s:800;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="2100">
+                            <a class="btn" href="<?php echo site_url('/locations') ?>">Visit Branch</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li data-transition="fade" data-slotamount="10" data-masterspeed="default" data-thumb="">
+                    <div class="tp-caption tp-resizeme image" data-x="right" data-hoffset="['0']" data-y="bottom" data-voffset="['-20','-35','40','25']" data-width="['auto','450','450','320']" data-transform_idle="o:1;" data-transform_in="x:550px;opacity:0;s:800;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000" data-responsive_offset="on">
                         <img class="img-responsive" src="<?php echo get_template_directory_uri() . '/images/man_1.png' ?>" alt="Image">
                     </div>
                     <div class="ib-slider-text">
@@ -124,19 +141,19 @@
                 <div class="wpb_column column_container col-sm-6">
                     <div class="column-inner">
                         <div class="wpb_wrapper ib-offer-text">
-                            <h2 class="custom_heading text-light">Push & Pull</h2>
+                            <h2 class="custom_heading text-light">Agency Banking</h2>
                             <div class="wpb_text_column wpb_content_element  text-light">
                                 <div class="wpb_wrapper">
-                                    <p>No need to stand in line; transfer money between <br>your bank account and your mobile wallet easily with IBLL's Push & Pull Service. </p>
+                                    <p>Our Agency Banking Service allows you to transact seamlessly </br> without the long  trip to the bank.</p>
                                 </div>
                             </div>
-                            <a class="wpcf7-form-control wpcf7-submit btn" href="<?php echo site_url( '/apply-for-push-pull' ) ?>">Sign Up</a>
+                            <a class="wpcf7-form-control wpcf7-submit btn" href="<?php echo site_url( '/locations' ) ?>">Visit Branch</a>
                         </div>
                     </div>
                 </div>
                 <div class="wpb_column column_container col-sm-6 ib-promotion-image">
                     <div class="tp-caption tp-resizeme" data-x="left" data-hoffset="['0']" data-y="bottom" data-voffset="" data-width="['auto','320','auto','320']" data-transform_idle="o:1;" data-transform_in="x:550px;opacity:0;s:800;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000" data-responsive_offset="on">
-                        <img class="img-responsive" src="<?php echo get_template_directory_uri() . '/images/push-pull-promotion.png' ?>" alt="Image">
+                        <img class="img-responsive" src="<?php echo get_template_directory_uri() . '/images/agency-baning-in-your-area.png' ?>" alt="Image">
                     </div>
                 </div>
             </div>
