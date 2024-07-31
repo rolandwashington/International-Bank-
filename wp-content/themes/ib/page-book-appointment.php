@@ -33,7 +33,7 @@
 								</div>
 							</div>
 
-							<div class="wpb_column column_container col-sm-6 col-md-3">
+							<div class="wpb_column column_container col-sm-6 col-md-4">
 								<div class="column-inner">
 									<div class="wpb_wrapper">
 										<div class="member-item radius">
