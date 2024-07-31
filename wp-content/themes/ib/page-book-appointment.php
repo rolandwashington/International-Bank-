@@ -41,7 +41,7 @@
 												<img src="<?php echo get_template_directory_uri(); ?>/images/our-team/Jacqueline_Willia.png" alt=""> <span class="overlay"></span>
 											</div>
 											<div class="mem-info">
-												<h5>Jacqueline Williams N'tow<span class="font12 normal">Chief Executive Officer</span></h5>
+												<h5>Jacqueline Williams N'tow<span class="font12 normal">Acting Chief Executive Officer</span></h5>
 												<p></p>
 											</div>
 										</div>
