@@ -33,7 +33,7 @@
 								</div>
 							</div>
 
-							<div class="wpb_column column_container col-sm-6 col-md-3">
+							<!-- <div class="wpb_column column_container col-sm-6 col-md-3">
 								<div class="column-inner">
 									<div class="wpb_wrapper">
 										<div class="member-item radius">
@@ -48,7 +48,7 @@
 										<div class="empty_space_30  lg-hidden"></div>
 									</div>
 								</div> 
-							</div>
+							</div> -->
                             <div class="career-box" id="appointment">
                                 <div class="content-box">
                                     <form action="<?php echo site_url() . "/book-appointment" ?>" method="POST" enctype="multipart/form-data">
