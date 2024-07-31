@@ -33,22 +33,22 @@
 								</div>
 							</div>
 
-							<!-- <div class="wpb_column column_container col-sm-6 col-md-3">
+							<div class="wpb_column column_container col-sm-6 col-md-3">
 								<div class="column-inner">
 									<div class="wpb_wrapper">
 										<div class="member-item radius">
 											<div class="avatar">
-												<img src="<?php echo get_template_directory_uri(); ?>/images/our-team/Henry_Saamoi.jpg" alt=""> <span class="overlay"></span>
+												<img src="<?php echo get_template_directory_uri(); ?>/images/our-team/Jacqueline_Willia.png" alt=""> <span class="overlay"></span>
 											</div>
 											<div class="mem-info">
-												<h5>Henry Fallah Saamoi<span class="font12 normal">Chief Executive Officer</span></h5>
+												<h5>Jacqueline Williams N'tow<span class="font12 normal">Chief Executive Officer</span></h5>
 												<p></p>
 											</div>
 										</div>
 										<div class="empty_space_30  lg-hidden"></div>
 									</div>
 								</div> 
-							</div> -->
+							</div>
                             <div class="career-box" id="appointment">
                                 <div class="content-box">
                                     <form action="<?php echo site_url() . "/book-appointment" ?>" method="POST" enctype="multipart/form-data">
