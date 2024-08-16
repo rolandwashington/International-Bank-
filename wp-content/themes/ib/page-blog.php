@@ -6,7 +6,7 @@
 			<div class="breadc-box no-line">
 				<div class="row">
 					<div class="col-md-6">
-						<h1 class="page-title">BLOG</h1>
+						<h1 class="page-title">NEWS</h1>
 					</div>
 				</div>
 			</div>
