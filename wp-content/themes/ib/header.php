@@ -138,7 +138,7 @@
                                     <li><a href="<?php echo site_url( '/online-forms' ) ?>">ONLINE APPLICATION FORMS</a></li>
                                     <li><a href="<?php echo site_url( '/resources' ) ?>">RESOURCES</a></li>
                                     <li><a href="<?php echo site_url( '/media-gallery' ) ?>">MEDIA & GALLERY</a></li>
-                                    <li><a href="<?php echo site_url( '/blog' ) ?>">BLOG</a></li>
+                                    <li><a href="<?php echo site_url( '/blog' ) ?>">NEWS</a></li>
                                 </ul>
                             </li>
                             <li><a href="https://onlinebanking.ibliberia.com/Trustbank_InternetBanking/" target="_blank">ONLINE BANKING LOGIN</a></li>
@@ -231,7 +231,7 @@
                         <a href="<?php echo site_url( '/online-forms' ) ?>" class="ib-menu-link">Online Application Forms</a>
                         <a href="<?php echo site_url( '/resources' ) ?>" class="ib-menu-link">Resources</a>
                         <a href="<?php echo site_url( '/media-gallery' ) ?>" class="ib-menu-link">Media & Gallery</a>
-                        <a href="<?php echo site_url( '/blog' ) ?>" class="ib-menu-link">Blog</a>
+                        <a href="<?php echo site_url( '/blog' ) ?>" class="ib-menu-link">NEWS</a>
                     </div>
                 </div>
             </div>
@@ -337,7 +337,7 @@
                                 <a href="<?php echo site_url( '/online-forms' ) ?>" class="ib-menu-link">Online Application Forms</a>
                                 <a href="<?php echo site_url( '/resources' ) ?>" class="ib-menu-link">Resources</a>
                                 <a href="<?php echo site_url( '/media-gallery' ) ?>" class="ib-menu-link">Media & Gallery</a>
-                                <a href="<?php echo site_url( '/blog' ) ?>" class="ib-menu-link">Blog</a>
+                                <a href="<?php echo site_url( '/blog' ) ?>" class="ib-menu-link">NEWS</a>
                             </div>
                         </div>
                     </div>
