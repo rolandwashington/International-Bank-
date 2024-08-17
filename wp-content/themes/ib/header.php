@@ -132,7 +132,7 @@
                                     <li><a href="<?php echo site_url( '/book-appointment' ) ?>">BOOK APPOINTMENT</a></li>
                                 </ul>
                             </li>
-                            <li class="menu-item-has-children"><a href="<?php echo site_url() ?>/publications">PUBLICATIONS</a>
+                            <li class="menu-item-has-children"><a href="<?php echo site_url() ?>/blog">PUBLICATIONS</a>
                                 <ul class="sub-menu">
                                     <li><a href="<?php echo site_url( '/publications' ) ?>">ANNOUNCEMENT</a></li>
                                     <li><a href="<?php echo site_url( '/online-forms' ) ?>">ONLINE APPLICATION FORMS</a></li>
@@ -157,7 +157,7 @@
                         <a href="<?php echo site_url( '/small-business' ) ?>" class="ib-menu-link ib-small-business">SMALL BUSINESS</a>
                         <a href="<?php echo site_url( '/corporate-institutional' ) ?>" class="ib-menu-link ib-corporate-institutional">CORPORATE & INSTITUTIONAL</a>
                         <a href="<?php echo site_url( '/about' ) ?>" class="ib-menu-link ib-about">ABOUT</a>
-                        <a href="<?php echo site_url( '/publications' ) ?>" class="ib-menu-link ib-resources">PUBLICATIONS</a>
+                        <a href="<?php echo site_url( '/blog' ) ?>" class="ib-menu-link ib-resources">PUBLICATIONS</a>
                     </div>
 
                     <div class="wrap-online-banking-and-search">
@@ -227,7 +227,7 @@
             <div class="ib-sub-header">
                 <div class="ib-sub-header-wrap">
                     <div class="ib-navigation">
-                        <a href="<?php echo site_url( '/publications' ) ?>" class="ib-menu-link">Announcement</a>
+                        <a href="<?php echo site_url( '/publications' ) ?>" class="ib-menu-link">Vacancy</a>
                         <a href="<?php echo site_url( '/online-forms' ) ?>" class="ib-menu-link">Online Application Forms</a>
                         <a href="<?php echo site_url( '/resources' ) ?>" class="ib-menu-link">Resources</a>
                         <a href="<?php echo site_url( '/media-gallery' ) ?>" class="ib-menu-link">Media & Gallery</a>
@@ -333,7 +333,7 @@
                     <div class="ib-sub-header">
                         <div class="ib-sub-header-wrap">
                             <div class="ib-navigation">
-                                <a href="<?php echo site_url( '/publications' ) ?>" class="ib-menu-link">Announcement</a>
+                                <a href="<?php echo site_url( '/publications' ) ?>" class="ib-menu-link">Vacancy</a>
                                 <a href="<?php echo site_url( '/online-forms' ) ?>" class="ib-menu-link">Online Application Forms</a>
                                 <a href="<?php echo site_url( '/resources' ) ?>" class="ib-menu-link">Resources</a>
                                 <a href="<?php echo site_url( '/media-gallery' ) ?>" class="ib-menu-link">Media & Gallery</a>
